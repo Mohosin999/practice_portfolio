@@ -2,8 +2,8 @@ import ContactForm from "@/components/contact-form";
 
 const Contact = () => {
   return (
-    <div class="w-full h-full pt-28 flex items-center justify-center">
-      <div class="w-11/12 h-full flex flex-col items-center justify-center gap-4">
+    <div className="w-full h-full pt-28 flex items-center justify-center">
+      <div className="w-11/12 h-full flex flex-col items-center justify-center gap-4">
         {/* Heading */}
         <div className="w-full">
           <h3 className="font-bold text-center text-2xl">Contact</h3>

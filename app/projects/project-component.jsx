@@ -7,6 +7,7 @@ import { fadeInUp } from "@/utils/animation";
 const ProjectComponent = () => {
   const projectsData = [
     {
+      id: "proj-01",
       image: "./img/pro01.png",
       name: "AI-Based Resume Builder Application",
       liveUrl: "https://www.twitter.com",
@@ -14,6 +15,7 @@ const ProjectComponent = () => {
       caseStudyUrl: "https://github.com/case-stusy-01",
     },
     {
+      id: "proj-02",
       image: "./img/pro02.png",
       name: "Clean YouTube Application",
       liveUrl: "https://www.youtube.com",
@@ -21,6 +23,7 @@ const ProjectComponent = () => {
       caseStudyUrl: "https://github.com/case-stusy-02",
     },
     {
+      id: "proj-03",
       image: "./img/pro03.png",
       name: "Track Zone Application",
       liveUrl: "https://www.facebook.com",
@@ -30,8 +33,8 @@ const ProjectComponent = () => {
   ];
 
   return (
-    <div class="w-full h-full pt-28 flex items-center justify-center">
-      <div class="w-11/12 h-full flex flex-col items-center justify-center gap-4">
+    <div className="w-full h-full pt-28 flex items-center justify-center">
+      <div className="w-11/12 h-full flex flex-col items-center justify-center gap-4">
         {/* Heading */}
         <div className="w-full">
           <h3 className="font-bold text-center text-2xl">Works & Projects</h3>
@@ -39,10 +42,10 @@ const ProjectComponent = () => {
 
         {/* Projects Information */}
         <div className="w-full pb-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project) => (
             <motion.div
               {...fadeInUp}
-              key={index}
+              key={project.id}
               className="w-full bg-cardcolor border border-gray-600/[0.5] p-4 rounded-xl"
             >
               {/* Image */}
