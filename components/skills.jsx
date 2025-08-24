@@ -11,18 +11,17 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-
-import Skill from "../ui/Skill";
+import Skill from "./ui/skill";
 
 const Skills = () => {
   return (
-    <div className="w-7/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
+    <div className="w-full lg:w-7/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 
       {/* Proficient */}
       <div className="mb-8">
         <h3 className="text-base text-gray-300 font-medium mb-2">Proficient</h3>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
             name={"JavaScript"}
             logo={<FaJs className="text-yellow-500" />}
@@ -51,7 +50,7 @@ const Skills = () => {
         <h3 className="text-base text-gray-300 font-medium mb-2">
           Working Knowledge
         </h3>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
             name={"Next.js"}
             logo={<SiNextdotjs className="text-white" />}
@@ -76,7 +75,7 @@ const Skills = () => {
         <h3 className="text-base text-gray-300 font-medium mb-2">
           Familiar With
         </h3>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
             name={"TypeScript"}
             logo={<SiTypescript className="text-blue-500" />}

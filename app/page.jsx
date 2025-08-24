@@ -1,10 +1,10 @@
-import Hero from "@/components/ui/Hero";
+import HeroSection from "@/components/hero-section";
 
 const Home = () => {
   return (
-    <div className="w-full h-screen bg-bgcolor relative flex items-center justify-center">
-      <div className="absolute flex items-center justify-center">
-        <Hero />
+    <div className="w-full flex items-center justify-center">
+      <div className="flex items-center justify-center">
+        <HeroSection />
       </div>
     </div>
   );

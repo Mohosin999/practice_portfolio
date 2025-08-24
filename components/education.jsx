@@ -2,7 +2,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div class="w-5/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
+    <div class="w-full lg:w-5/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
       <h2 class="text-xl font-semibold mb-6">Education</h2>
       <div>
         {/* Honors */}

@@ -1,8 +1,8 @@
-import ContactForm from "@/components/ui/ContactForm";
+import ContactForm from "@/components/contact-form";
 
 const Contact = () => {
   return (
-    <div class="w-full h-full mt-24 flex items-center justify-center">
+    <div class="w-full h-full pt-28 flex items-center justify-center">
       <div class="w-11/12 h-full flex flex-col items-center justify-center gap-4">
         {/* Heading */}
         <div className="w-full">

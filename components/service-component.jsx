@@ -1,17 +1,16 @@
 import React from "react";
 
-const Service = ({ src, title, params }) => {
+const ServiceComponent = ({ src, title, params }) => {
   return (
-    <div className="w-1/2">
+    <div className="w-full lg:w-1/2">
       <div className="rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
         <div className="flex items-center gap-3">
-          {/* Service's logo */}
-          <div className="w-14 h-14">
+          <div className="w-10 lg:w-14 h-10 lg:h-14">
             <img src={src} alt="service_one" className="w-full h-full" />
           </div>
-          {/* Service's name */}
+
           <div>
-            <h2 className="text-2xl font-bold">{title}</h2>
+            <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
           </div>
         </div>
         {/* Description */}
@@ -23,4 +22,4 @@ const Service = ({ src, title, params }) => {
   );
 };
 
-export default Service;
+export default ServiceComponent;

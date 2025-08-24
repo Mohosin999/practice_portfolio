@@ -60,20 +60,22 @@
 
 // export default Services;
 
-import Service from "../ui/Service";
+import ServiceComponent from "./service-component";
 
 const Services = () => {
   return (
     <div className="w-full bg-secondarycolor h-full flex flex-col items-center justify-center z-20">
       <div className="w-11/12 h-full pt-14 flex flex-col items-center justify-center gap-4">
         {/* Heading */}
-        <h2 className="text-5xl font-bold pb-6">My Services</h2>
+        <h2 className="text-3xl lg:text-5xl font-bold pb-4 lg:pb-6">
+          My Services
+        </h2>
         <div className="w-full gap-4 flex flex-col items-center justify-center">
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
             {/* ========================================================
            *                      Service 01
            ======================================================== */}
-            <Service
+            <ServiceComponent
               src={"./img/serv01.png"}
               title={"Responsive Web Design"}
               params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -84,7 +86,7 @@ const Services = () => {
             {/* ========================================================
            *                      Service 02
            ======================================================== */}
-            <Service
+            <ServiceComponent
               src={"./img/serv02.png"}
               title={"Web Application Development"}
               params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -93,11 +95,11 @@ const Services = () => {
                   facilis voluptatum, asperiores quis maxime natus laboriosam.`}
             />
           </div>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
             {/* ========================================================
             *                      Service 03
            ======================================================== */}
-            <Service
+            <ServiceComponent
               src={"./img/serv03.png"}
               title={"SEO-Friendly NextJS Website"}
               params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -109,7 +111,7 @@ const Services = () => {
             {/* ========================================================
             *                      Service 04
             ======================================================== */}
-            <Service
+            <ServiceComponent
               src={"./img/serv04.png"}
               title={"Custom UI/UX Design"}
               params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
