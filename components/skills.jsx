@@ -1,3 +1,5 @@
+"use client";
+
 import { FaJs, FaReact, FaSass, FaBootstrap } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -12,10 +14,15 @@ import {
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Skill from "./ui/skill";
+import { motion } from "framer-motion";
+import { fadeInUp } from "@/utils/animation";
 
 const Skills = () => {
   return (
-    <div className="w-full lg:w-7/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
+    <motion.div
+      {...fadeInUp}
+      className="w-full lg:w-7/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]"
+    >
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 
       {/* Proficient */}
@@ -92,7 +99,7 @@ const Skills = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

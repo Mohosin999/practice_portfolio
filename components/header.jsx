@@ -1,56 +1,5 @@
-// "use client";
-// import Link from "next/link";
-// import Navbar from "./Navbar";
-// import { useEffect, useState } from "react";
-
-// const Header = () => {
-//   const [showHeader, setShowHeader] = useState(true);
-//   const [lastScrollY, setLastScrollY] = useState(0);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.scrollY > lastScrollY) {
-//         // scrolling down → hide
-//         setShowHeader(false);
-//       } else {
-//         // scrolling up → show
-//         setShowHeader(true);
-//       }
-//       setLastScrollY(window.scrollY);
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, [lastScrollY]);
-
-//   return (
-//     <div
-//       className={`fixed top-0 left-0 z-50 w-full flex items-center justify-center transition-transform duration-300 ${
-//         showHeader ? "translate-y-0" : "-translate-y-full"
-//       }`}
-//     >
-//       <div className="w-11/12 flex items-center justify-center px-4 py-6 bg-secondarycolor">
-//         {/* Left side logo */}
-//         <div className="flex-1">
-//           <Link href={"/"}>
-//             <h4 className="text-xl">
-//               Mohosin <span className="text-primarycolor">.</span>
-//             </h4>
-//           </Link>
-//         </div>
-
-//         {/* Right side menu buttons */}
-//         <div className="flex-1">
-//           <Navbar />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
 "use client";
+
 import Link from "next/link";
 import Navbar from "./navbar";
 import { useEffect, useState } from "react";
@@ -83,7 +32,7 @@ const Header = () => {
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="w-full lg:w-11/12 flex items-center justify-between px-4 py-6 bg-secondarycolor rounded-2xl">
+        <div className="w-full flex items-center justify-between px-4 py-6 bg-secondarycolor rounded-2xl">
           {/* Left side logo */}
           <Link href={"/"}>
             <h4 className="text-xl font-bold">
