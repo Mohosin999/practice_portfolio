@@ -1,8 +1,8 @@
-import CircleImage from "@/components/ui/circle-image";
-import PersonalInfo from "@/components/personal-info";
-import Education from "@/components/education";
-import Skills from "@/components/skills";
-import Paragraph from "@/components/ui/paragraph";
+import CircleImage from "@/components/ui/CircleImage";
+import PersonalInfo from "@/components/PersonalInfo";
+import Education from "@/components/Education";
+import Skills from "@/components/Skills";
+import Paragraph from "@/components/ui/Paragraph";
 
 const About = () => {
   return (

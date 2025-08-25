@@ -14,7 +14,7 @@ import {
   SiSwagger,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import Skill from "./ui/skill";
+import Skill from "./ui/Skill";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animation";
 

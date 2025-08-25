@@ -2,9 +2,9 @@
 
 import { FaDownload } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import Services from "./services";
-import PersonalInfo from "./personal-info";
-import CircleImage from "./ui/circle-image";
+import Services from "./Services";
+import PersonalInfo from "./PersonalInfo";
+import CircleImage from "./ui/CircleImage";
 
 const HeroSection = () => {
   const animatedText = "Frontend Developer";

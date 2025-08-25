@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react"; // 3-dot / hamburger icon
 

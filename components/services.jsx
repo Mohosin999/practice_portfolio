@@ -1,7 +1,7 @@
 "use client";
 
 import { fadeInUp } from "@/utils/animation";
-import ServiceComponent from "./service-component";
+import ServiceComponent from "./ServiceComponent";
 import { motion } from "framer-motion";
 
 const Services = () => {

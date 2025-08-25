@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animation";
-import EducationItem from "./education-item";
+import EducationItem from "./EducationItem";
 
 const Education = () => {
   return (

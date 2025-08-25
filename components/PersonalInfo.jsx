@@ -3,7 +3,7 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import SocialIconLink from "./ui/SocialIconLink";
-import Counter from "./ui/counter";
+import Counter from "./ui/Counter";
 
 const PersonalInfo = ({ email = false }) => {
   return (

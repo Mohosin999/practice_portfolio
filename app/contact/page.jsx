@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
   return (

@@ -1,4 +1,3 @@
-// "use client";
 import React from "react";
 
 const SocialIconLink = ({ href, icon: Icon }) => {
