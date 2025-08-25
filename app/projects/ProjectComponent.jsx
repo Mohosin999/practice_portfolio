@@ -25,14 +25,6 @@ const ProjectComponent = () => {
       caseStudyUrl:
         "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
     },
-    {
-      id: "789987",
-      image: "./img/tweetly.png",
-      name: "Tweetly - Social Media App",
-      liveUrl: "https://tweetly-full-stack-social-media-app.vercel.app/",
-      sourceUrl:
-        "https://github.com/Mohosin999/FullStack-Tweetly-Social-Media-App-Next.js",
-    },
   ];
 
   return (
