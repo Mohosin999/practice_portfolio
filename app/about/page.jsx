@@ -13,7 +13,7 @@ const About = () => {
           <div className="text_container">
             <h2 className="text-4xl font-bold">About Me</h2>
 
-            <Paragraph text="With over 3 years of experience in web development, I focus on creating responsive, SEO-friendly, and high-performance web applications that combine clean design with robust architecture." />
+            <Paragraph text="With over 4+ years of experience in web development, I focus on creating responsive, SEO-friendly, and high-performance web applications that combine clean design with robust architecture." />
 
             <Paragraph text="I work extensively with JavaScript, React.js, Next.js, TypeScript, Express.js, Strapi, Context API, and Redux Toolkit. For UI and styling, skilled in Tailwind CSS and shadcn/ui to deliver clean and accessible interfaces. Hands-on experience with Git, Jest, and building both frontend-only and full-stack MERN applications. In a recent freelance project, I developed a custom web app using Next.js, TypeScript, Tailwind CSS, and integrated Strapi for backend content management, and worked closely with the client to ensure the technical solution aligned with their business goals." />
 
