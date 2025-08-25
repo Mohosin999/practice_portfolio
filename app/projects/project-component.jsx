@@ -7,7 +7,7 @@ import { fadeInUp } from "@/utils/animation";
 const ProjectComponent = () => {
   const projectsData = [
     {
-      id: "proj-01",
+      id: "123321",
       image: "./img/pro01.png",
       name: "AI-Based Resume Builder Application",
       liveUrl: "https://www.twitter.com",
@@ -15,7 +15,7 @@ const ProjectComponent = () => {
       caseStudyUrl: "https://github.com/case-stusy-01",
     },
     {
-      id: "proj-02",
+      id: "456654",
       image: "./img/pro02.png",
       name: "Clean YouTube Application",
       liveUrl: "https://www.youtube.com",
@@ -23,7 +23,7 @@ const ProjectComponent = () => {
       caseStudyUrl: "https://github.com/case-stusy-02",
     },
     {
-      id: "proj-03",
+      id: "789987",
       image: "./img/pro03.png",
       name: "Track Zone Application",
       liveUrl: "https://www.facebook.com",
@@ -43,56 +43,57 @@ const ProjectComponent = () => {
         {/* Projects Information */}
         <div className="w-full pb-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
           {projectsData.map((project) => (
-            <motion.div
-              {...fadeInUp}
-              key={project.id}
-              className="w-full bg-cardcolor border border-gray-600/[0.5] p-4 rounded-xl"
-            >
-              {/* Image */}
-              <div className="w-full rounded-xl overflow-hidden">
-                <Link href={project.liveUrl} target="_blank">
-                  <img
-                    src={project.image}
-                    alt={project.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-all duration-200 ease-in-out"
-                  />
-                </Link>
-              </div>
-
-              {/* Project's description */}
-              <div className="w-full pt-3 flex flex-col justify-center">
-                {/* Name */}
-                <h3 className="font-bold text-xl pb-2">{project.name}</h3>
-
-                {/* Links */}
-                <div className="flex gap-6">
-                  {/* Live link */}
-                  <Link
-                    href={project.liveUrl}
-                    target="_blank"
-                    className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
-                  >
-                    Live Link
-                  </Link>
-                  {/* Source Code link */}
-                  <Link
-                    href={project.sourceUrl}
-                    target="_blank"
-                    className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
-                  >
-                    Source Code
-                  </Link>
-                  {/* Case-study link */}
-                  <Link
-                    href={project.caseStudyUrl}
-                    target="_blank"
-                    className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
-                  >
-                    Case Study
+            <div key={project.id}>
+              <motion.div
+                {...fadeInUp}
+                className="w-full bg-cardcolor border border-gray-600/[0.5] p-4 rounded-xl"
+              >
+                {/* Image */}
+                <div className="w-full rounded-xl overflow-hidden">
+                  <Link href={project.liveUrl} target="_blank">
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className="w-full h-full object-cover hover:scale-105 transition-all duration-200 ease-in-out"
+                    />
                   </Link>
                 </div>
-              </div>
-            </motion.div>
+
+                {/* Project's description */}
+                <div className="w-full pt-3 flex flex-col justify-center">
+                  {/* Name */}
+                  <h3 className="font-bold text-xl pb-2">{project.name}</h3>
+
+                  {/* Links */}
+                  <div className="flex gap-6">
+                    {/* Live link */}
+                    <Link
+                      href={project.liveUrl}
+                      target="_blank"
+                      className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
+                    >
+                      Live Link
+                    </Link>
+                    {/* Source Code link */}
+                    <Link
+                      href={project.sourceUrl}
+                      target="_blank"
+                      className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
+                    >
+                      Source Code
+                    </Link>
+                    {/* Case-study link */}
+                    <Link
+                      href={project.caseStudyUrl}
+                      target="_blank"
+                      className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
+                    >
+                      Case Study
+                    </Link>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
           ))}
         </div>
       </div>

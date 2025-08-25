@@ -32,7 +32,7 @@ const Header = () => {
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="w-full flex items-center justify-between px-4 py-6 bg-secondarycolor rounded-2xl">
+        <div className="w-full md:w-11/12 flex items-center justify-between px-4 md:px-0 py-6 bg-secondarycolor rounded-2xl">
           {/* Left side logo */}
           <Link href={"/"}>
             <h4 className="text-xl font-bold">
