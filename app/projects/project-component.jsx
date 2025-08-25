@@ -25,14 +25,14 @@ const ProjectComponent = () => {
       caseStudyUrl:
         "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
     },
-    // {
-    //   id: "789987",
-    //   image: "./img/pro03.png",
-    //   name: "Track Zone Application",
-    //   liveUrl: "https://www.facebook.com",
-    //   sourceUrl: "https://github.com/source-03",
-    //   caseStudyUrl: "https://github.com/case-stusy-03",
-    // },
+    {
+      id: "789987",
+      image: "./img/tweetly.png",
+      name: "Tweetly - Social Media App",
+      liveUrl: "https://tweetly-full-stack-social-media-app.vercel.app/",
+      sourceUrl:
+        "https://github.com/Mohosin999/FullStack-Tweetly-Social-Media-App-Next.js",
+    },
   ];
 
   return (
@@ -86,13 +86,15 @@ const ProjectComponent = () => {
                       Source Code
                     </Link>
                     {/* Case-study link */}
-                    <Link
-                      href={project.caseStudyUrl}
-                      target="_blank"
-                      className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
-                    >
-                      Case Study
-                    </Link>
+                    {project.caseStudyUrl && (
+                      <Link
+                        href={project.caseStudyUrl}
+                        target="_blank"
+                        className="text-sm text-gray-400 hover:text-primarycolor transition-all ease-out duration-200 select-none"
+                      >
+                        Case Study
+                      </Link>
+                    )}
                   </div>
                 </div>
               </motion.div>
