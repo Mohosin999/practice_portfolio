@@ -2,6 +2,8 @@
 
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { fadeInUp } from "@/utils/animation";
 
 const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
@@ -36,7 +38,8 @@ const ContactForm = () => {
   };
 
   return (
-    <div
+    <motion.div
+      {...fadeInUp}
       className={`w-full px-8 py-14 ${
         isSuccess ? "pt-14 pb-0" : ""
       } max-w-md bg-cardcolor rounded-xl`}
@@ -85,7 +88,7 @@ const ContactForm = () => {
           Your Message Successfully Sent!
         </h4>
       )}
-    </div>
+    </motion.div>
   );
 };
 

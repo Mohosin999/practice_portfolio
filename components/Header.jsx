@@ -28,14 +28,14 @@ const Header = () => {
     <>
       {/* Header */}
       <div
-        className={`fixed top-0 left-0 z-50 w-full flex items-center justify-center transition-transform duration-300 ${
+        className={`bg-secondarycolor fixed top-0 left-0 z-50 w-full flex items-center justify-center transition-transform duration-300 ${
           showHeader ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="w-full md:w-11/12 flex items-center justify-between px-4 md:px-0 py-6 bg-secondarycolor rounded-2xl">
+        <div className="w-11/12 flex items-center justify-between px-4 md:px-0 py-6">
           {/* Left side logo */}
           <Link href={"/"}>
-            <h4 className="text-xl font-bold">
+            <h4 className="text-xl font-bold active:scale-105">
               Mohosin <span className="text-primarycolor">.</span>
             </h4>
           </Link>
