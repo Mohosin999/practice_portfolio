@@ -1,16 +1,17 @@
 "use client";
 
-import { FaJs, FaReact, FaSass, FaBootstrap } from "react-icons/fa";
+import { FaJs, FaReact, FaSass, FaGitAlt } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiRedux,
   SiStyledcomponents,
-  SiMui,
   SiJest,
   SiTestinglibrary,
   SiExpress,
   SiStrapi,
   SiTypescript,
+  SiPrisma,
+  SiSwagger,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Skill from "./ui/skill";
@@ -25,7 +26,9 @@ const Skills = () => {
     >
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 
-      {/* Proficient */}
+      {/* ======================================================================
+       *                             Proficient
+      ====================================================================== */}
       <div className="mb-8">
         <h3 className="text-base text-gray-300 font-medium mb-2">Proficient</h3>
         <div className="flex flex-wrap gap-2 lg:gap-3">
@@ -36,6 +39,10 @@ const Skills = () => {
           <Skill
             name={"React.js"}
             logo={<FaReact className="text-blue-500" />}
+          />
+          <Skill
+            name={"Next.js"}
+            logo={<SiNextdotjs className="text-white" />}
           />
           <Skill
             name={"Redux Toolkit"}
@@ -49,30 +56,35 @@ const Skills = () => {
             name={"Tailwind CSS"}
             logo={<RiTailwindCssFill className="text-teal-400" />}
           />
+          <Skill name={"Jest"} logo={<SiJest className="text-red-500" />} />
+          <Skill
+            name={"Testing Library"}
+            logo={<SiTestinglibrary className="text-orange-500" />}
+          />
+          <Skill name={"Git"} logo={<FaGitAlt className="text-orange-500" />} />
         </div>
       </div>
 
-      {/* Working Knowledge */}
+      {/* ======================================================================
+       *                            Working Knowledge
+      ====================================================================== */}
       <div className="mb-8">
         <h3 className="text-base text-gray-300 font-medium mb-2">
           Working Knowledge
         </h3>
         <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
-            name={"Next.js"}
-            logo={<SiNextdotjs className="text-white" />}
+            name={"TypeScript"}
+            logo={<SiTypescript className="text-blue-500" />}
           />
           <Skill
             name={"Strapi"}
             logo={<SiStrapi className="text-purple-600" />}
           />
+          <Skill name={"Prisma"} logo={<SiPrisma />} />
           <Skill
             name={"Styled Components"}
             logo={<SiStyledcomponents className="text-pink-400" />}
-          />
-          <Skill
-            name={"Material UI"}
-            logo={<SiMui className="text-blue-400" />}
           />
         </div>
       </div>
@@ -83,19 +95,10 @@ const Skills = () => {
           Familiar With
         </h3>
         <div className="flex flex-wrap gap-2 lg:gap-3">
-          <Skill
-            name={"TypeScript"}
-            logo={<SiTypescript className="text-blue-500" />}
-          />
           <Skill name={"Sass"} logo={<FaSass className="text-pink-400" />} />
           <Skill
-            name={"Bootstrap"}
-            logo={<FaBootstrap className="text-purple-500" />}
-          />
-          <Skill name={"Jest"} logo={<SiJest className="text-red-500" />} />
-          <Skill
-            name={"Testing Library"}
-            logo={<SiTestinglibrary className="text-orange-500" />}
+            name={"Swagger"}
+            logo={<SiSwagger className="text-green-400" />}
           />
         </div>
       </div>

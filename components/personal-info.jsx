@@ -25,7 +25,7 @@ const PersonalInfo = ({ email = false }) => {
           {/* Time of experience */}
           <div className="flex items-center justify-center gap-3 lg:border-r-2 lg:border-gray-400 w-full mb-3 lg:mb-0">
             <div className="font-bold text-4xl lg:text-5xl text-primarycolor flex items-center justify-center">
-              <Counter from={0} to={3} />+
+              <Counter from={0} to={4} />+
             </div>
             <div>
               <h4 className="text-sm">
@@ -36,7 +36,7 @@ const PersonalInfo = ({ email = false }) => {
           {/* Number of completed projects */}
           <div className="flex items-center justify-center w-full gap-3">
             <div className="font-bold text-4xl lg:text-5xl text-primarycolor flex items-center justify-center">
-              <Counter from={0} to={10} />+
+              <Counter from={0} to={11} />+
             </div>
             <div>
               <h4 className="text-sm">

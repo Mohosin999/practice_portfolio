@@ -2,6 +2,7 @@ import CircleImage from "@/components/ui/circle-image";
 import PersonalInfo from "@/components/personal-info";
 import Education from "@/components/education";
 import Skills from "@/components/skills";
+import Paragraph from "@/components/ui/paragraph";
 
 const About = () => {
   return (
@@ -12,29 +13,11 @@ const About = () => {
           <div className="text_container">
             <h2 className="text-4xl font-bold">About Me</h2>
 
-            <p className="py-4 text-sm lg:text-base text-gray-400">
-              Hi, I'm Mohosin Hasan Akash, a frontend web developer from
-              Bangladesh. I specialize in building web applications using React
-              and Express. My passion is crafting user-friendly and visually
-              appealing digital experiences. I'm Mohosin Hasan Akash, a frontend
-              web developer from Bangladesh. I specialize in building web
-              applications using React and Express. My passion is crafting
-              user-friendly and visually appealing digital experiences.
-            </p>
+            <Paragraph text="With over 3 years of experience in web development, I focus on creating responsive, SEO-friendly, and high-performance web applications that combine clean design with robust architecture." />
 
-            <p className="py-4 text-sm lg:text-base text-gray-400">
-              Hi, I'm Mohosin Hasan Akash, a frontend web developer from
-              Bangladesh. I specialize in building web applications using React
-              and Express. My passion is crafting user-friendly and visually
-              appealing digital experiences. I'm Mohosin Hasan Akash, a frontend
-              web developer from Bangladesh. I specialize in building web
-              applications using React and Express. My passion is crafting
-              user-friendly and visually appealing digital experiences. Hi, I'm
-              Mohosin Hasan Akash, a frontend web developer from Bangladesh. I
-              specialize in building web applications using React and Express.
-              My passion is crafting user-friendly and visually appealing
-              digital experiences.
-            </p>
+            <Paragraph text="I work extensively with JavaScript, React.js, Next.js, TypeScript, Express.js, Strapi, Context API, and Redux Toolkit. For UI and styling, skilled in Tailwind CSS and shadcn/ui to deliver clean and accessible interfaces. Hands-on experience with Git, Jest, and building both frontend-only and full-stack MERN applications. In a recent freelance project, I developed a custom web app using Next.js, TypeScript, Tailwind CSS, and integrated Strapi for backend content management, and worked closely with the client to ensure the technical solution aligned with their business goals." />
+
+            <Paragraph text="I’m always exploring smarter, faster ways to build, use AI tools to boost productivity, inspire creativity, and maintain high code quality." />
           </div>
         </div>
 

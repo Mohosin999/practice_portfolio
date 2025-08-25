@@ -8,28 +8,31 @@ const ProjectComponent = () => {
   const projectsData = [
     {
       id: "123321",
-      image: "./img/pro01.png",
-      name: "AI-Based Resume Builder Application",
-      liveUrl: "https://www.twitter.com",
-      sourceUrl: "https://github.com/source-01",
-      caseStudyUrl: "https://github.com/case-stusy-01",
+      image: "./img/resume-builder.png",
+      name: "AI-Powered Resume Builder App",
+      liveUrl: "https://full-stack-ai-resume-builder-app-ne-one.vercel.app/",
+      sourceUrl:
+        "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
+      caseStudyUrl:
+        "https://github.com/Mohosin999/Case-Study/tree/main/FullStack%20AI-Based%20Resume%20Builder%20Application%20-%20Next.js#title-ai-powered-resume-builder---enhancing-job-seekers-efficiency-and-professionalism",
     },
     {
       id: "456654",
-      image: "./img/pro02.png",
-      name: "Clean YouTube Application",
-      liveUrl: "https://www.youtube.com",
-      sourceUrl: "https://github.com/source-02",
-      caseStudyUrl: "https://github.com/case-stusy-02",
+      image: "./img/clean-youtube.png",
+      name: "Clean YouTube App",
+      liveUrl: "https://clean-youtube-application.onrender.com/",
+      sourceUrl: "https://github.com/Mohosin999/Clean-YouTube-Application",
+      caseStudyUrl:
+        "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
     },
-    {
-      id: "789987",
-      image: "./img/pro03.png",
-      name: "Track Zone Application",
-      liveUrl: "https://www.facebook.com",
-      sourceUrl: "https://github.com/source-03",
-      caseStudyUrl: "https://github.com/case-stusy-03",
-    },
+    // {
+    //   id: "789987",
+    //   image: "./img/pro03.png",
+    //   name: "Track Zone Application",
+    //   liveUrl: "https://www.facebook.com",
+    //   sourceUrl: "https://github.com/source-03",
+    //   caseStudyUrl: "https://github.com/case-stusy-03",
+    // },
   ];
 
   return (

@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animation";
+import EducationItem from "./education-item";
 
 const Education = () => {
   return (
@@ -12,41 +13,23 @@ const Education = () => {
     >
       <h2 className="text-xl font-semibold mb-6">Education</h2>
       <div>
-        {/* Honors */}
-        <div className="flex items-start mb-8">
-          <span className="block w-3 h-3 bg-primarycolor rounded-full mt-1.5"></span>
-          <div className="ml-4">
-            <h3 className="font-medium">Honors, Department of Chemistry</h3>
-            <p className="text-sm text-gray-400">2019 - 2023</p>
-            <p className="text-sm text-gray-300">
-              National University of Bangladesh
-            </p>
-          </div>
-        </div>
-        {/* College */}
-        <div className="flex items-start mb-8">
-          <span className="block w-3 h-3 bg-primarycolor rounded-full mt-1.5"></span>
-          <div className="ml-4">
-            <h3 className="font-medium">
-              Higher Secondary Certificate (HSC) - Science
-            </h3>
-            <p className="text-sm text-gray-400">2016 - 2018</p>
-            <p className="text-sm text-gray-300">
-              Agricultural University College (KB College), Mymensingh
-            </p>
-          </div>
-        </div>
-        {/* School */}
-        <div className="flex items-start">
-          <span className="block w-3 h-3 bg-primarycolor rounded-full mt-1.5"></span>
-          <div className="ml-4">
-            <h3 className="font-medium">Secondary School Certificate (SSC)</h3>
-            <p className="text-sm text-gray-400">2011 - 2016</p>
-            <p className="text-sm text-gray-300">
-              Narayan Khola High School, Nakla, Sherpur
-            </p>
-          </div>
-        </div>
+        <EducationItem
+          degree="Bachelor of Science (BSc) Honours, Chemistry"
+          university="National University of Bangladesh"
+          period="2018 - 2021"
+        />
+
+        <EducationItem
+          degree="Higher Secondary Certificate (HSC) - Science"
+          university="Agricultural University College, Mymensingh"
+          period="2016 - 2018"
+        />
+
+        <EducationItem
+          degree="Secondary School Certificate (SSC) - Science"
+          university="Narayan Khola High School, Nakla, Sherpur"
+          period="2011 - 2016"
+        />
       </div>
     </motion.div>
   );
