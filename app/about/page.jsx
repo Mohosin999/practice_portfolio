@@ -1,8 +1,8 @@
 import CircleImage from "@/components/ui/CircleImage";
 import PersonalInfo from "@/components/PersonalInfo";
+import Paragraph from "@/components/ui/Paragraph";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
-import Paragraph from "@/components/ui/Paragraph";
 
 const About = () => {
   return (

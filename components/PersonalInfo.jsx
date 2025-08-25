@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import SocialIconLink from "./ui/SocialIconLink";
 import Counter from "./ui/Counter";
 
@@ -52,10 +53,19 @@ const PersonalInfo = ({ email = false }) => {
        ======================================================== */}
       <div className="w-full lg:w-5/12 py-5 flex items-center justify-around bg-secondarycolor p-3 rounded-3xl border border-gray-600/[0.5] shadow-md overflow-x-hidden">
         <ul className="flex items-center justify-center gap-6">
-          <SocialIconLink href="#" icon={FaGithub} />
-          <SocialIconLink href="#" icon={FaTwitter} />
-          <SocialIconLink href="#" icon={FaLinkedin} />
-          <SocialIconLink href="#" icon={FaFacebook} />
+          <SocialIconLink
+            href="https://www.linkedin.com/in/mohosinh99/"
+            icon={FaLinkedin}
+          />
+          <SocialIconLink href="https://x.com/mohosinh99" icon={FaXTwitter} />
+          <SocialIconLink
+            href="https://github.com/Mohosin999"
+            icon={FaGithub}
+          />
+          <SocialIconLink
+            href="https://www.facebook.com/mohosinh99"
+            icon={FaFacebook}
+          />
         </ul>
       </div>
     </div>
