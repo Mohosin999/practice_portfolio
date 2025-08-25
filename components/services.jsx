@@ -13,59 +13,42 @@ const Services = () => {
           My Services
         </h2>
         <div className="w-full gap-4 flex flex-col items-center justify-center">
+          {/* ========================================================
+           *                      Service 01
+           ======================================================== */}
           <motion.div
             {...fadeInUp}
             className="flex flex-col lg:flex-row items-center justify-center gap-4"
           >
-            {/* ========================================================
-           *                      Service 01
-           ======================================================== */}
             <ServiceComponent
               src={"./img/serv01.png"}
               title={"Responsive Web Design"}
-              params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Accusamus, magni ab quisquam incidunt excepturi dolor voluptas
-                  quasi provident rerum. Labore, quas perferendis voluptas error
-                  facilis voluptatum, asperiores quis maxime natus laboriosam.`}
+              params={`I build fully responsive and visually engaging websites using TailwindCSS, Sass, Shadcn UI, and Framer Motion. I focus on modern design principles, smooth animations, and optimal user experience across all devices.`}
             />
-            {/* ========================================================
-           *                      Service 02
-           ======================================================== */}
+
             <ServiceComponent
               src={"./img/serv02.png"}
-              title={"Web Application Development"}
-              params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Accusamus, magni ab quisquam incidunt excepturi dolor voluptas
-                  quasi provident rerum. Labore, quas perferendis voluptas error
-                  facilis voluptatum, asperiores quis maxime natus laboriosam.`}
+              title={"ReactJS Web Development"}
+              params={`I develop professional web applications using ReactJS, integrating REST APIs and AI APIs seamlessly. I follow clean code and DRY principles, use Redux Toolkit and Easy-Peasy for efficient state management.`}
             />
           </motion.div>
+          {/* ========================================================
+            *                      Service 02
+           ======================================================== */}
           <motion.div
             {...fadeInUp}
             className="flex flex-col lg:flex-row items-center justify-center gap-4"
           >
-            {/* ========================================================
-            *                      Service 03
-           ======================================================== */}
             <ServiceComponent
               src={"./img/serv03.png"}
               title={"SEO-Friendly NextJS Website"}
-              params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Accusamus, magni ab quisquam incidunt excepturi dolor voluptas
-                  quasi provident rerum. Labore, quas perferendis voluptas error
-                  facilis voluptatum, asperiores quis maxime natus laboriosam.`}
+              params={`I build SEO-friendly and high-performance websites using NextJS, utilizing server-side rendering, API integration, and full-stack features. I also incorporate AI tools to enhance functionality and productivity.`}
             />
 
-            {/* ========================================================
-            *                      Service 04
-            ======================================================== */}
             <ServiceComponent
               src={"./img/serv04.png"}
-              title={"Custom UI/UX Design"}
-              params={`Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Accusamus, magni ab quisquam incidunt excepturi dolor voluptas
-                  quasi provident rerum. Labore, quas perferendis voluptas error
-                  facilis voluptatum, asperiores quis maxime natus laboriosam.`}
+              title={"Full-Stack Application Development"}
+              params={`I create complete full-stack applications using Strapi or NextJS full-stack features, connecting frontends with backend APIs efficiently. I focus on scalability, clean architecture, and productivity using AI tools.`}
             />
           </motion.div>
         </div>

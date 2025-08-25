@@ -38,7 +38,7 @@ const HeroSection = () => {
             <h5 className="text-gray-400 text-base">Hey there!</h5>
 
             <h2 className="text-3xl lg:text-5xl xl:text-6xl font-bold">
-              I'm <span className="text-primarycolor">Mohosin Hasan</span>
+              I'm <span className="">Mohosin Hasan</span>
               <br />a{" "}
               <motion.span
                 className="inline-block"
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   <motion.span
                     key={index}
                     variants={letter}
-                    className="inline-block"
+                    className="inline-block text-primarycolor"
                   >
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
@@ -60,10 +60,12 @@ const HeroSection = () => {
 
             {/* Paragraph */}
             <p className="py-4 text-sm lg:text-base text-gray-400">
-              Hi, I'm Mohosin Hasan Akash, a frontend web developer from
-              Bangladesh. I specialize in building web applications using React
-              and Express. My passion is crafting user-friendly and visually
-              appealing digital experiences.
+              A front-end web developer from Bangladesh, specializing in modern
+              web applications with ReactJS & NextJS. Passionate about building
+              responsive, user-friendly, and visually engaging digital
+              experiences. I use AI tools to enhance productivity and
+              consistently follow the DRY principle to write clean and
+              maintainable code.
             </p>
 
             {/* Download resume button */}
