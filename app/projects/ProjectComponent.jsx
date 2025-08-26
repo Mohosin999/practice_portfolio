@@ -25,6 +25,15 @@ const ProjectComponent = () => {
       caseStudyUrl:
         "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
     },
+    {
+      id: "789987",
+      image: "./img/live-cricket.png",
+      name: "Live Cricket Score App",
+      liveUrl: "https://cricket-live-application-z7ba-nxas4d6u0.vercel.app/",
+      sourceUrl: "https://github.com/Mohosin999/Live-Cricket-Score-App-Next.js",
+      // caseStudyUrl:
+      //   "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
+    },
   ];
 
   return (
@@ -36,7 +45,7 @@ const ProjectComponent = () => {
         </div>
 
         {/* Projects Information */}
-        <div className="w-full pb-10 grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="w-full pb-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
           {projectsData.map((project) => (
             <div key={project.id}>
               <motion.div

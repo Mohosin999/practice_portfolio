@@ -12,13 +12,13 @@ const Services = () => {
         <h2 className="text-3xl lg:text-4xl font-bold pb-4 lg:pb-6">
           My Services
         </h2>
-        <div className="w-full gap-4 flex flex-col items-center justify-center">
+        <div className="w-full gap-5 flex flex-col items-center justify-center">
           {/* ========================================================
            *                      Service 01
            ======================================================== */}
           <motion.div
             {...fadeInUp}
-            className="flex flex-col lg:flex-row items-center justify-center gap-4"
+            className="flex flex-col lg:flex-row items-center justify-center gap-5"
           >
             <ServiceComponent
               src={"./img/serv01.png"}
@@ -37,7 +37,7 @@ const Services = () => {
            ======================================================== */}
           <motion.div
             {...fadeInUp}
-            className="flex flex-col lg:flex-row items-center justify-center gap-4"
+            className="flex flex-col lg:flex-row items-center justify-center gap-5"
           >
             <ServiceComponent
               src={"./img/serv03.png"}
