@@ -37,7 +37,7 @@ const PersonalInfo = ({ email = false }) => {
           {/* Number of completed projects */}
           <div className="flex items-center justify-center w-full gap-3">
             <div className="font-bold text-4xl lg:text-5xl text-primarycolor flex items-center justify-center">
-              <Counter from={0} to={11} />+
+              <Counter from={0} to={9} />+
             </div>
             <div>
               <h4 className="text-sm">
