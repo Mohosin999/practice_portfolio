@@ -81,7 +81,7 @@ const Skills = () => {
             name={"Strapi"}
             logo={<SiStrapi className="text-purple-600" />}
           />
-          <Skill name={"Prisma"} logo={<SiPrisma />} />
+          <Skill name={"Prisma ORM"} logo={<SiPrisma />} />
           <Skill
             name={"Styled Components"}
             logo={<SiStyledcomponents className="text-pink-400" />}
