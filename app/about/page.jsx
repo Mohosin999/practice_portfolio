@@ -13,13 +13,13 @@ const About = () => {
           <div className="text_container">
             <h2 className="text-4xl font-bold">About Me</h2>
 
-            <Paragraph text="I create responsive, SEO-friendly, and high-performance web applications that combine modern design with scalable architecture. With over 4 years in web development, I focus on building products that look great, work smoothly, and help businesses grow." />
+            <Paragraph text="With over 4 years of experience in web development, I design and build responsive, SEO-friendly, and high-performance web applications. My focus is on blending modern, user-centered design with scalable architecture to create digital products that not only look great but also perform seamlessly." />
 
             <Paragraph text="Recently, I’ve been building websites with AI-powered features integrated directly into the workflow, and I aim to incorporate AI in some way across all future projects. This approach ensures that the solutions I deliver stay modern, efficient, and ahead of the curve." />
 
-            <Paragraph text="I’ve contributed to a wide range of projects—ranging from custom web apps to full-stack solutions—using technologies such as JavaScript, React.js, Next.js, TypeScript, Express.js, and Strapi. On the frontend, I emphasize clean and accessible interfaces with Tailwind CSS and shadcn/ui, while on the backend, I ensure solid integrations and flexible content management systems." />
+            <Paragraph text="I have contributed to a diverse range of projects, from custom web applications to full-stack solutions, leveraging technologies such as JavaScript, React.js, Next.js, TypeScript, Express.js, Strapi (Headless CMS), Redux-Toolkit, and Easy-Peasy. On the frontend, I focus on building clean, accessible, and responsive interfaces using SASS, Tailwind CSS, shadcn/ui, Styled-Components, MUI, and Framer Motion. On the backend, I work with Strapi and Next.js full-stack features to build functional and manageable content systems with reliable integrations." />
 
-            <Paragraph text="Clients I collaborate with value the transparency and dedication I bring to each project. From the first conversation to deployment, I ensure their goals remain the priority while translating ideas into polished, professional digital solutions." />
+            <Paragraph text="I work closely with my client, maintaining transparent and consistent communication to understand their needs and adapt to evolving requirements. From initial discussions to final deployment, I translate ideas into polished, professional digital solutions, refining designs and features along the way to ensure the final product aligns with their vision and delivers complete satisfaction." />
           </div>
         </div>
 
