@@ -25,7 +25,7 @@ const HeroSection = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: { duration: 0.2, ease: "easeInOut" },
     },
   };
 
@@ -61,8 +61,8 @@ const HeroSection = () => {
             {/* Paragraph */}
             <p className="py-4 text-sm lg:text-base text-gray-400">
               A front-end web developer from Bangladesh, specializing in modern
-              web applications with ReactJS & NextJS. Passionate about building
-              responsive, user-friendly, and visually engaging digital
+              web applications with React & Next.js. Dedicated to building
+              scalable, responsive, user-friendly, and visually engaging digital
               experiences. I use AI tools to enhance productivity and
               consistently follow the DRY principle to write clean and
               maintainable code.

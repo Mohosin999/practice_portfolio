@@ -12,6 +12,7 @@ import {
   SiTypescript,
   SiPrisma,
   SiSwagger,
+  SiMongoose,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import Skill from "./ui/Skill";
@@ -30,11 +31,17 @@ const Skills = () => {
        *                             Proficient
       ====================================================================== */}
       <div className="mb-8">
-        <h3 className="text-base text-gray-300 font-medium mb-2">Proficient</h3>
+        <h3 className="text-base text-gray-300 font-medium mb-2">
+          Frontend Technologies
+        </h3>
         <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
             name={"JavaScript"}
             logo={<FaJs className="text-yellow-500" />}
+          />
+          <Skill
+            name={"TypeScript"}
+            logo={<SiTypescript className="text-blue-500" />}
           />
           <Skill
             name={"React.js"}
@@ -49,13 +56,14 @@ const Skills = () => {
             logo={<SiRedux className="text-violet-500" />}
           />
           <Skill
-            name={"Express.js"}
-            logo={<SiExpress className="text-gray-400" />}
-          />
-          <Skill
             name={"Tailwind CSS"}
             logo={<RiTailwindCssFill className="text-teal-400" />}
           />
+          <Skill
+            name={"Styled Components"}
+            logo={<SiStyledcomponents className="text-pink-400" />}
+          />
+          <Skill name={"Sass"} logo={<FaSass className="text-pink-400" />} />
           <Skill name={"Jest"} logo={<SiJest className="text-red-500" />} />
           <Skill
             name={"Testing Library"}
@@ -70,12 +78,16 @@ const Skills = () => {
       ====================================================================== */}
       <div className="mb-8">
         <h3 className="text-base text-gray-300 font-medium mb-2">
-          Working Knowledge
+          Backend Technologies
         </h3>
         <div className="flex flex-wrap gap-2 lg:gap-3">
           <Skill
-            name={"TypeScript"}
-            logo={<SiTypescript className="text-blue-500" />}
+            name={"Express.js"}
+            logo={<SiExpress className="text-gray-400" />}
+          />
+          <Skill
+            name={"Mongoose"}
+            logo={<SiMongoose className="text-red-500" />}
           />
           <Skill
             name={"Strapi"}
@@ -83,23 +95,28 @@ const Skills = () => {
           />
           <Skill name={"Prisma ORM"} logo={<SiPrisma />} />
           <Skill
-            name={"Styled Components"}
-            logo={<SiStyledcomponents className="text-pink-400" />}
-          />
-        </div>
-      </div>
-
-      {/* Familiar With */}
-      <div>
-        <h3 className="text-base text-gray-300 font-medium mb-2">
-          Familiar With
-        </h3>
-        <div className="flex flex-wrap gap-2 lg:gap-3">
-          <Skill name={"Sass"} logo={<FaSass className="text-pink-400" />} />
-          <Skill
             name={"Swagger"}
             logo={<SiSwagger className="text-green-400" />}
           />
+
+          {/* <Skill
+            name={"Node.js"}
+            logo={<SiNodedotjs className="text-green-500" />}
+          />
+          <Skill
+            name={"MongoDB"}
+            logo={<SiMongodb className="text-green-600" />}
+          /> */}
+          {/* <Skill
+            name={"REST API"}
+            logo={<SiApachesolr className="text-yellow-500" />}
+          />
+          <Skill
+            name={"GraphQL"}
+            logo={<SiGraphql className="text-pink-500" />}
+          />
+          <Skill name={"Socket.io"} logo={<SiSocketdotio />} /> */}
+          {/* <Skill name={"Docker"} logo={<SiDocker className="text-blue-500" />} /> */}
         </div>
       </div>
     </motion.div>

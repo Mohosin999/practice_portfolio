@@ -28,7 +28,7 @@ const Services = () => {
 
             <ServiceComponent
               src={"./img/serv02.png"}
-              title={"ReactJS Web Development"}
+              title={"Web Development (React)"}
               params={`I develop professional web applications using ReactJS, integrating REST APIs and AI APIs seamlessly. I follow clean code and DRY principles, use Redux Toolkit and Easy-Peasy for efficient state management.`}
             />
           </motion.div>
@@ -41,14 +41,14 @@ const Services = () => {
           >
             <ServiceComponent
               src={"./img/serv03.png"}
-              title={"SEO-Friendly NextJS Website"}
-              params={`I build SEO-friendly and high-performance websites using NextJS, utilizing server-side rendering, API integration, and full-stack features. I also incorporate AI tools to enhance functionality and productivity.`}
+              title={"SEO-Friendly Website (Next.js)"}
+              params={`I build SEO-friendly and high-performance websites using Next.js, utilizing server-side rendering, API integration, and full-stack features. I also incorporate AI tools to enhance functionality and productivity.`}
             />
 
             <ServiceComponent
               src={"./img/serv04.png"}
-              title={"Full-Stack Application Development"}
-              params={`I create complete full-stack applications using Strapi or NextJS full-stack features, connecting frontends with backend APIs efficiently. I focus on scalability, clean architecture, and productivity using AI tools.`}
+              title={"Full-Stack Web Development"}
+              params={`I create complete full-stack applications using React, Strapi or Next.js full-stack features, connecting frontends with backend APIs efficiently. I focus on scalability, clean architecture, and productivity using AI tools.`}
             />
           </motion.div>
         </div>

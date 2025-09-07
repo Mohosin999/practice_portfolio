@@ -26,7 +26,7 @@ const PersonalInfo = ({ email = false }) => {
           {/* Time of experience */}
           <div className="flex items-center justify-center gap-3 lg:border-r-2 lg:border-gray-400 w-full mb-3 lg:mb-0">
             <div className="font-bold text-4xl lg:text-5xl text-primarycolor flex items-center justify-center">
-              <Counter from={0} to={4} />+
+              <Counter from={0} to={3} />+
             </div>
             <div>
               <h4 className="text-sm">
