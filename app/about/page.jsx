@@ -1,17 +1,17 @@
 import CircleImage from "@/components/ui/CircleImage";
-import PersonalInfo from "@/components/PersonalInfo";
+import PersonalInfo from "@/app/about/PersonalInfo";
 import Paragraph from "@/components/ui/Paragraph";
-import Education from "@/components/Education";
-import Skills from "@/components/Skills";
+import Education from "@/app/about/Education";
+import Skills from "@/app/about/Skills";
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center z-20">
-      <div className="w-11/12 h-full pt-28 flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+    <div className="w-full h-full flex flex-col items-center justify-center">
+      <div className="w-full lg:w-[87%] h-full pt-6 lg:pt-10 flex flex-col-reverse lg:flex-row items-center justify-center gap-8 px-3 md:px-6 lg:px-0">
         {/* Content (left on desktop, below on mobile) */}
-        <div className="w-full md:w-7/12 text-center md:text-left">
+        <div className="w-full lg:w-7/12 text-center lg:text-left">
           <div className="text_container">
-            <h2 className="text-4xl font-bold">About Me</h2>
+            <h2 className="text-2xl lg:text-4xl font-bold">About Me</h2>
 
             <Paragraph text="With over 3 years of experience in web development, I design and build responsive, SEO-friendly, and high-performance web applications. Now my focus is on creating modern, AI-featured web solutions." />
 
@@ -37,7 +37,7 @@ const About = () => {
       {/* ========================================================
        *                    Education and Skills
        ======================================================== */}
-      <div className="w-11/12 pb-10 flex flex-col md:flex-row items-start justify-center gap-5">
+      <div className="w-full lg:w-[87%] grid grid-cols-1 lg:grid-cols-5 pt-14 gap-5 px-3 md:px-6 lg:px-0">
         <Education />
 
         <Skills />

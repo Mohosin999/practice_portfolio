@@ -9,9 +9,9 @@ const Education = () => {
   return (
     <motion.div
       {...fadeInUp}
-      className="w-full lg:w-5/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]"
+      className="col-span-5 lg:col-span-2 rounded-xl p-4 lg:p-6 bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] order-2 lg:order-1"
     >
-      <h2 className="text-xl font-semibold mb-6">Education</h2>
+      <h3 className="text-xl font-semibold mb-6">Education</h3>
       <div>
         <EducationItem
           degree="Bachelor of Science (BSc) Honours, Chemistry"

@@ -3,7 +3,7 @@
 import { FaDownload } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import Services from "./Services";
-import PersonalInfo from "./PersonalInfo";
+import PersonalInfo from "../app/about/PersonalInfo";
 import CircleImage from "./ui/CircleImage";
 
 const HeroSection = () => {
@@ -30,15 +30,17 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center z-20">
-      <div className="w-11/12 h-full pt-28 flex flex-col-reverse lg:flex-row items-center justify-center gap-8">
+    <div className="w-full h-full flex flex-col items-center justify-center">
+      <div className="w-full lg:w-[87%] h-full pt-6 lg:pt-10 flex flex-col-reverse lg:flex-row items-center justify-center gap-8 px-3 md:px-6 lg:px-0">
         {/* Left side hero text (on mobile it comes below the image) */}
         <div className="w-full lg:w-7/12 text-center lg:text-left">
           <div className="text_container">
-            <h5 className="text-gray-400 text-base">Hey there!</h5>
+            <h5 className="text-gray-700 dark:text-gray-300 text-base lg:text-lg">
+              Hey, this is me
+            </h5>
 
-            <h2 className="text-3xl lg:text-5xl xl:text-6xl font-bold">
-              I'm <span className="">Mohosin Hasan</span>
+            <h2 className="text-3xl lg:text-5xl font-bold">
+              Mohosin Hasan Akash
               <br />a{" "}
               <motion.span
                 className="inline-block"
@@ -50,7 +52,7 @@ const HeroSection = () => {
                   <motion.span
                     key={index}
                     variants={letter}
-                    className="inline-block text-primarycolor"
+                    className="inline-block text-sky-600"
                   >
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
@@ -59,7 +61,7 @@ const HeroSection = () => {
             </h2>
 
             {/* Paragraph */}
-            <p className="py-4 text-sm lg:text-base text-gray-400">
+            <p className="py-4 text-base lg:text-lg text-gray-700 dark:text-gray-300">
               A front-end web developer from Bangladesh, specializing in modern
               web applications with React & Next.js. Dedicated to building
               scalable, responsive, user-friendly, and visually engaging digital
@@ -76,7 +78,7 @@ const HeroSection = () => {
               aria-label="Download Resume"
               className="flex w-fit mx-auto lg:mx-0"
             >
-              <button className="flex items-center justify-center gap-3 text-primarycolor px-5 py-2 my-3 text-sm border-2 border-primarycolor transition-all ease-in-out duration-200 hover:bg-primarycolor hover:text-white">
+              <button className="flex items-center justify-center gap-3 text-sky-600 px-5 py-2 my-3 text-base lg:text-lg border-2 border-sky-600 transition-all ease-in-out duration-200 hover:bg-sky-600 hover:text-white">
                 <FaDownload /> Download Resume
               </button>
             </a>
@@ -86,16 +88,6 @@ const HeroSection = () => {
         {/* Right side hero image (on mobile it shows on top) */}
         <CircleImage image="./img/profile.jpg" />
       </div>
-
-      {/* ========================================================
-       *                      services
-       ======================================================== */}
-      <Services />
-
-      {/* ========================================================
-       *                Personal info & Social links
-       ======================================================== */}
-      <PersonalInfo email={true} />
     </div>
   );
 };

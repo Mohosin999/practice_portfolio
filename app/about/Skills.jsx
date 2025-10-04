@@ -15,88 +15,95 @@ import {
   SiMongoose,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import Skill from "./ui/Skill";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animation";
+import FrontendSkill from "../../components/ui/FrontendSkill";
+import BackendSkill from "../../components/ui/BackendSkill";
 
 const Skills = () => {
   return (
     <motion.div
       {...fadeInUp}
-      className="w-full lg:w-7/12 rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]"
+      className="col-span-5 lg:col-span-3 rounded-xl p-4 lg:p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)] order-1 lg:order-2"
     >
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 
       {/* ======================================================================
        *                             Proficient
       ====================================================================== */}
-      <div className="mb-8">
-        <h3 className="text-base text-gray-300 font-medium mb-2">
-          Frontend Technologies
-        </h3>
-        <div className="flex flex-wrap gap-2 lg:gap-3">
-          <Skill
+      <div className="mb-5">
+        <div className="flex flex-wrap gap-2">
+          <FrontendSkill
             name={"JavaScript"}
-            logo={<FaJs className="text-yellow-500" />}
+            logo={<FaJs className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"TypeScript"}
-            logo={<SiTypescript className="text-blue-500" />}
+            logo={<SiTypescript className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"React.js"}
-            logo={<FaReact className="text-blue-500" />}
+            logo={<FaReact className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"Next.js"}
             logo={<SiNextdotjs className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"Redux Toolkit"}
-            logo={<SiRedux className="text-violet-500" />}
+            logo={<SiRedux className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"Tailwind CSS"}
-            logo={<RiTailwindCssFill className="text-teal-400" />}
+            logo={<RiTailwindCssFill className="text-white" />}
           />
-          <Skill
+          <FrontendSkill
             name={"Styled Components"}
-            logo={<SiStyledcomponents className="text-pink-400" />}
+            logo={<SiStyledcomponents className="text-white" />}
           />
-          <Skill name={"Sass"} logo={<FaSass className="text-pink-400" />} />
-          <Skill name={"Jest"} logo={<SiJest className="text-red-500" />} />
-          <Skill
+          <FrontendSkill
+            name={"Sass"}
+            logo={<FaSass className="text-white" />}
+          />
+          <FrontendSkill
+            name={"Jest"}
+            logo={<SiJest className="text-white" />}
+          />
+          <FrontendSkill
             name={"Testing Library"}
-            logo={<SiTestinglibrary className="text-orange-500" />}
+            logo={<SiTestinglibrary className="text-white" />}
           />
-          <Skill name={"Git"} logo={<FaGitAlt className="text-orange-500" />} />
+          <FrontendSkill
+            name={"Git"}
+            logo={<FaGitAlt className="text-white" />}
+          />
         </div>
       </div>
 
       {/* ======================================================================
        *                            Working Knowledge
       ====================================================================== */}
-      <div className="mb-8">
-        <h3 className="text-base text-gray-300 font-medium mb-2">
-          Backend Technologies
-        </h3>
+      <div className="">
         <div className="flex flex-wrap gap-2 lg:gap-3">
-          <Skill
+          <BackendSkill
             name={"Express.js"}
-            logo={<SiExpress className="text-gray-400" />}
+            logo={<SiExpress className="text-white" />}
           />
-          <Skill
+          <BackendSkill
             name={"Mongoose"}
-            logo={<SiMongoose className="text-red-500" />}
+            logo={<SiMongoose className="text-white" />}
           />
-          <Skill
+          <BackendSkill
             name={"Strapi"}
-            logo={<SiStrapi className="text-purple-600" />}
+            logo={<SiStrapi className="text-white" />}
           />
-          <Skill name={"Prisma ORM"} logo={<SiPrisma />} />
-          <Skill
+          <BackendSkill
+            name={"Prisma ORM"}
+            logo={<SiPrisma className="text-white" />}
+          />
+          <BackendSkill
             name={"Swagger"}
-            logo={<SiSwagger className="text-green-400" />}
+            logo={<SiSwagger className="text-white" />}
           />
 
           {/* <Skill

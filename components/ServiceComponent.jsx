@@ -1,24 +1,24 @@
 import React from "react";
+import { fadeInUp } from "@/utils/animation";
+import { motion } from "framer-motion";
 
-const ServiceComponent = ({ src, title, params }) => {
+const ServiceComponent = ({ icon, title, params }) => {
   return (
-    <div className="w-full lg:w-1/2">
-      <div className="rounded-xl p-6 min-h-52 bg-cardcolor border border-gray-600/[0.5]">
-        <div className="flex items-center gap-3">
-          <div className="w-10 lg:w-14 h-10 lg:h-14">
-            <img src={src} alt="service_one" className="w-full h-full" />
-          </div>
-
-          <div>
-            <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
-          </div>
+    <motion.div {...fadeInUp} className="w-full">
+      <div className="rounded-xl p-4 lg:p-6 h-full flex flex-col bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:-translate-y-2">
+        <div className="flex flex-col items-center gap-3">
+          <div>{icon}</div>
+          <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
         </div>
+
         {/* Description */}
-        <div className="w-full py-3">
-          <p className="text-sm text-gray-400">{params}</p>
+        <div className="w-full py-3 mt-1 lg:mt-2 flex-1 min-w-0">
+          <p className="text-sm lg:text-base text-center text-gray-700 dark:text-gray-300">
+            {params}
+          </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,11 +1,13 @@
+import Banner from "@/components/Banner";
 import HeroSection from "@/components/HeroSection";
+import Services from "@/components/Services";
 
 const Home = () => {
   return (
-    <div className="w-full flex items-center justify-center">
-      <div className="flex items-center justify-center">
-        <HeroSection />
-      </div>
+    <div>
+      <HeroSection />
+      <Banner />
+      <Services />
     </div>
   );
 };

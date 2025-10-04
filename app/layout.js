@@ -1,11 +1,7 @@
 import "./globals.css";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
-const PlusJakartaSans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800"],
-});
+import GoToTopButton from "@/components/ui/GoToTopButton";
 
 export const metadata = {
   title: "Mohosin | Frontend Developer",
@@ -16,10 +12,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${PlusJakartaSans.className} antialiased bg-secondarycolor text-white`}
+        className={`bg-[#F8F6FD] dark:bg-[#181A1B] text-gray-800 dark:text-gray-100 selection:bg-sky-300`}
       >
         <Header />
         {children}
+        <Footer />
+
+        <GoToTopButton />
       </body>
     </html>
   );

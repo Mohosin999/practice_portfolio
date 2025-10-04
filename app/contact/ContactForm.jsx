@@ -40,9 +40,9 @@ const ContactForm = () => {
   return (
     <motion.div
       {...fadeInUp}
-      className={`w-full px-8 py-14 ${
+      className={`w-full px-4 lg:px-8 py-8 lg:py-14 ${
         isSuccess ? "pt-14 pb-0" : ""
-      } max-w-md bg-cardcolor rounded-xl`}
+      } max-w-md bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)]`}
     >
       <form
         ref={form}
@@ -54,25 +54,25 @@ const ContactForm = () => {
           name="name"
           placeholder="Your Name"
           required
-          className="w-full bg-secondarycolor p-3 outline-none border-b-2 border-gray-400"
+          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400"
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="w-full bg-secondarycolor p-3 outline-none border-b-2 border-gray-400"
+          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
-          className="w-full bg-secondarycolor p-3 outline-none border-b-2 border-gray-400"
+          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400"
           rows={5}
         ></textarea>
         <button
           type="submit"
-          className="w-full bg-primarycolor text-sm p-3 hover:opacity-85 transition-all ease-in-out duration-200 flex justify-center items-center"
+          className="w-full bg-sky-600 text-base text-white p-3 hover:opacity-85 transition-all ease-in-out duration-200 flex justify-center items-center active:scale-105"
           disabled={isLoading} // Disable button while loading
         >
           Send
@@ -84,7 +84,7 @@ const ContactForm = () => {
 
       {/* Success Message */}
       {isSuccess && (
-        <h4 className="text-sm text-white pt-4 pb-5 text-center">
+        <h4 className="text-base text-white pt-4 pb-5 text-center">
           Your Message Successfully Sent!
         </h4>
       )}
