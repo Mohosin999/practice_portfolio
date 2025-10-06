@@ -20,7 +20,9 @@ const PersonalInfo = () => {
               <Counter from={0} to={3} />+
             </div>
             <div>
-              <h4 className="text-lg text-white">Years of Experience</h4>
+              <h4 className="text-sm lg:text-base text-white">
+                Years of Experience
+              </h4>
             </div>
           </div>
 
@@ -33,7 +35,9 @@ const PersonalInfo = () => {
               <Counter from={0} to={10} />
             </div>
             <div>
-              <h4 className="text-lg text-white">Projects Completed</h4>
+              <h4 className="text-sm lg:text-base text-white">
+                Projects Completed
+              </h4>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 export const projectsData = [
   {
-    id: "123321",
     image: "./img/resume-builder.png",
     name: "AI-Powered Resume Builder App",
     description:
@@ -11,7 +10,6 @@ export const projectsData = [
     caseStudyUrl: "/case-study/resume-builder",
   },
   {
-    id: "123321",
     image: "./img/smartgpt.png",
     name: "SmartGPT - AI Chatbot",
     description:
@@ -22,7 +20,6 @@ export const projectsData = [
     caseStudyUrl: "/case-study/smartgpt",
   },
   {
-    id: "456654",
     image: "./img/clean-youtube.png",
     name: "Clean YouTube App",
     description:
@@ -32,7 +29,6 @@ export const projectsData = [
     caseStudyUrl: "/case-study/clean-youtube",
   },
   {
-    id: "789987",
     image: "./img/live-cricket.png",
     name: "Live Cricket Score App",
     description:

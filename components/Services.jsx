@@ -10,7 +10,7 @@ const Services = () => {
     <div className="w-full h-full flex flex-col items-center justify-center">
       <div className="w-full lg:w-[87%] h-full pt-14 flex flex-col items-center justify-center gap-4 px-3 md:px-6 lg:px-0">
         {/* Heading */}
-        <h2 className="text-2xl lg:text-4xl font-bold pb-4 lg:pb-6 flex items-center gap-2">
+        <h2 className="text-2xl lg:text-3xl font-bold pb-4 lg:pb-6 flex items-center gap-2">
           My Services
         </h2>
         <div className="w-full gap-5 flex flex-col items-center justify-center">

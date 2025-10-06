@@ -14,7 +14,7 @@ const Banner = () => {
 
       {/* Content */}
       <div className="relative w-full py-20 lg:py-24 flex flex-col items-center justify-center gap-4">
-        <h2 className="w-full lg:w-[87%] text-2xl lg:text-4xl font-semibold text-white text-center leading-[1.3] px-3 md:px-6 lg:px-0">
+        <h2 className="w-full lg:w-[87%] text-2xl lg:text-3xl font-semibold text-white text-center leading-[1.3] px-3 md:px-6 lg:px-0">
           I Build Web Apps with <span className="text-yellow-300">AI</span>{" "}
           Today,
           <br />

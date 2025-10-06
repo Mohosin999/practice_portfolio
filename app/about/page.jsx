@@ -11,7 +11,7 @@ const About = () => {
         {/* Content (left on desktop, below on mobile) */}
         <div className="w-full lg:w-7/12 text-center lg:text-left">
           <div className="text_container">
-            <h2 className="text-2xl lg:text-4xl font-bold">About Me</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold">About Me</h2>
 
             <Paragraph text="With over 3 years of experience in web development, I design and build responsive, SEO-friendly, and high-performance web applications. Now my focus is on creating modern, AI-featured web solutions." />
 

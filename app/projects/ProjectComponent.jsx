@@ -11,15 +11,15 @@ const ProjectComponent = () => {
       <div className="w-full lg:w-[87%] h-full flex flex-col items-center justify-center gap-4 px-3 md:px-6 lg:px-0">
         {/* Heading */}
         <div className="w-full">
-          <h3 className="font-bold text-center text-2xl lg:text-4xl mb-2">
+          <h3 className="font-bold text-center text-2xl lg:text-3xl mb-2">
             Works & Projects
           </h3>
         </div>
 
         {/* Projects Information */}
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
-          {projectsData.map((project) => (
-            <div key={project.id}>
+          {projectsData.map((project, index) => (
+            <div key={index}>
               <motion.div
                 {...fadeInUp}
                 className="group relative w-full bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] p-4 rounded-xl overflow-hidden"
@@ -37,7 +37,7 @@ const ProjectComponent = () => {
 
                 {/* Name */}
                 <div className="w-full pt-3 flex flex-col justify-center">
-                  <h3 className="font-bold text-lg lg:text-xl pb-2">
+                  <h3 className="font-bold text-base lg:text-lg py-1">
                     {project.name}
                   </h3>
                 </div>

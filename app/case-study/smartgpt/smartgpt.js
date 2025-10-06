@@ -1,38 +1,20 @@
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
 import {
-  SiTypescript,
-  SiPrisma,
-  SiPostgresql,
-  SiGooglegemini,
-  SiTailwindcss,
+  SiRedux,
+  SiNpm,
   SiShadcnui,
-  SiClerk,
+  SiExpress,
+  SiMongodb,
+  SiSwagger,
 } from "react-icons/si";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiGeminiFill, RiTailwindCssFill } from "react-icons/ri";
+import { AiFillOpenAI } from "react-icons/ai";
 
 // =================== Overview ===================
 export const overview = {
   title: "📝 Overview",
-  text: `I developed a full-stack AI-powered Resume Builder using Next.js with
-          built-in server-side capabilities. It enables users to create
-          professional resumes effortlessly with professional formats and
-          complete CRUD support. Integrated with Google Gemini AI, the app
-          generates professional descriptions and intelligent skill suggestions
-          based on the resume title. Designed to help users overcome formatting
-          and layout challenges, it auto-structures resumes for a polished look.
-          Users can instantly download their resumes as PDFs, ready for job
-          applications.`,
-};
-
-// =================== Problem Statement ===================
-export const problemStatement = {
-  title: "❗ Problem Statement",
-  text: `Many job seekers, especially newbies, struggle to create a resume that meets professional global standards. They often face challenges in formatting, prioritizing relevant sections, and presenting information clearly. As a result, the resume fails to effectively convey skills and experience.`,
-};
-
-// =================== Objective ===================
-export const objective = {
-  title: "🎯 Objective",
-  text: `To develop a user-friendly AI-powered resume builder that enables users to create professional, well-structured resumes efficiently, with minimal manual effort and maximum customization.`,
+  text: `SmartGPT is a full-stack AI chatbot and image generation platform built with the MERN stack. It integrates OpenAI, Google Gemini, and ImageKit to provide intelligent, context-aware responses. Users can securely generate and store AI-powered chats and images, with authentication handled via JWT and bcrypt. The frontend uses React and TailwindCSS for a modern UI, while the backend leverages Node.js, Express, and MongoDB for scalability. The platform also offers a well-documented RESTful API with Swagger for easy integration.`,
 };
 
 // =================== Approach ===================
@@ -40,39 +22,27 @@ export const approach = {
   title: "🧩 Approach",
   parts: [
     {
-      subtitle: "Research",
+      subtitle: "Technology Selection",
       points: [
-        `🔹 Studied existing resume standards and took advice from
-              professionals.`,
-        `🔹 Identified additional important sections (e.g., Achievements)
-              but deferred implementation for future iterations.`,
+        `🔹 Choose the MERN stack, OpenAI & Google Gemini, and ImageKit for secure storage and AI integration.`,
       ],
     },
     {
-      subtitle: "Design",
+      subtitle: "System Architecture Design",
       points: [
-        `🔹 Built a user-centric interface with structured sections for
-              dashboard, personal details, summary, experience, project,
-              education, skills, and resume preview.`,
-        `🔹 Followed UI/UX best practices to ensure accessibility,
-              responsive layouts, and intuitive navigation across devices.`,
-        `🔹 Developed an on-demand preview and print-ready mode — users can
-              choose when to preview their resume instead of constant live
-              preview, giving them more control.`,
-        `🔹 Used Shadcn UI components for a consistent, professional design
-              system with accessible, production-ready elements.`,
-        `🔹 Applied global reusable styles with Tailwind’s @apply
-              directive, ensuring consistency and reducing repetitive code.`,
-        `🔹 Implemented reusable components across most features, making
-              the system modular, maintainable, and scalable.`,
+        `🔹 Plan frontend, backend, database, and API structure for scalability and maintainability.`,
       ],
     },
     {
-      subtitle: "AI Integration",
+      subtitle: "Implementation",
       points: [
-        `🔹 Integrated Google Gemini AI to generate professional summaries.`,
-        `🔹 Created experience and project descriptions with AI assistance.`,
-        `🔹 Generated tailored skill suggestions.`,
+        `🔹 Build authentication, AI chat, image generation, chat management, and API endpoints.`,
+      ],
+    },
+    {
+      subtitle: "Documentation & Deployment",
+      points: [
+        `🔹 Provide Swagger API docs, live demo, and proper environment setup.`,
       ],
     },
   ],
@@ -83,30 +53,44 @@ export const features = {
   title: "✨ Features",
   parts: [
     {
-      subtitle: "Customizable Resume Sections",
+      subtitle: "Secure Authentication",
       points: [
-        `🔹 Users can add, edit, or delete any resume section.`,
-        `🔹 Support for multiple entries within a section.`,
-        `🔹 Edit or delete specific entries.`,
+        `🔹 Register and log in using email and password.`,
+        `🔹 Passwords are encrypted with bcrypt for security.`,
+        `🔹 JSON Web Token (JWT) is used for authentication.`,
+        `🔹 Without login, no user can access any feature.`,
       ],
     },
     {
-      subtitle: "AI Description Generation",
+      subtitle: "AI Chatbot",
       points: [
-        `🔹 Generate professional resume summaries.`,
-        `🔹 Generate a narrative of impactful work experiences that fit your role.`,
-        `🔹 Generate a clear and concise project description highlighting your contributions.`,
+        `🔹 Generate AI-powered responses for any text prompt.`,
+        `🔹 Works like ChatGPT, giving intelligent answers instead of simple messaging.`,
+        `🔹 Each conversation is saved securely in the user’s account.`,
       ],
     },
     {
-      subtitle: "AI Skill Suggestions",
+      subtitle: "AI Image Generation",
       points: [
-        `🔹 Provides intelligent skill suggestions based on the user’s resume title.`,
+        `🔹 Generate unique images from your own prompts.`,
+        `🔹 Images are uploaded and stored using ImageKit.`,
       ],
     },
     {
-      subtitle: "Download as PDF",
-      points: [`🔹 Users can download their resume in a PDF format.`],
+      subtitle: "Chat Management",
+      points: [
+        `🔹 Search Chats – Find specific conversations quickly.`,
+        `🔹 Delete Chats – Remove unwanted chats individually.`,
+        `🔹 Chat History – Access your past prompts and responses anytime.`,
+      ],
+    },
+    {
+      subtitle: "Backend API with Swagger",
+      points: [
+        `🔹 RESTful API designed using Express.js and MongoDB.`,
+        `🔹 Fully documented with Swagger UI.`,
+        `🔹 Organized structure for scalability and easy integration.`,
+      ],
     },
   ],
 };
@@ -115,14 +99,25 @@ export const features = {
 export const techStack = {
   title: "🛠️ Tech Stack",
   skills: [
-    { label: "TypeScript", icon: <SiTypescript /> },
-    { label: "Next.js", icon: <RiNextjsFill /> },
-    { label: "Prisma ORM", icon: <SiPrisma /> },
-    { label: "PostgreSQL", icon: <SiPostgresql /> },
-    { label: "Google Gemini AI", icon: <SiGooglegemini /> },
-    { label: "Tailwind CSS", icon: <SiTailwindcss /> },
+    { label: "JavaScript", icon: <IoLogoJavascript /> },
+    { label: "React", icon: <FaReact /> },
+    { label: "Redux Toolkit", icon: <SiRedux /> },
+    { label: "Tailwind CSS", icon: <RiTailwindCssFill /> },
     { label: "shadcn/ui", icon: <SiShadcnui /> },
-    { label: "Clerk", icon: <SiClerk /> },
+    { label: "React Router DOM", icon: <SiNpm /> },
+    { label: "Express.js", icon: <SiExpress /> },
+    { label: "MongoDB", icon: <SiMongodb /> },
+    { label: "JWT", icon: <SiNpm /> },
+    { label: "Swagger UI", icon: <SiSwagger /> },
+    { label: "OpenAI", icon: <AiFillOpenAI /> },
+    { label: "Google Gemini AI", icon: <RiGeminiFill /> },
+    { label: "ImageKit", icon: <SiNpm /> },
+    { label: "React Markdown", icon: <SiNpm /> },
+    { label: "PrismJS", icon: <SiNpm /> },
+    { label: "React Hot Toast", icon: <SiNpm /> },
+    { label: "React Icons", icon: <SiNpm /> },
+    { label: "Axios", icon: <SiNpm /> },
+    { label: "Prop-Types", icon: <SiNpm /> },
   ],
 };
 

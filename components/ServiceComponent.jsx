@@ -8,7 +8,7 @@ const ServiceComponent = ({ icon, title, params }) => {
       <div className="rounded-xl p-4 lg:p-6 h-full flex flex-col bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] transition-transform duration-300 hover:-translate-y-2">
         <div className="flex flex-col items-center gap-3">
           <div>{icon}</div>
-          <h2 className="text-xl lg:text-2xl font-bold">{title}</h2>
+          <h2 className="text-lg lg:text-xl font-bold">{title}</h2>
         </div>
 
         {/* Description */}
