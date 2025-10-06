@@ -28,10 +28,10 @@ const CaseStudySmartGPT = () => {
          *                          Overview
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {overview.title}
           </h2>
-          <p className="text-base lg:text-lg text-gray-800 dark:text-gray-300">
+          <p className="text-sm lg:text-base text-gray-800 dark:text-gray-300">
             {overview.text}
           </p>
         </section>
@@ -40,19 +40,19 @@ const CaseStudySmartGPT = () => {
          *                          Approach
         =====================================================================*/}
         <section>
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {approach.title}
           </h2>
 
           {approach.parts.map((part, index) => (
             <div key={index} className="space-y-1 mt-3">
-              <h3 className="text-lg lg:text-xl font-semibold">
+              <h3 className="text-sm lg:text-base font-semibold">
                 {part.subtitle}
               </h3>
               {part.points.map((point, index) => (
                 <ul
                   key={index}
-                  className="pl-3 lg:pl-5 space-y-1 text-base lg:text-lg text-gray-800 dark:text-gray-300"
+                  className="pl-3 lg:pl-5 space-y-1 text-sm lg:text-base text-gray-800 dark:text-gray-300"
                 >
                   <li>{point}</li>
                 </ul>
@@ -65,13 +65,13 @@ const CaseStudySmartGPT = () => {
          *                          Features
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {features.title}
           </h2>
 
           {features.parts.map((part, index) => (
             <div key={index} className="space-y-1 mt-3">
-              <h3 className="text-base lg:text-lg font-semibold">
+              <h3 className="text-sm lg:text-base font-semibold">
                 {part.subtitle}
               </h3>
               {part.points.map((point, index) => (
@@ -90,7 +90,7 @@ const CaseStudySmartGPT = () => {
          *                          Tech Stack
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-start gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-start gap-2">
             {techStack.title}
           </h2>
 
@@ -109,7 +109,7 @@ const CaseStudySmartGPT = () => {
          *                         Challenges & Solutions
         =====================================================================*/}
         <section className="space-y-4">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {challengesAndSolutions.title}
           </h2>
 
@@ -118,12 +118,12 @@ const CaseStudySmartGPT = () => {
               key={index}
               className="bg-white dark:bg-gray-800 p-4 lg:p-6 rounded-lg shadow-[0_0_7px_rgba(0,0,0,0.2)] space-y-2"
             >
-              <h3 className="text-lg lg:text-xl font-semibold">
+              <h3 className="text-sm lg:text-base font-semibold">
                 {part.issueName}
               </h3>
 
               {/* Challenge */}
-              <p className="text-base lg:text-lg text-gray-800 dark:text-gray-300">
+              <p className="text-sm lg:text-base text-gray-800 dark:text-gray-300">
                 <span className="px-2 py-1 bg-red-300 dark:text-gray-800">
                   {part.challenge}:
                 </span>
@@ -131,7 +131,7 @@ const CaseStudySmartGPT = () => {
               </p>
 
               {/* Solution */}
-              <p className="text-base lg:text-lg text-gray-800 dark:text-gray-300 pt-2">
+              <p className="text-sm lg:text-base text-gray-800 dark:text-gray-300 pt-2">
                 <span className="px-2 py-1 bg-green-300 dark:text-gray-800">
                   {part.solution}:
                 </span>
@@ -145,14 +145,14 @@ const CaseStudySmartGPT = () => {
          *                          Test Code Journey
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {testCodeJourney.title}
           </h2>
 
           {testCodeJourney.lists.map((list, index) => (
             <ul
               key={index}
-              className="pl-3 lg:pl-5 space-y-1 text-base lg:text-lg text-gray-800 dark:text-gray-300"
+              className="pl-3 lg:pl-5 space-y-1 text-sm lg:text-base text-gray-800 dark:text-gray-300"
             >
               <li>{list}</li>
             </ul>
@@ -163,14 +163,14 @@ const CaseStudySmartGPT = () => {
          *                           Lessons Learned
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl lg:text-2xl font-semibold flex items-center gap-2">
+          <h2 className="text-lg lg:text-xl font-semibold flex items-center gap-2">
             {lessons.title}
           </h2>
 
           {lessons.lists.map((list, index) => (
             <ul
               key={index}
-              className="pl-3 lg:pl-5 space-y-1 text-base lg:text-lg text-gray-800 dark:text-gray-300"
+              className="pl-3 lg:pl-5 space-y-1 text-sm lg:text-base text-gray-800 dark:text-gray-300"
             >
               <li>{list}</li>
             </ul>
