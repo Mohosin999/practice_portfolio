@@ -11,6 +11,17 @@ export const projectsData = [
     caseStudyUrl: "/case-study/resume-builder",
   },
   {
+    id: "123321",
+    image: "./img/smartgpt.png",
+    name: "SmartGPT - AI Chatbot",
+    description:
+      "AI Resume Builder is a Next.js full-stack app for creating professional resumes with polished formats and smart layouts. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can quickly build, customize, and download resumes as job-ready PDFs.",
+    liveUrl: "https://full-stack-ai-resume-builder-app-ne-one.vercel.app/",
+    sourceUrl:
+      "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
+    caseStudyUrl: "/case-study/smartgpt",
+  },
+  {
     id: "456654",
     image: "./img/clean-youtube.png",
     name: "Clean YouTube App",
@@ -18,8 +29,7 @@ export const projectsData = [
       "Clean YouTube is a React-based web application designed to enhance your YouTube video-watching experience by providing a clean, ad-free, and distraction-free interface. Users can efficiently manage playlists, track recent activities, and save their favorite playlists for a seamless and enjoyable experience.",
     liveUrl: "https://clean-youtube-application.onrender.com/",
     sourceUrl: "https://github.com/Mohosin999/Clean-YouTube-Application",
-    caseStudyUrl:
-      "https://github.com/Mohosin999/Case-Study/blob/main/Clean%20YouTube%20Application/README.md#title-clean-youtube--minimalist--ad-free-viewing-experience",
+    caseStudyUrl: "/case-study/clean-youtube",
   },
   {
     id: "789987",

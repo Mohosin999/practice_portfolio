@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeInUp } from "@/utils/animation";
-import { projectsData } from "@/utils/projectData";
+import { projectsData } from "@/app/projects/projectData";
 
 const ProjectComponent = () => {
   return (
@@ -37,7 +37,9 @@ const ProjectComponent = () => {
 
                 {/* Name */}
                 <div className="w-full pt-3 flex flex-col justify-center">
-                  <h3 className="font-bold text-xl pb-2">{project.name}</h3>
+                  <h3 className="font-bold text-lg lg:text-xl pb-2">
+                    {project.name}
+                  </h3>
                 </div>
 
                 {/* Overlay */}

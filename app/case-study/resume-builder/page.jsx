@@ -11,7 +11,7 @@ import {
   problemStatement,
   techStack,
   testCodeJourney,
-} from "@/utils/resume-builder";
+} from "@/app/case-study/resume-builder/resume-builder";
 
 const CaseStudyResumeBuilder = () => {
   return (
