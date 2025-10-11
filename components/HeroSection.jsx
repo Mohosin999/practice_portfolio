@@ -61,7 +61,7 @@ const HeroSection = () => {
             </h2>
 
             {/* Paragraph */}
-            <p className="text-left md:text-center lg:text-left py-4 text-base lg:text-lg text-gray-700 dark:text-gray-300">
+            <p className="text-left md:text-center lg:text-left py-4 text-base text-gray-700 dark:text-gray-300">
               A front-end web developer from Bangladesh, specializing in modern
               web applications with React & Next.js. Dedicated to building
               scalable, responsive, user-friendly, and visually engaging digital
