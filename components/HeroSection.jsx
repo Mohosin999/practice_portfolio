@@ -39,7 +39,7 @@ const HeroSection = () => {
               Hey, this is me
             </h5>
 
-            <h2 className="text-3xl lg:text-5xl font-bold">
+            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold">
               Mohosin Hasan Akash
               <br />a{" "}
               <motion.span
@@ -61,7 +61,7 @@ const HeroSection = () => {
             </h2>
 
             {/* Paragraph */}
-            <p className="py-4 text-sm lg:text-base text-gray-700 dark:text-gray-300">
+            <p className="text-left md:text-center lg:text-left py-4 text-base lg:text-lg text-gray-700 dark:text-gray-300">
               A front-end web developer from Bangladesh, specializing in modern
               web applications with React & Next.js. Dedicated to building
               scalable, responsive, user-friendly, and visually engaging digital

@@ -13,7 +13,7 @@ const ServiceComponent = ({ icon, title, params }) => {
 
         {/* Description */}
         <div className="w-full py-3 mt-1 lg:mt-2 flex-1 min-w-0">
-          <p className="text-sm lg:text-base text-center text-gray-700 dark:text-gray-300">
+          <p className="text-sm lg:text-base text-left md:text-center lg:text-left text-gray-700 dark:text-gray-300">
             {params}
           </p>
         </div>
