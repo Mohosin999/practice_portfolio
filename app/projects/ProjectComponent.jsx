@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/utils/animation";
+import { fadeInVisiable } from "@/utils/animation";
 import { projectsData } from "@/app/projects/projectData";
 
 const ProjectComponent = () => {
@@ -21,7 +21,7 @@ const ProjectComponent = () => {
           {projectsData.map((project, index) => (
             <div key={index}>
               <motion.div
-                {...fadeInUp}
+                {...fadeInVisiable}
                 className="group relative w-full bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] p-4 rounded-xl overflow-hidden"
               >
                 {/* Image */}
