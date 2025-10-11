@@ -28,7 +28,7 @@ const CaseStudyResumeBuilder = () => {
          *                          Overview
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {overview.title}
           </h2>
           <p className="text-base text-gray-800 dark:text-gray-300">
@@ -40,7 +40,7 @@ const CaseStudyResumeBuilder = () => {
          *                          Problem Statement
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {problemStatement.title}
           </h2>
           <p className="text-base text-gray-800 dark:text-gray-300">
@@ -52,7 +52,7 @@ const CaseStudyResumeBuilder = () => {
          *                          Objective
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {objective.title}
           </h2>
           <p className="text-base text-gray-800 dark:text-gray-300">
@@ -64,12 +64,15 @@ const CaseStudyResumeBuilder = () => {
          *                          Approach
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {approach.title}
           </h2>
 
           {approach.parts.map((part, index) => (
-            <div key={index} className="space-y-1 mt-3">
+            <div
+              key={index}
+              className={`space-y-1 ${index !== 0 ? "pt-1.5" : ""}`}
+            >
               <h3 className="text-base font-semibold">{part.subtitle}</h3>
               {part.points.map((point, index) => (
                 <ul
@@ -87,12 +90,15 @@ const CaseStudyResumeBuilder = () => {
          *                          Features
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {features.title}
           </h2>
 
           {features.parts.map((part, index) => (
-            <div key={index} className="space-y-1 mt-3">
+            <div
+              key={index}
+              className={`space-y-1 ${index !== 0 ? "pt-1.5" : ""}`}
+            >
               <h3 className="text-base font-semibold">{part.subtitle}</h3>
               {part.points.map((point, index) => (
                 <ul
@@ -110,7 +116,7 @@ const CaseStudyResumeBuilder = () => {
          *                          Tech Stack
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-start gap-2">
+          <h2 className="text-2xl font-semibold flex items-start gap-2">
             {techStack.title}
           </h2>
 
@@ -129,7 +135,7 @@ const CaseStudyResumeBuilder = () => {
          *                         Challenges & Solutions
         =====================================================================*/}
         <section className="space-y-4">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {challengesAndSolutions.title}
           </h2>
 
@@ -163,7 +169,7 @@ const CaseStudyResumeBuilder = () => {
          *                          Test Code Journey
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {testCodeJourney.title}
           </h2>
 
@@ -181,7 +187,7 @@ const CaseStudyResumeBuilder = () => {
          *                           Lessons Learned
         =====================================================================*/}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold flex items-center gap-2">
+          <h2 className="text-2xl font-semibold flex items-center gap-2">
             {lessons.title}
           </h2>
 

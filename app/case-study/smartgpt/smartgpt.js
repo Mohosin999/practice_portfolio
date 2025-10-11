@@ -22,25 +22,25 @@ export const approach = {
   title: "🧩 Approach",
   parts: [
     {
-      subtitle: "Technology Selection",
+      subtitle: "Technology Selection:",
       points: [
         `🔹 Choose the MERN stack, OpenAI & Google Gemini, and ImageKit for secure storage and AI integration.`,
       ],
     },
     {
-      subtitle: "System Architecture Design",
+      subtitle: "System Architecture Design:",
       points: [
         `🔹 Plan frontend, backend, database, and API structure for scalability and maintainability.`,
       ],
     },
     {
-      subtitle: "Implementation",
+      subtitle: "Implementation:",
       points: [
         `🔹 Build authentication, AI chat, image generation, chat management, and API endpoints.`,
       ],
     },
     {
-      subtitle: "Documentation & Deployment",
+      subtitle: "Documentation & Deployment:",
       points: [
         `🔹 Provide Swagger API docs, live demo, and proper environment setup.`,
       ],
@@ -53,7 +53,7 @@ export const features = {
   title: "✨ Features",
   parts: [
     {
-      subtitle: "Secure Authentication",
+      subtitle: "Secure Authentication:",
       points: [
         `🔹 Register and log in using email and password.`,
         `🔹 Passwords are encrypted with bcrypt for security.`,
@@ -62,7 +62,7 @@ export const features = {
       ],
     },
     {
-      subtitle: "AI Chatbot",
+      subtitle: "AI Chatbot:",
       points: [
         `🔹 Generate AI-powered responses for any text prompt.`,
         `🔹 Works like ChatGPT, giving intelligent answers instead of simple messaging.`,
@@ -70,14 +70,14 @@ export const features = {
       ],
     },
     {
-      subtitle: "AI Image Generation",
+      subtitle: "AI Image Generation:",
       points: [
         `🔹 Generate unique images from your own prompts.`,
         `🔹 Images are uploaded and stored using ImageKit.`,
       ],
     },
     {
-      subtitle: "Chat Management",
+      subtitle: "Chat Management:",
       points: [
         `🔹 Search Chats – Find specific conversations quickly.`,
         `🔹 Delete Chats – Remove unwanted chats individually.`,
@@ -85,12 +85,16 @@ export const features = {
       ],
     },
     {
-      subtitle: "Backend API with Swagger",
+      subtitle: "Backend API with Swagger:",
       points: [
         `🔹 RESTful API designed using Express.js and MongoDB.`,
         `🔹 Fully documented with Swagger UI.`,
         `🔹 Organized structure for scalability and easy integration.`,
       ],
+    },
+    {
+      subtitle: "Dark / Light Mode:",
+      points: [`🔹 Switch seamlessly between dark and light themes.`],
     },
   ],
 };

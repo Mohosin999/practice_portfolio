@@ -40,7 +40,7 @@ export const approach = {
   title: "🧩 Approach",
   parts: [
     {
-      subtitle: "Research",
+      subtitle: "Research:",
       points: [
         `🔹 Studied existing resume standards and took advice from
               professionals.`,
@@ -49,7 +49,7 @@ export const approach = {
       ],
     },
     {
-      subtitle: "Design",
+      subtitle: "Design:",
       points: [
         `🔹 Built a user-centric interface with structured sections for
               dashboard, personal details, summary, experience, project,
@@ -68,7 +68,7 @@ export const approach = {
       ],
     },
     {
-      subtitle: "AI Integration",
+      subtitle: "AI Integration:",
       points: [
         `🔹 Integrated Google Gemini AI to generate professional summaries.`,
         `🔹 Created experience and project descriptions with AI assistance.`,
@@ -83,7 +83,7 @@ export const features = {
   title: "✨ Features",
   parts: [
     {
-      subtitle: "Customizable Resume Sections",
+      subtitle: "Customizable Resume Sections:",
       points: [
         `🔹 Users can add, edit, or delete any resume section.`,
         `🔹 Support for multiple entries within a section.`,
@@ -91,7 +91,7 @@ export const features = {
       ],
     },
     {
-      subtitle: "AI Description Generation",
+      subtitle: "AI Description Generation:",
       points: [
         `🔹 Generate professional resume summaries.`,
         `🔹 Generate a narrative of impactful work experiences that fit your role.`,
@@ -99,14 +99,18 @@ export const features = {
       ],
     },
     {
-      subtitle: "AI Skill Suggestions",
+      subtitle: "AI Skill Suggestions:",
       points: [
         `🔹 Provides intelligent skill suggestions based on the user’s resume title.`,
       ],
     },
     {
-      subtitle: "Download as PDF",
+      subtitle: "Download as PDF:",
       points: [`🔹 Users can download their resume in a PDF format.`],
+    },
+    {
+      subtitle: "Dark / Light Mode:",
+      points: [`🔹 Switch seamlessly between dark and light themes.`],
     },
   ],
 };
