@@ -10,11 +10,12 @@ import {
 } from "react-icons/si";
 import { RiGeminiFill, RiTailwindCssFill } from "react-icons/ri";
 import { AiFillOpenAI } from "react-icons/ai";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 // =================== Overview ===================
 export const overview = {
   title: "📝 Overview",
-  text: `SmartGPT is a full-stack AI chatbot and image generation platform built with the MERN stack. It integrates OpenAI, Google Gemini, and ImageKit to provide intelligent, context-aware responses. Users can securely generate and store AI-powered chats and images, with authentication handled via JWT and bcrypt. The frontend uses React and TailwindCSS for a modern UI, while the backend leverages Node.js, Express, and MongoDB for scalability. The platform also offers a well-documented RESTful API with Swagger for easy integration.`,
+  text: `SmartGPT is a full-stack AI chatbot and image generation platform built with the MERN stack. It integrates OpenAI, Google Gemini, and ImageKit to provide intelligent, context-aware responses. Users can securely generate and store AI-powered chats and images, with authentication handled via JWT and bcrypt. The frontend uses React and Tailwind CSS for a modern UI, while the backend leverages Node.js, Express.js, and MongoDB for scalability. The platform also offers a well-documented RESTful API with Swagger for easy integration.`,
 };
 
 // =================== Approach ===================
@@ -24,7 +25,7 @@ export const approach = {
     {
       subtitle: "Technology Selection:",
       points: [
-        `🔹 Choose the MERN stack, OpenAI & Google Gemini, and ImageKit for secure storage and AI integration.`,
+        `🔹 Choose the MERN stack, OpenAI, Google Gemini, and ImageKit for secure storage and AI integration.`,
       ],
     },
     {
@@ -105,10 +106,11 @@ export const techStack = {
   skills: [
     { label: "JavaScript", icon: <IoLogoJavascript /> },
     { label: "React", icon: <FaReact /> },
+    { label: "React Router DOM", icon: <SiNpm /> },
     { label: "Redux Toolkit", icon: <SiRedux /> },
     { label: "Tailwind CSS", icon: <RiTailwindCssFill /> },
     { label: "shadcn/ui", icon: <SiShadcnui /> },
-    { label: "React Router DOM", icon: <SiNpm /> },
+    { label: "Framer Motion", icon: <TbBrandFramerMotion /> },
     { label: "Express.js", icon: <SiExpress /> },
     { label: "MongoDB", icon: <SiMongodb /> },
     { label: "JWT", icon: <SiNpm /> },
@@ -130,45 +132,77 @@ export const challengesAndSolutions = {
   title: "⚡ Challenges & Solutions",
   parts: [
     {
-      issueName: "Issue 01: Next.js 15 Typed Routes Bug",
+      issueName: "Issue 01: Route Not Found (404) in Swagger UI",
       challenge: "Challenge",
       solution: "Solution",
       challengeDescription:
-        "While upgrading my full-stack AI Resume Builder to Next.js 15 (App Router), I encountered a critical TypeScript issue during production builds. Despite correctly typing dynamic route parameters and trying recommended fixes—like adjusting typed routes, using generateStaticParams, and refactoring async/await—the build kept failing. The root cause was Next.js 15’s experimental typed routes feature, which enforced overly strict type checking and mistakenly treated parameters as Promises, leading to persistent build failures.",
+        "When testing the registration API via Swagger, the request returned a `404 Not Found` error. The issue occurred because the route was either not defined correctly or mounted after middleware in the Express app.",
       solutionDescription:
-        "To resolve the issue, I downgraded from Next.js 15 to 14.2.x for better stability and made a few minor adjustments in the configuration, including updates to next.config.js and font imports. After these changes, the production builds finally ran without errors, and the application now works flawlessly.",
+        "The problem was fixed by ensuring the middleware (eg. express.json(), CORS, Swagger/OpenAPI validator) was applied before mounting the routes. Correct ordering guarantees that requests are parsed and routed properly.",
+    },
+    {
+      issueName: "Issue 02: Undefined req.body (500 Internal Server Error)",
+      challenge: "Challenge",
+      solution: "Solution",
+      challengeDescription:
+        "After fixing the route, the API returned a 500 Internal Server Error with the message `Cannot destructure property 'name' of 'req.body' as it is undefined`. This happened because Express did not parse incoming JSON bodies before reaching the controller.",
+      solutionDescription:
+        "I forgot to define express.json() before the route. Ensured express.json() middleware is applied before routes. This allows Express to correctly parse JSON requests so req.body is available",
     },
     {
       issueName:
-        "Issue 02: Mobile Print Styles Showing Instead of Desktop Styles",
+        "Issue 03: User.findUserByEmail is not a function (500 Internal Server Error)",
       challenge: "Challenge",
       solution: "Solution",
       challengeDescription:
-        "After making the resume responsive for mobile, printing the resume caused it to use mobile-optimized styles (stacked layouts, centered text) instead of the cleaner desktop layout. This resulted in unprofessional print output, as desktop styles (side-by-side sections, proper alignment) are much better for printed resumes.",
+        "During registration, calling userExist(email) function caused an error because the Mongoose `User` model does not have a findUserByEmail method. Initially, the code incorrectly called a non-existent model function.",
       solutionDescription:
-        "Leveraged Tailwind CSS’s print: modifier to enforce desktop-specific styles during printing.",
+        "Created a helper function findUserByEmail(email) and updated userExist function to call this helper instead of the model directly.",
     },
     {
-      issueName: "Issue 03: Managing Reusable Styles in Tailwind CSS",
+      issueName: "Issue 04: Chat API Query Failure",
       challenge: "Challenge",
       solution: "Solution",
       challengeDescription:
-        "While building the app’s design, I felt exhausted from repeatedly writing the same Tailwind utility classes across multiple components. This repetition made the JSX messy and harder to maintain.",
+        "The chat API query used id instead of _id, causing it to return null and fail to find the correct chat.",
       solutionDescription:
-        "Implemented a global reusable style system using Tailwind’s @apply directive.",
+        "Updated the query to `Chat.findOne({ userId, _id: chatId })`, ensuring the correct chat is retrieved.",
     },
-  ],
-};
-
-// =================== Test Code Journey ===================
-export const testCodeJourney = {
-  title: "🧪 Test Code Journey",
-  lists: [
-    "🔹 Initially, I attempted to set up a test environment twice but quit due to recurring errors.",
-    "🔹 Every fix seemed to trigger a new error, leading to frustration.",
-    "🔹 trying a third time, I revised my test knowledge, re-learned testing classes, and analyzed error patterns.",
-    "🔹 On my third attempt, I successfully configured the test environment, wrote meaningful test cases, and understood the purpose of each test.",
-    "🔹 This experience taught me the importance of perseverance, structured learning, and error analysis when working with testing frameworks.",
+    {
+      issueName: "Issue 05: AI Messages and Chat Title Not Updating Instantly",
+      challenge: "Challenge",
+      solution: "Solution",
+      challengeDescription:
+        "AI-generated messages and chat titles were not showing instantly in the app. Even though the data was created successfully, nothing appeared until the page was reloaded. The issue caused delayed updates and made the chat feel unresponsive.",
+      solutionDescription:
+        "I solved it by calling related functions like createChat, showAllChat, and selectChatById inside one main function. However, the real fix came after properly using async/await, which ensured all asynchronous operations completed in the right order, allowing messages and chat titles to appear instantly without reloading.",
+    },
+    {
+      issueName: "Issue 06: Image Generation Blocked Due to Account Limits",
+      challenge: "Challenge",
+      solution: "Solution",
+      challengeDescription:
+        "While working with ImageKit, every request to generate an image through my endpoint was returning a 403 Forbidden error. I double-checked my code, API keys, and endpoint configuration; everything seemed perfectly fine, yet the error persisted.",
+      solutionDescription:
+        "The issue was due to exceeding ImageKit’s 650 monthly extension units in the free plan, which blocks extension requests. I resolved it by monitoring usage and planning to upgrade the plan if more capacity is needed.",
+    },
+    {
+      issueName: "Issue 07: Persistent Login Error Toast Notification",
+      challenge: "Challenge",
+      solution: "Solution",
+      challengeDescription:
+        "After a failed login, the `Invalid credentials` toast reappeared when revisiting the login page even without a new login attempt. The issue happened because the error state in Redux persisted. This caused outdated error messages and a poor user experience.",
+      solutionDescription:
+        "Added a `clearError` action in the Redux slice and dispatched it after showing the toast, resetting the error state. This ensured notifications only appear in response to actual login attempts.",
+    },
+    {
+      issueName: "Issue 08: Swagger File Not Loading in Vercel Deployment",
+      challenge: "Challenge",
+      solution: "Solution",
+      challengeDescription:
+        "Deploying my Express + Swagger API to Vercel failed because `./swagger.yaml` didn’t resolve correctly in the serverless environment, even though it worked locally. The API couldn’t load the Swagger file, causing runtime errors.",
+      solutionDescription: `I fixed it by using path.join(__dirname, "../../swagger.yaml") to reference the file relative to the current module. This ensured the Swagger file loaded correctly in Vercel, allowing Swagger docs and OpenAPI validation to work without errors.`,
+    },
   ],
 };
 
@@ -176,10 +210,9 @@ export const testCodeJourney = {
 export const lessons = {
   title: "📖 Lessons Learned",
   lists: [
-    "🔹 Centralized global styles improved consistency and maintainability.",
-    "🔹 AI integration requires patience and iterative tuning.",
-    "🔹 Reusable components simplified development and maintenance.",
-    "🔹 Performance optimization improved UX (lazy loading, optimized rendering).",
-    "🔹 Debugging mindset is critical for solving complex framework issues.",
+    "🔹 Correct middleware order and proper async handling are essential for reliable API behavior.",
+    "🔹 Monitoring external service limits prevents unexpected feature blocks.",
+    "🔹 Using correct database query fields and helper functions avoids silent failures.",
+    "🔹 Deployment environments may require different file path handling for consistent functionality.",
   ],
 };

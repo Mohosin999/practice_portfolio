@@ -142,24 +142,6 @@ const CaseStudySmartGPT = () => {
         </section>
 
         {/* ===================================================================
-         *                          Test Code Journey
-        =====================================================================*/}
-        <section className="space-y-2">
-          <h2 className="text-2xl font-semibold flex items-center gap-2">
-            {testCodeJourney.title}
-          </h2>
-
-          {testCodeJourney.lists.map((list, index) => (
-            <ul
-              key={index}
-              className="pl-3 lg:pl-5 space-y-1 text-base text-gray-800 dark:text-gray-300"
-            >
-              <li>{list}</li>
-            </ul>
-          ))}
-        </section>
-
-        {/* ===================================================================
          *                           Lessons Learned
         =====================================================================*/}
         <section className="space-y-2">
