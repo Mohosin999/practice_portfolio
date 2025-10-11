@@ -25,7 +25,7 @@ const HeroSection = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.2, ease: "easeInOut" },
+      transition: { duration: 0.1, ease: "easeInOut" },
     },
   };
 
@@ -62,11 +62,9 @@ const HeroSection = () => {
 
             {/* Paragraph */}
             <p className="text-left md:text-center lg:text-left py-4 text-base xl:text-lg text-gray-700 dark:text-gray-300">
-              A front-end web developer from Bangladesh, specializing in modern
-              web applications with React & Next.js. Dedicated to building
-              scalable, responsive, user-friendly, and visually engaging digital
-              experiences. I use AI tools to enhance productivity and
-              consistently follow the DRY principle to write clean and
+              I'm here to tell that I'm a frontend developer who use ReactJS to
+              develop web applications. I use AI tools to enhance productivity
+              and consistently follow the DRY principle to write clean and
               maintainable code.
             </p>
 

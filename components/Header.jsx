@@ -89,7 +89,7 @@ const Header = () => {
             {navlinks.map((link, index) => (
               <li
                 key={index}
-                className={`text-sm lg:text-base font-semibold ${
+                className={`text-base font-semibold ${
                   pathname === link.path
                     ? "text-sky-600"
                     : "text-gray-800 dark:text-gray-200"
