@@ -44,9 +44,9 @@ const ProjectComponent = () => {
 
                 {/* Overlay */}
                 <div
-                  className="absolute bottom-0 left-0 w-full max-h-[80%] bg-white dark:bg-gray-800 rounded-t-xl text-gray-700 dark:text-gray-300 
-               transform translate-y-full opacity-0 
-               group-hover:translate-y-0 group-hover:opacity-100 
+                  className="absolute bottom-0 left-0 w-full max-h-[80%] bg-white dark:bg-gray-800 rounded-t-xl text-gray-700 dark:text-gray-300
+               transform translate-y-full opacity-0
+               group-hover:translate-y-0 group-hover:opacity-100
                transition-all duration-500 ease-in-out flex flex-col"
                 >
                   {/* Scrollable Description */}
