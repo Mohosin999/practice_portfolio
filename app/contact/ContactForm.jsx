@@ -40,7 +40,7 @@ const ContactForm = () => {
   return (
     <motion.div
       {...fadeInUp}
-      className={`w-full px-4 lg:px-8 py-8 lg:py-14 ${
+      className={`w-full px-4 md:px-8 py-8 md:py-14 ${
         isSuccess ? "pt-14 pb-0" : ""
       } max-w-md bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)]`}
     >
