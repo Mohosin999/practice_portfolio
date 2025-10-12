@@ -11,10 +11,3 @@ export const fadeInVisiable = {
   viewport: { once: true, amount: 0.9 },
   transition: { duration: 0.6 },
 };
-
-export const fadeInDown = {
-  initial: { opacity: 0, y: -100 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.2 },
-  transition: { duration: 0.6 },
-};
