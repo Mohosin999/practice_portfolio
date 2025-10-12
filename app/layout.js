@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`bg-[#F8F6FD] dark:bg-[#181A1B] text-gray-800 dark:text-gray-100 selection:bg-sky-300`}
+        className={`bg-[#F8F6FD] dark:bg-[#181A1B] text-gray-800 dark:text-gray-100 selection:bg-sky-300 dark:selection:text-gray-900`}
       >
         <Header />
         {children}
