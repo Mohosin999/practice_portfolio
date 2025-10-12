@@ -21,7 +21,7 @@ const Services = () => {
             <ServiceComponent
               icon={<FaReact className="w-32 h-32 text-blue-500" />}
               title={"Web Development (React)"}
-              params={`I develop professional web applications using ReactJS, integrating REST APIs and AI APIs seamlessly. I follow clean code and DRY principles, use Redux Toolkit and Easy-Peasy for efficient state management.`}
+              params={`I build dynamic, responsive web applications with React.js, following clean code and DRY principles while integrating RESTful APIs. I deliver smooth user experiences using efficient state management with Redux Toolkit.`}
             />
 
             <ServiceComponent
@@ -29,7 +29,7 @@ const Services = () => {
                 <RiNextjsLine className="w-32 h-32 text-gray-700 dark:text-gray-200" />
               }
               title={"Web Development (Next.js)"}
-              params={`I build SEO-friendly and high-performance websites using Next.js, utilizing server-side rendering, API integration, and full-stack features. I also incorporate AI tools to enhance functionality and productivity.`}
+              params={`I build scalable, SEO-friendly web applications with Next.js, leveraging server-side rendering, dynamic routing, and API integrations. I deliver robust, production-ready solutions with fast performance and maintainable code.`}
             />
 
             <ServiceComponent
@@ -37,7 +37,7 @@ const Services = () => {
                 <IoCodeSlashOutline className="w-32 h-32 text-orange-600" />
               }
               title={"Full-Stack Web Development"}
-              params={`I create complete full-stack applications using React, Strapi or Next.js full-stack features, connecting frontends with backend APIs efficiently. I focus on scalability, clean architecture, and productivity using AI tools.`}
+              params={`I build complete full-stack applications using React or Next.js for the frontend and Express or Strapi for the backend, efficiently connecting with REST APIs. I focus on scalability, clean architecture, and maintainable, high-performance solutions.`}
             />
           </div>
         </div>

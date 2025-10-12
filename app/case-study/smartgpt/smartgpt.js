@@ -15,7 +15,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 // =================== Overview ===================
 export const overview = {
   title: "📝 Overview",
-  text: `SmartGPT is a full-stack AI chatbot and image generation platform built with the MERN stack. It integrates OpenAI, Google Gemini, and ImageKit to provide intelligent, context-aware responses. Users can securely generate and store AI-powered chats and images, with authentication handled via JWT and bcrypt. The frontend uses React and Tailwind CSS for a modern UI, while the backend leverages Node.js, Express.js, and MongoDB for scalability. The platform also offers a well-documented RESTful API with Swagger for easy integration.`,
+  text: `SmartGPT is a full-stack AI chatbot and image generation platform built with the MERN stack. It integrates OpenAI, Google Gemini, and ImageKit to provide intelligent, context-aware responses. Users can securely generate and store AI-powered chats and images, with authentication handled via JWT and bcrypt. The frontend uses React and Tailwind CSS for a modern UI, while the backend leverages Node.js, Express, and MongoDB for scalability. The platform also offers a well-documented RESTful API with Swagger for easy integration.`,
 };
 
 // =================== Approach ===================
