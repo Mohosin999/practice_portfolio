@@ -8,6 +8,7 @@ import {
   SiClerk,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 // =================== Overview ===================
 export const overview = {
@@ -126,6 +127,7 @@ export const techStack = {
     { label: "Google Gemini AI", icon: <SiGooglegemini /> },
     { label: "Tailwind CSS", icon: <SiTailwindcss /> },
     { label: "shadcn/ui", icon: <SiShadcnui /> },
+    { label: "Framer Motion", icon: <TbBrandFramerMotion /> },
     { label: "Clerk", icon: <SiClerk /> },
   ],
 };

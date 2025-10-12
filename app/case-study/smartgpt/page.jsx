@@ -6,17 +6,14 @@ import {
   challengesAndSolutions,
   features,
   lessons,
-  objective,
   overview,
-  problemStatement,
   techStack,
-  testCodeJourney,
 } from "@/app/case-study/smartgpt/smartgpt";
 
 const CaseStudySmartGPT = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      <div className="w-full lg:w-[60%] space-y-8 pt-6 lg:pt-10 px-3 md:px-6 lg:px-0">
+      <div className="w-full lg:w-[60%] space-y-12 pt-6 lg:pt-10 px-3 md:px-6 lg:px-0">
         {/* Title */}
         <h1 className="text-2xl lg:text-3xl font-bold">
           SmartGPT - Designing a Secure, Full-Stack AI Chatbot and Image

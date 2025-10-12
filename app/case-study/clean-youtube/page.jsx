@@ -11,16 +11,15 @@ import {
   problemStatement,
   techStack,
   testCodeJourney,
-} from "@/app/case-study/resume-builder/resume-builder";
+} from "@/app/case-study/clean-youtube/clean-youtube";
 
-const CaseStudyResumeBuilder = () => {
+const CaseStudyCleanYoutube = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
       <div className="w-full lg:w-[60%] space-y-12 pt-6 lg:pt-10 px-3 md:px-6 lg:px-0">
         {/* Title */}
         <h1 className="text-2xl lg:text-3xl font-bold">
-          AI-Powered Resume Builder - Enhancing Job Seekers’ Efficiency and
-          Professionalism
+          Clean YouTube – Minimalist & Ad-Free Viewing Experience
         </h1>
 
         {/* Overview */}
@@ -166,24 +165,6 @@ const CaseStudyResumeBuilder = () => {
         </section>
 
         {/* ===================================================================
-         *                          Test Code Journey
-        =====================================================================*/}
-        <section className="space-y-2">
-          <h2 className="text-2xl font-semibold flex items-center gap-2">
-            {testCodeJourney.title}
-          </h2>
-
-          {testCodeJourney.lists.map((list, index) => (
-            <ul
-              key={index}
-              className="text-base pl-3 lg:pl-5 space-y-1 text-gray-800 dark:text-gray-300"
-            >
-              <li>{list}</li>
-            </ul>
-          ))}
-        </section>
-
-        {/* ===================================================================
          *                           Lessons Learned
         =====================================================================*/}
         <section className="space-y-2">
@@ -205,4 +186,4 @@ const CaseStudyResumeBuilder = () => {
   );
 };
 
-export default CaseStudyResumeBuilder;
+export default CaseStudyCleanYoutube;
