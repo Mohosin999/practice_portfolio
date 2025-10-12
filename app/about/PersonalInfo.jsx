@@ -51,15 +51,15 @@ const PersonalInfo = () => {
               href="https://www.linkedin.com/in/mohosinh99/"
               icon={FaLinkedin}
             />
-            <SocialIconLink href="https://x.com/mohosinh99" icon={FaXTwitter} />
             <SocialIconLink
               href="https://github.com/Mohosin999"
               icon={FaGithub}
             />
             <SocialIconLink
-              href="https://github.com/Mohosin999"
+              href="https://www.facebook.com/mohosinh99"
               icon={FaFacebook}
             />
+            <SocialIconLink href="https://x.com/mohosinh99" icon={FaXTwitter} />
           </ul>
         </div>
       </div>
