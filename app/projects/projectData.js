@@ -36,5 +36,6 @@ export const projectsData = [
       "Live Cricket Score App is a Next.js application powered by the Cricbuzz API, offering real-time cricket updates with a clean and responsive UI. It keeps users engaged with live scores, recent results, upcoming fixtures, and cricket articles. A detailed scorecard section provides in-depth match insights for a complete experience.",
     liveUrl: "https://cricket-live-application-z7ba-nxas4d6u0.vercel.app/",
     sourceUrl: "https://github.com/Mohosin999/Live-Cricket-Score-App-Next.js",
+    caseStudyUrl: "/case-study/live-cricket",
   },
 ];
