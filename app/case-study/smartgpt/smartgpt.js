@@ -10,7 +10,6 @@ import {
 } from "react-icons/si";
 import { RiGeminiFill, RiTailwindCssFill } from "react-icons/ri";
 import { AiFillOpenAI } from "react-icons/ai";
-import { TbBrandFramerMotion } from "react-icons/tb";
 
 // =================== Overview ===================
 export const overview = {
@@ -110,7 +109,6 @@ export const techStack = {
     { label: "Redux Toolkit", icon: <SiRedux /> },
     { label: "Tailwind CSS", icon: <RiTailwindCssFill /> },
     { label: "shadcn/ui", icon: <SiShadcnui /> },
-    { label: "Framer Motion", icon: <TbBrandFramerMotion /> },
     { label: "Express.js", icon: <SiExpress /> },
     { label: "MongoDB", icon: <SiMongodb /> },
     { label: "JWT", icon: <SiNpm /> },
