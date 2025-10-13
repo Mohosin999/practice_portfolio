@@ -4,10 +4,9 @@ const DevSkill = ({ label, name, logo, className }) => {
   // Define color styles for each label
   const labelStyles = {
     frontend: "bg-sky-600 border-sky-600 text-white shadow-sm", // current style
-    backend: "bg-orange-500 border-orange-500 text-white shadow-sm",
-    design: "bg-green-600 border-green-600 text-white shadow-sm",
-    tools:
-      "bg-gradient-to-r from-gray-700 via-gray-900 to-black border border-gray-800 text-white shadow-md",
+    backend: "bg-[#00aaa0] border-[#00aaa0] text-white shadow-sm",
+    design: "bg-[#5e63b6] border-[#5e63b6] text-white shadow-sm",
+    tools: "bg-[#d65a31] border-[#d65a31] text-white shadow-sm",
   };
 
   // fallback if no label matched
