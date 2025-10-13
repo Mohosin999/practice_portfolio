@@ -84,7 +84,7 @@ const ContactForm = () => {
 
       {/* Success Message */}
       {isSuccess && (
-        <h4 className="text-base text-gray-700 dark:text-gray-300 pt-4 pb-5 text-center">
+        <h4 className="text-base text-gray-700 dark:text-gray-300 pt-4 text-center">
           Your Message Successfully Sent!
         </h4>
       )}
