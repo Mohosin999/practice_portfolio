@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { FaJs, FaReact, FaSass, FaGitAlt } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -15,7 +16,7 @@ import {
   SiMongoose,
 } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { motion } from "framer-motion";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { fadeInVisiable } from "@/utils/animation";
 import FrontendSkill from "../../components/ui/FrontendSkill";
 import BackendSkill from "../../components/ui/BackendSkill";
@@ -29,7 +30,7 @@ const Skills = () => {
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 
       {/* ======================================================================
-       *                             Proficient
+       *                            Frontend Skills
       ====================================================================== */}
       <div className="mb-5">
         <div className="flex flex-wrap gap-2">
@@ -42,7 +43,7 @@ const Skills = () => {
             logo={<SiTypescript className="text-white" />}
           />
           <FrontendSkill
-            name={"React.js"}
+            name={"React"}
             logo={<FaReact className="text-white" />}
           />
           <FrontendSkill
@@ -61,9 +62,13 @@ const Skills = () => {
             name={"Styled Components"}
             logo={<SiStyledcomponents className="text-white" />}
           />
-          <FrontendSkill
+          {/* <FrontendSkill
             name={"Sass"}
             logo={<FaSass className="text-white" />}
+          /> */}
+          <FrontendSkill
+            name={"Framer Motion"}
+            logo={<TbBrandFramerMotion className="text-white" />}
           />
           <FrontendSkill
             name={"Jest"}
@@ -81,10 +86,10 @@ const Skills = () => {
       </div>
 
       {/* ======================================================================
-       *                            Working Knowledge
+       *                            Backend Skills
       ====================================================================== */}
       <div className="">
-        <div className="flex flex-wrap gap-2 lg:gap-3">
+        <div className="flex flex-wrap gap-2">
           <BackendSkill
             name={"Express.js"}
             logo={<SiExpress className="text-white" />}
@@ -94,16 +99,16 @@ const Skills = () => {
             logo={<SiMongoose className="text-white" />}
           />
           <BackendSkill
+            name={"Swagger"}
+            logo={<SiSwagger className="text-white" />}
+          />
+          <BackendSkill
             name={"Strapi"}
             logo={<SiStrapi className="text-white" />}
           />
           <BackendSkill
             name={"Prisma ORM"}
             logo={<SiPrisma className="text-white" />}
-          />
-          <BackendSkill
-            name={"Swagger"}
-            logo={<SiSwagger className="text-white" />}
           />
 
           {/* <Skill

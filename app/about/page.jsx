@@ -63,17 +63,15 @@ const About = () => {
           <div className="text_container">
             <h2 className="text-2xl lg:text-3xl font-bold">About Me</h2>
 
-            <Paragraph text="Hi, I’m Mohosin Hasan Akash from Bangladesh, a passionate Frontend Web Developer with over 3 years of experience. I design and build responsive, SEO-friendly, scalable, and high-performance web applications." />
-
-            <Paragraph text="I have worked with a client as a Frontend Developer, creating SEO-friendly, high-performance web apps with smooth animations and engaging user experiences. I provided custom solutions, frequently updated multiple sections based on client requests, and learned a lot while delivering impactful results." />
-
-            <Paragraph text="I mainly work with JavaScript, TypeScript, React, Next.js, Redux-Toolkit, Node.js, Express.js, Headless CMS (Strapi), Tailwind CSS, Styled-Components, Framer Motion, and more." />
+            <Paragraph text="With over 3 years of experience in front-end development, I’m an expert at creating high-performance, scalable web applications that maximize user experience and business success. My skills are JavaScript, TypeScript, React, and Next.js, and I have a deep understanding of building RESTful APIs using Node.js and Express.js. " />
 
             <Paragraph text="Recently, I’ve been building websites with AI-powered features integrated directly into the workflow. This approach ensures that the solutions I deliver stay modern, efficient, and ahead of the curve." />
 
-            <Paragraph text="I am currently learning backend development and working with the MERN stack. I can already build advanced APIs, and soon I will start creating all my upcoming projects using MERN technologies." />
+            <Paragraph text="I worked with a client as a Frontend Developer, building a high-performance, SEO-optimized web app using Next.js that helped boost their company's sales. I consistently updated various sections based on client requests, and learned a lot while delivering impactful results." />
 
-            <Paragraph text="When I’m not coding, I love spending time in peaceful green environments. I also exercise regularly to stay physically and mentally healthy." />
+            <Paragraph text="I truly enjoy learning new things. Right now, I’m exploring backend development and working with the MERN stack to strengthen my full-stack skills. When I’m not coding, I love spending time in peaceful green environments. I also exercise regularly to stay physically and mentally healthy." />
+
+            <Paragraph text="Aiming for remote opportunities worldwide, I’m excited to bring my expertise to forward-thinking teams and contribute to projects driven by creativity and excellence." />
           </div>
         </div>
 
