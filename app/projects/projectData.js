@@ -4,7 +4,7 @@ export const projectsData = [
     name: "SmartGPT - AI Chatbot",
     description:
       "AI Resume Builder is a Next.js full-stack app for creating professional resumes with polished formats and smart layouts. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can quickly build, customize, and download resumes as job-ready PDFs.",
-    liveUrl: "https://full-stack-ai-resume-builder-app-ne-one.vercel.app/",
+    liveUrl: "https://smart-gpt-app-client.vercel.app/",
     sourceUrl:
       "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
     caseStudyUrl: "/case-study/smartgpt",
