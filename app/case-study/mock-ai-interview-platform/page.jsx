@@ -11,7 +11,7 @@ import {
   problemStatement,
   techStack,
   testCodeJourney,
-} from "@/app/case-study/resume-builder/resume-builder";
+} from "@/app/case-study/mock-ai-interview-platform/mock-ai";
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 const CaseStudyResumeBuilder = () => {
@@ -31,8 +31,7 @@ const CaseStudyResumeBuilder = () => {
         <div className="w-full lg:w-[60%] space-y-12 lg:pt-4 px-3 md:px-6 lg:px-0">
           {/* Title */}
           <h1 className="text-2xl lg:text-3xl font-bold">
-            AI-Powered Resume Builder - Enhancing Job Seekers’ Efficiency and
-            Professionalism
+            MockAI - AI-Powered Mock Interview Platform
           </h1>
 
           {/* Overview */}
@@ -45,18 +44,6 @@ const CaseStudyResumeBuilder = () => {
             </h2>
             <p className="text-base text-gray-800 dark:text-gray-300">
               {overview.text}
-            </p>
-          </section>
-
-          {/* ===================================================================
-         *                          Problem Statement
-        =====================================================================*/}
-          <section className="space-y-2">
-            <h2 className="text-2xl font-semibold flex items-center gap-2">
-              {problemStatement.title}
-            </h2>
-            <p className="text-base text-gray-800 dark:text-gray-300">
-              {problemStatement.text}
             </p>
           </section>
 
@@ -174,24 +161,6 @@ const CaseStudyResumeBuilder = () => {
                   <span className="ml-2">{part.solutionDescription}</span>
                 </p>
               </div>
-            ))}
-          </section>
-
-          {/* ===================================================================
-         *                          Test Code Journey
-        =====================================================================*/}
-          <section className="space-y-2">
-            <h2 className="text-2xl font-semibold flex items-center gap-2">
-              {testCodeJourney.title}
-            </h2>
-
-            {testCodeJourney.lists.map((list, index) => (
-              <ul
-                key={index}
-                className="text-base pl-3 lg:pl-5 space-y-1 text-gray-800 dark:text-gray-300"
-              >
-                <li>{list}</li>
-              </ul>
             ))}
           </section>
 

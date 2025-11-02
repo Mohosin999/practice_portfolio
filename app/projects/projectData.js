@@ -1,5 +1,15 @@
 export const projectsData = [
   {
+    image: "./img/mockai.png",
+    name: "MockAI - AI-Powered Interview Platform",
+    description:
+      "MockAI is a Next.js web app for realistic AI-driven mock interviews with personalized feedback and smart question suggestions. Powered by VAPI, Firebase, and Google Gemini AI, it offers secure authentication, real-time AI interaction, and a modern platform to practice and enhance mock interview skills.",
+    liveUrl: "https://mock-zone-ai-mock-interview-app-ful.vercel.app/",
+    sourceUrl:
+      "https://github.com/Mohosin999/MockAI-Interview-Platform-FullStack-Next.js",
+    caseStudyUrl: "/case-study/mock-ai-interview-platform",
+  },
+  {
     image: "./img/smartgpt.png",
     name: "SmartGPT - AI Chatbot",
     description:
