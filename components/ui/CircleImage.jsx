@@ -4,7 +4,7 @@ import React from "react";
 const CircleImage = ({ image, alt = "profile image" }) => {
   return (
     <div className="flex items-center justify-center w-full lg:w-5/12">
-      <div className="aspect-square w-full max-w-md bg-sky-600 rounded-full border border-sky-600/[0.5] shadow-md">
+      <div className="aspect-square w-full max-w-md bg-[#018FA5] rounded-full border border-[#018FA5]/[0.5] shadow-md">
         <img
           src={image}
           alt={alt}

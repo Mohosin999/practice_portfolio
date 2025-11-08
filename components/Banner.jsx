@@ -10,7 +10,7 @@ const Banner = () => {
       ></div>
 
       {/* Overlay with color and opacity */}
-      <div className="absolute inset-0 bg-sky-600 opacity-90"></div>
+      <div className="absolute inset-0 bg-[#018FA5] opacity-90"></div>
 
       {/* Content */}
       <div className="relative w-full py-20 lg:py-24 flex flex-col items-center justify-center gap-4">
