@@ -50,7 +50,7 @@ const HeroSection = () => {
                   <motion.span
                     key={index}
                     variants={letter}
-                    className="inline-block text-[#018FA5]"
+                    className="inline-block text-[#018FA5] "
                   >
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
@@ -61,9 +61,10 @@ const HeroSection = () => {
             {/* Paragraph */}
             <p className="text-left md:text-center lg:text-left py-4 text-base xl:text-lg text-gray-700 dark:text-gray-300">
               I use React and Next.js on the front-end to build a
-              high-performance and scalable applications. I can create RESTful
-              APIs using Node.js and Express. To enhance productivity I use AI
-              tools and write clean and maintainable code.
+              high-performance and scalable applications. I have deep
+              understanding of building RESTful APIs using Node.js and Express.
+              As a frontend developer, my power is writting clean, reusable and
+              maintainable code and use AI to optimize user experience.
             </p>
 
             {/* Download resume button */}
