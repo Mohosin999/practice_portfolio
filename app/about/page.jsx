@@ -76,7 +76,7 @@ const About = () => {
         </div>
 
         {/* Image (right on desktop, top on mobile) */}
-        <CircleImage image="./img/profile.jpg" />
+        <CircleImage image="./img/profile2.png" />
       </div>
 
       {/* ========================================================

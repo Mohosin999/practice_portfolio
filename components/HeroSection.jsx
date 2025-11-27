@@ -33,7 +33,7 @@ const HeroSection = () => {
         {/* Left side hero text (on mobile it comes below the image) */}
         <div className="w-full lg:w-7/12 text-center lg:text-left">
           <div className="text_container">
-            <h5 className="text-gray-700 dark:text-gray-300 text-sm lg:text-base">
+            <h5 className="text-gray-700 dark:text-gray-300 text-sm lg:text-base mb-2">
               Hey, this is me
             </h5>
 
@@ -50,7 +50,7 @@ const HeroSection = () => {
                   <motion.span
                     key={index}
                     variants={letter}
-                    className="inline-block text-[#018FA5] "
+                    className="inline-block text-sky-600 "
                   >
                     {char === " " ? "\u00A0" : char}
                   </motion.span>
@@ -75,7 +75,7 @@ const HeroSection = () => {
               aria-label="Download Resume"
               className="flex w-fit mx-auto lg:mx-0"
             >
-              <button className="flex items-center justify-center gap-3 text-sm lg:text-base text-[#018FA5] px-5 py-2 my-3 border-2 border-[#018FA5] transition-all ease-in-out duration-200 hover:bg-[#018FA5] hover:text-white">
+              <button className="flex items-center justify-center gap-3 text-sm lg:text-base text-sky-600 px-5 py-2 my-3 border-2 border-sky-600 transition-all ease-in-out duration-200 hover:bg-sky-600 hover:text-white">
                 <FaDownload /> Download Resume
               </button>
             </a>
@@ -83,7 +83,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right side hero image (on mobile it shows on top) */}
-        <CircleImage image="./img/profile.jpg" />
+        <CircleImage image="./img/profile1.png" />
       </div>
     </div>
   );
