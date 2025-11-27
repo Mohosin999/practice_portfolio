@@ -83,7 +83,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right side hero image (on mobile it shows on top) */}
-        <CircleImage image="./img/profile1.png" />
+        <CircleImage image="./img/profile.png" />
       </div>
     </div>
   );

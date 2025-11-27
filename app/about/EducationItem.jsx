@@ -3,7 +3,7 @@ import React from "react";
 const EducationItem = ({ degree, university, period }) => {
   return (
     <div className="flex items-start mb-4 lg:mb-8">
-      <span className="block w-3 h-3 bg-[#018FA5] rounded-full mt-1.5"></span>
+      <span className="block w-3 h-3 bg-sky-600 rounded-full mt-1.5"></span>
       <div className="ml-4">
         <h3 className="text-base text-gray-800 dark:text-gray-200 font-medium">
           {degree}

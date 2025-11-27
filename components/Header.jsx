@@ -25,8 +25,8 @@ const Header = () => {
         <div className="w-full lg:w-[87%] flex items-center justify-between px-3 md:px-6 lg:px-0 py-6">
           {/* Left side logo */}
           <Link href={"/"}>
-            <h4 className="text-xl lg:text-2xl font-bold active:scale-105 flex items-center">
-              <HiCode size={40} className="mr-2 text-[#018FA5]" /> Mohosin
+            <h4 className="text-xl lg:text-2xl font-bold active:scale-105 flex items-center hover:text-sky-600 duration-300">
+              <HiCode size={40} className="mr-2 text-sky-600" /> Mohosin
             </h4>
           </Link>
 
@@ -39,9 +39,9 @@ const Header = () => {
                 key={index}
                 className={`text-sm lg:text-base font-semibold ${
                   pathname === link.path
-                    ? "text-[#018FA5]"
-                    : "text-gray-800 dark:text-gray-200 hover:dark:text-[#018FA5]"
-                } hover:text-[#018FA5] transition-all ease-out duration-200 active:scale-105`}
+                    ? "text-sky-600"
+                    : "text-gray-800 dark:text-gray-200 hover:dark:text-sky-600"
+                } hover:text-sky-600 transition-all ease-out duration-200 active:scale-105`}
               >
                 <Link href={link.path}>{link.name}</Link>
               </li>
@@ -50,7 +50,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact">
-                <button className="text-sm lg:text-base bg-[#018FA5] font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
+                <button className="text-sm lg:text-base bg-sky-600 font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>
@@ -91,9 +91,9 @@ const Header = () => {
                 key={index}
                 className={`text-base font-semibold ${
                   pathname === link.path
-                    ? "text-[#018FA5]"
-                    : "text-gray-800 dark:text-gray-200 hover:dark:text-[#018FA5]"
-                } hover:text-[#018FA5] transition-all ease-out duration-200 active:scale-105`}
+                    ? "text-sky-600"
+                    : "text-gray-800 dark:text-gray-200 hover:dark:text-sky-600"
+                } hover:text-sky-600 transition-all ease-out duration-200 active:scale-105`}
               >
                 <Link href={link.path} onClick={() => setIsSidebarOpen(false)}>
                   {link.name}
@@ -104,7 +104,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact" onClick={() => setIsSidebarOpen(false)}>
-                <button className="text-sm lg:text-base bg-[#018FA5] font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
+                <button className="text-sm lg:text-base bg-sky-600 font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>

@@ -1,5 +1,15 @@
 export const projectsData = [
   {
+    image: "./img/resume-builder.png",
+    name: "AI-Powered Resume Builder",
+    description:
+      "AI Resume Builder is a Next.js full-stack app for creating professional resumes with polished formats and smart layouts. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can quickly build, customize, and download resumes as job-ready PDFs.",
+    liveUrl: "https://full-stack-ai-resume-builder-app-ne-one.vercel.app/",
+    sourceUrl:
+      "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
+    caseStudyUrl: "/case-study/resume-builder",
+  },
+  {
     image: "./img/mockai.png",
     name: "MockAI - AI-Powered Interview Platform",
     description:
@@ -19,17 +29,6 @@ export const projectsData = [
   //     "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
   //   caseStudyUrl: "/case-study/smartgpt",
   // },
-  {
-    image: "./img/resume-builder.png",
-    name: "AI-Powered Resume Builder",
-    description:
-      "AI Resume Builder is a Next.js full-stack app for creating professional resumes with polished formats and smart layouts. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can quickly build, customize, and download resumes as job-ready PDFs.",
-    liveUrl: "https://full-stack-ai-resume-builder-app-ne-one.vercel.app/",
-    sourceUrl:
-      "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
-    caseStudyUrl: "/case-study/resume-builder",
-  },
-
   {
     image: "./img/clean-youtube.png",
     name: "Clean YouTube",
