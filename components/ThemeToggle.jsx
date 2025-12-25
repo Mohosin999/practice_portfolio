@@ -9,13 +9,13 @@ const ThemeToggle = () => {
   return (
     <button onClick={toggleTheme} className="relative group p-2">
       {theme === "dark" ? (
-        <BsLightbulb className="w-5 h-5 text-white hover:text-sky-600 font-semibold" />
+        <BsLightbulb className="w-5 h-5 text-white hover:text-[#B73ACA] font-semibold" />
       ) : (
-        <BsLightbulbOff className="w-5 h-5 hover:text-sky-600 font-semibold" />
+        <BsLightbulbOff className="w-5 h-5 hover:text-[#B73ACA] font-semibold" />
       )}
 
       {/* Tooltip */}
-      <span className="absolute left-1/2 -translate-x-1/2 top-10 scale-0 rounded bg-sky-600 px-3 py-1 text-sm text-white whitespace-nowrap group-hover:scale-100 transition-all min-w-[80px] text-center shadow-lg">
+      <span className="absolute left-1/2 -translate-x-1/2 top-10 scale-0 rounded bg-[#B73ACA] px-3 py-1 text-sm text-white whitespace-nowrap group-hover:scale-100 transition-all min-w-[80px] text-center shadow-lg">
         {theme === "dark" ? "Light Mode" : "Dark Mode"}
       </span>
     </button>

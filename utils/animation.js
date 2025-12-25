@@ -8,6 +8,6 @@ export const fadeInUp = {
 export const fadeInVisiable = {
   initial: { opacity: 0, scale: 0.8 },
   whileInView: { opacity: 1, scale: 1 },
-  viewport: { once: true, amount: 0.9 },
+  viewport: { once: true, amount: 0.8 },
   transition: { duration: 0.4 },
 };

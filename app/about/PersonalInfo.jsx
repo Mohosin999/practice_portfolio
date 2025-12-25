@@ -13,7 +13,7 @@ const PersonalInfo = () => {
         {/* ========================================================
          *                      Left Section
          ======================================================== */}
-        <div className="w-full lg:w-7/12 min-h-[120px] bg-sky-600 px-14 py-4 rounded-3xl border border-gray-600/[0.5] shadow-md flex flex-col lg:flex-row items-center gap-2 lg:gap-6">
+        <div className="w-full lg:w-7/12 min-h-[120px] bg-[#B73ACA] px-14 py-4 rounded-3xl border border-gray-600/[0.5] shadow-md flex flex-col lg:flex-row items-center gap-2 lg:gap-6">
           {/* Counter 1 */}
           <div className="flex-1 flex items-center justify-center lg:justify-start gap-3">
             <div className="font-bold text-3xl lg:text-5xl text-white flex items-center">
@@ -32,7 +32,7 @@ const PersonalInfo = () => {
           {/* Counter 2 */}
           <div className="flex-1 flex items-center justify-center gap-3">
             <div className="font-bold text-3xl lg:text-5xl text-white flex items-center">
-              <Counter from={0} to={10} />
+              <Counter from={0} to={11} />
             </div>
             <div>
               <h4 className="text-sm lg:text-base text-white">
@@ -45,7 +45,7 @@ const PersonalInfo = () => {
         {/* ========================================================
          *                      Right Section
          ======================================================== */}
-        <div className="w-full lg:w-5/12 lg:min-h-[120px] bg-sky-600 px-14 py-4 rounded-3xl border border-gray-600/[0.5] shadow-md flex items-center justify-center">
+        <div className="w-full lg:w-5/12 lg:min-h-[120px] bg-[#B73ACA] px-14 py-4 rounded-3xl border border-gray-600/[0.5] shadow-md flex items-center justify-center">
           <ul className="flex items-center justify-center gap-6">
             <SocialIconLink
               href="https://www.linkedin.com/in/mohosinh99/"

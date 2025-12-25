@@ -1,5 +1,5 @@
-import Banner from "@/components/Banner";
 import HeroSection from "@/components/HeroSection";
+import Banner from "@/components/Banner";
 import Services from "@/components/Services";
 
 const Home = () => {

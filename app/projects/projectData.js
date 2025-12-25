@@ -10,26 +10,6 @@ export const projectsData = [
     caseStudyUrl: "/case-study/resume-builder",
   },
   {
-    image: "./img/mockai.png",
-    name: "MockAI - AI-Powered Interview Platform",
-    description:
-      "MockAI is a Next.js web app for realistic AI-driven mock interviews with personalized feedback and smart question suggestions. Powered by VAPI, Firebase, and Google Gemini AI, it offers secure authentication, real-time AI interaction, and a modern platform to practice and enhance mock interview skills.",
-    liveUrl: "https://mock-zone-ai-mock-interview-app-ful.vercel.app/",
-    sourceUrl:
-      "https://github.com/Mohosin999/MockAI-Interview-Platform-FullStack-Next.js",
-    caseStudyUrl: "/case-study/mock-ai-interview-platform",
-  },
-  // {
-  //   image: "./img/smartgpt.png",
-  //   name: "SmartGPT - AI Chatbot",
-  //   description:
-  //     "AI Resume Builder is a Next.js full-stack app for creating professional resumes with polished formats and smart layouts. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can quickly build, customize, and download resumes as job-ready PDFs.",
-  //   liveUrl: "https://smart-gpt-app-client.vercel.app/",
-  //   sourceUrl:
-  //     "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
-  //   caseStudyUrl: "/case-study/smartgpt",
-  // },
-  {
     image: "./img/clean-youtube.png",
     name: "Clean YouTube",
     description:
@@ -38,13 +18,13 @@ export const projectsData = [
     sourceUrl: "https://github.com/Mohosin999/Clean-YouTube-Application",
     caseStudyUrl: "/case-study/clean-youtube",
   },
-  // {
-  //   image: "./img/live-cricket.png",
-  //   name: "Live Cricket Score",
-  //   description:
-  //     "Live Cricket Score App is a Next.js application powered by the Cricbuzz API, offering real-time cricket updates with a clean and responsive UI. It keeps users engaged with live scores, recent results, upcoming fixtures, and cricket articles. A detailed scorecard section provides in-depth match insights for a complete experience.",
-  //   liveUrl: "https://cricket-live-application-z7ba.vercel.app/",
-  //   sourceUrl: "https://github.com/Mohosin999/Live-Cricket-Score-App-Next.js",
-  //   caseStudyUrl: "/case-study/live-cricket",
-  // },
+  {
+    image: "./img/live-cricket.png",
+    name: "Live Cricket Score",
+    description:
+      "Live Cricket Score App is a Next.js application powered by the Cricbuzz API, offering real-time cricket updates with a clean and responsive UI. It keeps users engaged with live scores, recent results, upcoming fixtures, and cricket articles. A detailed scorecard section provides in-depth match insights for a complete experience.",
+    liveUrl: "https://cricket-live-application-z7ba.vercel.app/",
+    sourceUrl: "https://github.com/Mohosin999/Live-Cricket-Score-App-Next.js",
+    caseStudyUrl: "/case-study/live-cricket",
+  },
 ];
