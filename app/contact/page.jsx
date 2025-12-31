@@ -7,7 +7,7 @@ const Contact = () => {
         {/* Left Side - Heading & Text */}
         <div className="w-full lg:w-1/2 flex flex-col gap-5 text-center lg:text-left">
           <h3 className="font-bold text-2xl lg:text-3xl">Get in Touch</h3>
-          <p className="text-base text-left md:text-center lg:text-left text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-base text-left md:text-center lg:text-left text leading-relaxed">
             I’d love to hear from you! Whether you have a question, project
             idea, or just want to say hello, feel free to reach out. Fill out
             the form and click the send button. This will send your message to

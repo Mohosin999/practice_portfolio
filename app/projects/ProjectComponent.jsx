@@ -23,7 +23,7 @@ const ProjectComponent = () => {
           {projectsData.length > 0 && (
             <div
               className="w-full bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)]
-              p-5 rounded-xl flex flex-col gap-4"
+              p-6 lg:p-8 rounded-xl flex flex-col gap-4"
             >
               {/* Image */}
               <div className="w-full md:h-[235px] xl:h-[300px] rounded-xl overflow-hidden group">
@@ -42,7 +42,7 @@ const ProjectComponent = () => {
               </h3>
 
               {/* Description */}
-              <p className="text-gray-700 dark:text-gray-300 text-sm lg:text-base">
+              <p className="text text-sm lg:text-base">
                 {projectsData[0].description}
               </p>
 
@@ -83,7 +83,7 @@ const ProjectComponent = () => {
             <motion.div
               key={index}
               {...fadeInVisiable}
-              className="bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] p-4 rounded-xl flex flex-col gap-3"
+              className="bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] p-6 lg:p-8 rounded-xl flex flex-col gap-3"
             >
               {/* Image */}
               <div className="w-full rounded-xl overflow-hidden group">
@@ -100,7 +100,7 @@ const ProjectComponent = () => {
               <h3 className="font-bold text-lg">{project.name}</h3>
 
               {/* Description (shortened) */}
-              <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
+              <p className="text text-sm">
                 {project.description}
               </p>
 

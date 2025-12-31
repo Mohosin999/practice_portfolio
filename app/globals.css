@@ -54,17 +54,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #007A3F; /* Thumb color, matches your yellow button */
+  background-color: #007a3f; /* Thumb color, matches your yellow button */
   border-radius: 6px; /* Rounded corners */
   border: 3px solid var(--background); /* Space around thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #007A3F; /* Slightly darker on hover */
+  background-color: #007a3f; /* Slightly darker on hover */
 }
 
 /* Scrollbar for Firefox */
 * {
   scrollbar-width: thin; /* "auto", "thin", "none" */
-  scrollbar-color: #007A3F var(--background); /* thumb track */
+  scrollbar-color: #007a3f var(--background); /* thumb track */
+}
+
+.text {
+  @apply text-gray-800 dark:text-gray-300;
 }

@@ -33,7 +33,7 @@ const HeroSection = () => {
         {/* Left side hero text (on mobile it comes below the image) */}
         <div className="w-full lg:w-7/12 text-center lg:text-left">
           <div className="text_container">
-            <h5 className="text-gray-700 dark:text-gray-300 text-sm lg:text-base mb-2">
+            <h5 className="text text-sm lg:text-base mb-2">
               Hey, this is me
             </h5>
 
@@ -59,12 +59,8 @@ const HeroSection = () => {
             </h2>
 
             {/* Paragraph */}
-            <p className="text-left md:text-center lg:text-left py-4 text-base xl:text-lg text-gray-700 dark:text-gray-300">
-              I use React and Next.js on the front-end to build a
-              high-performance and scalable applications. I have deep
-              understanding of building RESTful APIs using Node.js and Express.
-              As a frontend developer, my power is writting clean, reusable and
-              maintainable code and use AI to optimize user experience.
+            <p className="text-left md:text-center lg:text-left py-4 text-base xl:text-lg text">
+              Developing user-friendly web apps with high-performance and maintainable code using React, Next.js, and TypeScript. I have good knowledge of building RESTful APIs using Node.js and Express. I am deeply exploring the world of AI-powered web apps to enhance user experience.
             </p>
 
             {/* Download resume button */}
