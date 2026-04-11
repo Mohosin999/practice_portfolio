@@ -4,7 +4,16 @@ import useTheme from "@/hook/useTheme";
 import { BsLightbulb, BsLightbulbOff } from "react-icons/bs";
 
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, mounted } = useTheme();
+
+  // Prevent hydration mismatch by not rendering until mounted
+  if (!mounted) {
+    return (
+      <div className="p-2">
+        <BsLightbulbOff className="w-5 h-5 text-gray-400" />
+      </div>
+    );
+  }
 
   return (
     <button onClick={toggleTheme} className="relative group p-2">

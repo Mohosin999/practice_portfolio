@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 
 const useTheme = () => {
   const [theme, setTheme] = useState("light");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     // Check stored theme or system preference
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme) {
@@ -26,7 +28,8 @@ const useTheme = () => {
     document.documentElement.classList.toggle("dark", newTheme === "dark");
   };
 
-  return { theme, toggleTheme };
+  // Return mounted state along with theme to prevent hydration mismatch
+  return { theme, toggleTheme, mounted };
 };
 
 export default useTheme;
