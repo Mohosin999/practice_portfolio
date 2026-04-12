@@ -67,7 +67,7 @@
 
 //             <div className="space-y-6">
 //               {educationList.map((edu, index) => (
-//                 <div key={index} className="relative pl-12">
+//                 <div key={index} className="relative pl-10 md:pl-12">
 //                   {/* Timeline dot */}
 //                   <div className="absolute left-2.5 top-2 w-3 h-3 bg-[#32961C] rounded-full border-4 border-white dark:border-gray-800 shadow-md"></div>
 
@@ -167,11 +167,11 @@ const coursesList = [
     platform: "Frontend Masters",
     year: "2023",
   },
-  {
-    title: "React - The Complete Guide",
-    platform: "Udemy (Maximilian Schwarzmüller)",
-    year: "2022",
-  },
+  // {
+  //   title: "React - The Complete Guide",
+  //   platform: "Udemy (Maximilian Schwarzmüller)",
+  //   year: "2022",
+  // },
 ];
 
 const CertificationsAndCourses = () => {
@@ -180,8 +180,9 @@ const CertificationsAndCourses = () => {
       {...fadeInUp}
       className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Education Card */}
+      {/* items-start added here - this is the key fix */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+        {/* Education Card - removed any h-full */}
         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
           <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaGraduationCap className="text-[#32961C]" />
@@ -189,13 +190,13 @@ const CertificationsAndCourses = () => {
           </h3>
 
           <div className="relative">
-            <div className="absolute md:left-4 top-0 bottom-0 w-0.5 bg-[#32961C]"></div>
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#32961C]"></div>
 
             <div className="space-y-6">
               {educationList.map((edu, index) => (
                 <div key={index} className="relative pl-10 md:pl-12">
                   {/* Timeline dot */}
-                  <div className="absolute left-2.5 top-2 w-3 h-3 bg-[#32961C] rounded-full border-4 border-white dark:border-gray-800 shadow-md"></div>
+                  <div className="absolute left-2.5 top-2 w-4 h-4 bg-[#32961C] rounded-full border-4 border-white dark:border-gray-800 shadow-md"></div>
 
                   {/* Content Card */}
                   <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-[#32961C] hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-[#32961C]/5 to-transparent">
@@ -219,7 +220,7 @@ const CertificationsAndCourses = () => {
           </div>
         </div>
 
-        {/* Recent Courses Card */}
+        {/* Recent Courses Card - removed any h-full */}
         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
           <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaBookOpen className="text-[#32961C]" />

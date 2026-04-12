@@ -133,7 +133,7 @@ const experiences = [
     location: "Remote",
     type: "Full-time",
     achievements: [
-      "Led the development of AI-powered dashboard features serving 10,000+ users",
+      "Led the development of AI-powered dashboard features serving 10,000+ users. Led the development of AI-powered dashboard features serving 10,000+ users",
       "Improved application performance by 40% through code optimization and lazy loading",
       "Mentored 3 junior developers and conducted code reviews",
       "Implemented comprehensive testing strategy achieving 85% code coverage",
@@ -155,13 +155,13 @@ const WorkExperience = () => {
 
         <div className="relative">
           {/* Timeline vertical line */}
-          <div className="absolute md:left-4 lg:left-6 top-0 bottom-0 w-0.5 bg-[#32961C]"></div>
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-[#32961C]"></div>
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <div key={index} className="relative pl-10 md:pl-12 lg:pl-16">
+              <div key={index} className="relative pl-10 md:pl-12">
                 {/* Timeline dot */}
-                <div className="absolute left-2.5 lg:left-4.5 top-2 w-3 h-3 bg-[#32961C] rounded-full border-4 border-white dark:border-gray-800 shadow-md"></div>
+                <div className="absolute left-2.5 top-2 w-4 h-4 bg-[#32961C] rounded-full border-4 border-white dark:border-gray-800 shadow-md"></div>
 
                 {/* Header */}
                 <div className="mb-3">
@@ -194,12 +194,12 @@ const WorkExperience = () => {
                   {exp.achievements.map((achievement, i) => (
                     <li
                       key={i}
-                      className="text-sm text-gray-700 dark:text-gray-300 flex items-end gap-2 justify-start"
+                      className="text-sm text-gray-700 dark:text-gray-300 flex gap-2"
                     >
-                      <span className="text-[#32961C] mt-1.5 flex-shrink-0">
+                      <span className="text-base text-[#32961C] leading-5 flex-shrink-0">
                         •
                       </span>
-                      <span>{achievement}</span>
+                      <span className="leading-5">{achievement}</span>
                     </li>
                   ))}
                 </ul>

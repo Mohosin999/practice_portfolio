@@ -11,7 +11,7 @@ const ProfessionalSummary = () => {
     >
       <div className="rounded-xl p-6 lg:p-8 bg-gradient-to-r from-[#32961C] to-[#267a15] shadow-lg">
         {/* Availability Status Badge */}
-        <div className="flex items-center justify-center lg:justify-start mb-4">
+        <div className="flex items-center justify-center md:justify-start mb-4">
           <span className="relative flex h-3 w-3 mr-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
@@ -23,8 +23,8 @@ const ProfessionalSummary = () => {
         </div>
 
         {/* Professional Tagline */}
-        <h2 className="text-2xl lg:text-4xl font-bold text-white text-center lg:text-left mb-4">
-          Full Stack Developer
+        <h2 className="text-3xl lg:text-4xl font-bold text-white text-center md:text-left mb-4">
+          Details About Me
         </h2>
 
         {/* Career Objectives */}
@@ -35,8 +35,8 @@ const ProfessionalSummary = () => {
           with forward-thinking teams globally.
         </p> */}
 
-        <div className="text-white space-y-4 text-sm lg:text-base ">
-          <p className="text-center lg:text-left leading-relaxed">
+        <div className="text-white space-y-4 text-base text-left leading-relaxed">
+          <p>
             With over 4 years of experience in front-end development, I'm an
             expert at creating high-performance, scalable web applications that
             maximize user experience. My skills are JavaScript, TypeScript,
@@ -44,14 +44,14 @@ const ProfessionalSummary = () => {
             RESTful APIs using Node.js and Express.
           </p>
 
-          <p className="text-center lg:text-left leading-relaxed">
+          <p>
             Recently, I've been building websites with AI-powered features
             integrated directly into the workflow. This approach ensures that
             the solutions I deliver stay modern, efficient, and ahead of the
             curve.
           </p>
 
-          <p className="text-center lg:text-left leading-relaxed">
+          <p>
             Recently, I've been building websites with AI-powered features
             integrated directly into the workflow. This approach ensures that
             the solutions I deliver stay modern, efficient, and ahead of the
