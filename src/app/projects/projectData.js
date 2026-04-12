@@ -10,6 +10,11 @@ export const projectsData = [
     sourceUrl:
       "https://github.com/Mohosin999/FullStack-AI-Powered-Resume-Builder-App-Next.js",
     caseStudyUrl: "/case-study/resume-builder",
+    technologies: [
+      { name: "React", logo: "/logos/react.svg" },
+      { name: "Next.js", logo: "/logos/react.svg" },
+      { name: "Tailwind", logo: "/logos/react.svg" },
+    ],
   },
   {
     image: "./img/clean-youtube.png",
@@ -20,6 +25,11 @@ export const projectsData = [
     liveUrl: "https://clean-youtube-application.onrender.com/",
     sourceUrl: "https://github.com/Mohosin999/Clean-YouTube-Application",
     caseStudyUrl: "/case-study/clean-youtube",
+    technologies: [
+      { name: "React", logo: "/logos/react.svg" },
+      { name: "Next.js", logo: "/logos/nextjs.svg" },
+      { name: "Tailwind", logo: "/logos/tailwind.svg" },
+    ],
   },
   {
     image: "./img/live-cricket.png",
@@ -30,5 +40,10 @@ export const projectsData = [
     liveUrl: "https://cricket-live-application-z7ba.vercel.app/",
     sourceUrl: "https://github.com/Mohosin999/Live-Cricket-Score-App-Next.js",
     caseStudyUrl: "/case-study/live-cricket",
+    technologies: [
+      { name: "React", logo: "/logos/react.svg" },
+      { name: "Next.js", logo: "/logos/nextjs.svg" },
+      { name: "Tailwind", logo: "/logos/tailwind.svg" },
+    ],
   },
 ];
