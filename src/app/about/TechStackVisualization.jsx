@@ -34,19 +34,25 @@ const skillCategories = [
       { name: "jQuery", icon: <DiJqueryLogo /> },
     ],
   },
-  {
-    name: "Styling & UI",
-    skills: [
-      { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
-      { name: "Styled Components", icon: <SiStyledcomponents /> },
-      { name: "shadcn/ui", icon: <SiShadcnui /> },
-      { name: "Redux Toolkit", icon: <SiRedux /> },
-      { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
-    ],
-  },
+  // {
+  //   name: "Styling & UI",
+  //   skills: [
+  //     { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+  //     { name: "Styled Components", icon: <SiStyledcomponents /> },
+  //     { name: "shadcn/ui", icon: <SiShadcnui /> },
+  //     { name: "Redux Toolkit", icon: <SiRedux /> },
+  //     { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
+  //   ],
+  // },
   {
     name: "Backend & Database",
     skills: [
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Mongoose", icon: <SiMongoose /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "MSSQL", icon: <DiMysql /> },
       { name: "Node.js", icon: <FaNodeJs /> },
       { name: "Express.js", icon: <SiExpress /> },
       { name: "MongoDB", icon: <SiMongodb /> },
@@ -78,7 +84,7 @@ const TechStackVisualization = () => {
           Tech Stack
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {skillCategories.map((category, catIndex) => (
             <div key={catIndex}>
               <h4 className="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300 border-b-2 border-[#32961C]/30 pb-2">

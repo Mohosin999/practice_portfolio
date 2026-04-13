@@ -74,7 +74,7 @@ const HeroSection = () => {
                 aria-label="Download Resume"
                 className="flex w-fit mx-auto lg:mx-0"
               >
-                <button className="flex items-center justify-center gap-3 text-sm lg:text-base text-white px-5 py-2 my-3 bg-[#32961C] border-2 border-[#32961C] transition-all ease-in-out duration-200 hover:bg-transparent hover:text-[#32961C]">
+                <button className="flex items-center justify-center gap-3 text-sm lg:text-base text-white px-5 py-2 my-3 bg-[#32961C] border-2 border-[#32961C] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30">
                   <FaDownload /> Download Resume
                 </button>
               </a>
@@ -86,7 +86,7 @@ const HeroSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn Profile"
-                  className="flex items-center justify-center w-12 h-12 text-[#32961C] border-2 border-[#32961C] rounded-full transition-all ease-in-out duration-200 hover:bg-[#32961C] hover:text-white"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const HeroSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Profile"
-                  className="flex items-center justify-center w-12 h-12 text-[#32961C] border-2 border-[#32961C] rounded-full transition-all ease-in-out duration-200 hover:bg-[#32961C] hover:text-white"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

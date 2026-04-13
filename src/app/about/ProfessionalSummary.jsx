@@ -27,35 +27,30 @@ const ProfessionalSummary = () => {
           Details About Me
         </h2>
 
-        {/* Career Objectives */}
-        {/* <p className="text-white/90 text-base lg:text-lg text-center lg:text-left max-w-4xl leading-relaxed">
-          Passionate about building scalable SaaS products and delivering
-          innovative solutions that bridge the gap between cutting-edge AI
-          technology and exceptional user experiences. Seeking to collaborate
-          with forward-thinking teams globally.
-        </p> */}
-
         <div className="text-white space-y-4 text-base text-left leading-relaxed">
           <p>
-            With over 4 years of experience in front-end development, I'm an
-            expert at creating high-performance, scalable web applications that
-            maximize user experience. My skills are JavaScript, TypeScript,
-            React, and Next.js, and I have a deep understanding of building
-            RESTful APIs using Node.js and Express.
+            With over 2 years of hands-on experience in MERN stack development,
+            I focus on building high-performance and scalable web applications
+            that maximize user experience. My skills are JavaScript, TypeScript,
+            React, Node.js, and MongoDB, and I am currently exploring advanced
+            concepts, including system design and agentic workflows. My skill
+            set enables me to manage complex tasks and deliver effective
+            solutions.
           </p>
 
           <p>
-            Recently, I've been building websites with AI-powered features
-            integrated directly into the workflow. This approach ensures that
-            the solutions I deliver stay modern, efficient, and ahead of the
-            curve.
+            On the frontend, I work with React, Next.js, Redux-Toolkit and
+            Zustand with concentration on designing responsible and
+            user-friendly interfaces. On the backend, I work with Node.js,
+            Express.js, and MongoDB with concentration on robust and scalable
+            server-side applications.​
           </p>
 
           <p>
-            Recently, I've been building websites with AI-powered features
-            integrated directly into the workflow. This approach ensures that
-            the solutions I deliver stay modern, efficient, and ahead of the
-            curve.
+            Committed to continuous learning and professional growth,
+            consistently improving my technical skills, staying updated with
+            modern technologies, and expanding my expertise to adapt to evolving
+            industry trends and deliver high-quality software solutions.
           </p>
         </div>
       </div>

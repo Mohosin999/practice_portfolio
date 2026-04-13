@@ -70,7 +70,3 @@ body {
   scrollbar-width: thin; /* "auto", "thin", "none" */
   scrollbar-color: #32961c var(--background); /* thumb track */
 }
-
-.text {
-  @apply text-gray-800 dark:text-gray-300;
-}

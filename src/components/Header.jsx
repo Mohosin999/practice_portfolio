@@ -50,7 +50,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact">
-                <button className="text-sm lg:text-base bg-[#32961C] font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
+                <button className="text-sm lg:text-base text-white px-6 py-2 bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30 font-semibold whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>
@@ -104,7 +104,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact" onClick={() => setIsSidebarOpen(false)}>
-                <button className="text-sm lg:text-base bg-[#32961C] font-semibold text-white px-6 py-2 rounded-2xl hover:opacity-85 transition-all ease-out duration-200 whitespace-nowrap active:scale-105">
+                <button className="text-sm lg:text-base text-white px-6 py-2 bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30 font-semibold whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>

@@ -9,14 +9,10 @@ import {
   SiNodedotjs,
   SiExpress,
   SiMongodb,
-  SiPostgresql,
-  SiPrisma,
+  // SiPostgresql,
+  // SiPrisma,
 } from "react-icons/si";
-import {
-  RiTailwindCssFill,
-  RiGithubFill,
-  RiLinkedinFill,
-} from "react-icons/ri";
+import { RiGithubFill, RiLinkedinFill } from "react-icons/ri";
 import HeroSection from "@/components/HeroSection";
 import {
   fadeInUp,
@@ -34,11 +30,6 @@ const HomePage = () => {
       color: "text-gray-700 dark:text-gray-200",
     },
     { icon: <SiTypescript />, name: "TypeScript", color: "text-blue-600" },
-    {
-      icon: <RiTailwindCssFill />,
-      name: "Tailwind CSS",
-      color: "text-cyan-500",
-    },
     { icon: <SiNodedotjs />, name: "Node.js", color: "text-green-600" },
     {
       icon: <SiExpress />,
@@ -46,8 +37,8 @@ const HomePage = () => {
       color: "text-gray-600 dark:text-gray-300",
     },
     { icon: <SiMongodb />, name: "MongoDB", color: "text-green-500" },
-    { icon: <SiPostgresql />, name: "PostgreSQL", color: "text-blue-700" },
-    { icon: <SiPrisma />, name: "Prisma", color: "text-indigo-600" },
+    // { icon: <SiPostgresql />, name: "PostgreSQL", color: "text-blue-700" },
+    // { icon: <SiPrisma />, name: "Prisma", color: "text-indigo-600" },
   ];
 
   const features = [
@@ -55,13 +46,13 @@ const HomePage = () => {
       icon: <FaCode className="text-4xl text-[#32961C]" />,
       title: "Frontend Development",
       description:
-        "Building responsive, interactive UIs with React, Next.js, and modern CSS frameworks.",
+        "Building responsive, interactive UIs with React, Next.js, and Tailwind CSS.",
     },
     {
       icon: <FaRocket className="text-4xl text-[#32961C]" />,
       title: "Backend Development",
       description:
-        "Creating scalable RESTful APIs with Node.js, Express, and database management.",
+        "Creating scalable RESTful APIs with Node.js, Express, and MongoDB.",
     },
     {
       icon: <FaLaptopCode className="text-4xl text-[#32961C]" />,
@@ -80,17 +71,14 @@ const HomePage = () => {
 
       {/* ========================================================
        *                      Tech Stack Marquee
-      ======================================================== */}
-      <section className="w-full pt-16">
+       ======================================================== */}
+      <section className="w-full pt-8">
         <div className="w-[87%] mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl lg:text-3xl font-bold">
-              {/* Major Technologies I Work With */}
-              Core Technologies I Use
-            </h2>
+            <h2 className="text-2xl lg:text-3xl font-bold">Core Stack</h2>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-12 xl:gap-16">
             {techStack.map((tech, index) => (
               <div
                 key={index}
@@ -124,11 +112,11 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 lg:p-8 shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
                 {...fadeInUp}
               >
                 <div className="mb-4">{feature.icon}</div>
@@ -193,11 +181,9 @@ const HomePage = () => {
                 className="text-4xl lg:text-5xl font-bold mb-2"
                 {...counterAnimation}
               >
-                100%
+                24/7
               </motion.h3>
-              <p className="text-white/80 text-sm lg:text-base">
-                Client Satisfaction
-              </p>
+              <p className="text-white/80 text-sm lg:text-base">Support</p>
             </motion.div>
           </motion.div>
         </div>
@@ -206,7 +192,7 @@ const HomePage = () => {
       {/* ========================================================
        *                      Call to Action
       ======================================================== */}
-      <section className="w-full py-16">
+      <section className="w-full pt-16">
         <div className="w-[87%] mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
@@ -220,7 +206,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3 bg-[#32961C] text-white font-semibold rounded-full border-2 border-[#32961C] transition-all duration-300 hover:bg-transparent hover:text-[#32961C]"
+                className="inline-flex items-center gap-2 px-8 py-3 text-white font-semibold bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
               >
                 <FaEnvelope /> Get In Touch
               </a>
@@ -231,7 +217,7 @@ const HomePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="flex items-center justify-center w-12 h-12 text-[#32961C] border-2 border-[#32961C] rounded-full transition-all duration-300 hover:bg-[#32961C] hover:text-white"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
                 >
                   <RiGithubFill className="text-xl" />
                 </a>
@@ -240,7 +226,7 @@ const HomePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="flex items-center justify-center w-12 h-12 text-[#32961C] border-2 border-[#32961C] rounded-full transition-all duration-300 hover:bg-[#32961C] hover:text-white"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
                 >
                   <RiLinkedinFill className="text-xl" />
                 </a>
