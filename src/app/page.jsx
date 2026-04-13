@@ -1,13 +1,7 @@
-import HeroSection from "@/components/HeroSection";
-import Services from "@/components/Services";
+import HomePage from "@/components/HomePage";
 
 const Home = () => {
-  return (
-    <div>
-      <HeroSection />
-      <Services />
-    </div>
-  );
+  return <HomePage />;
 };
 
 export default Home;

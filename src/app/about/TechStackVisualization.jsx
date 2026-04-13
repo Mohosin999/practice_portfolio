@@ -1,14 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/utils/animation";
-import {
-  FaJs,
-  FaReact,
-  FaNodeJs,
-  FaDocker,
-  FaAws,
-} from "react-icons/fa";
+import { fadeInVisiable } from "@/utils/animation";
+import { FaJs, FaReact, FaNodeJs, FaDocker, FaAws } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiRedux,
@@ -76,7 +70,7 @@ const skillCategories = [
 const TechStackVisualization = () => {
   return (
     <motion.div
-      {...fadeInUp}
+      {...fadeInVisiable}
       className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10"
     >
       <div className="rounded-xl p-6 lg:p-8 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
