@@ -25,13 +25,22 @@ import { DiJqueryLogo, DiMysql } from "react-icons/di";
 
 const skillCategories = [
   {
-    name: "Frontend Core",
+    name: "Frontend",
     skills: [
       { name: "JavaScript", icon: <FaJs /> },
       { name: "TypeScript", icon: <SiTypescript /> },
       { name: "React", icon: <FaReact /> },
       { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "jQuery", icon: <DiJqueryLogo /> },
+      { name: "Redux Toolkit", icon: <SiRedux /> },
+      { name: "Zustand", icon: <SiRedux /> },
+      { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+      { name: "Node.js", icon: <FaNodeJs /> },
+      { name: "Express.js", icon: <SiExpress /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "Jest", icon: <SiJest /> },
+      { name: "React Testing Library", icon: <SiTestinglibrary /> },
+      { name: "Git", icon: <SiGit /> },
+      { name: "Docker", icon: <FaDocker /> },
     ],
   },
   // {
@@ -44,33 +53,27 @@ const skillCategories = [
   //     { name: "Framer Motion", icon: <TbBrandFramerMotion /> },
   //   ],
   // },
-  {
-    name: "Backend & Database",
-    skills: [
-      { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Express.js", icon: <SiExpress /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "Mongoose", icon: <SiMongoose /> },
-      { name: "PostgreSQL", icon: <SiPostgresql /> },
-      { name: "MSSQL", icon: <DiMysql /> },
-      { name: "Node.js", icon: <FaNodeJs /> },
-      { name: "Express.js", icon: <SiExpress /> },
-      { name: "MongoDB", icon: <SiMongodb /> },
-      { name: "Mongoose", icon: <SiMongoose /> },
-      { name: "PostgreSQL", icon: <SiPostgresql /> },
-      { name: "MSSQL", icon: <DiMysql /> },
-    ],
-  },
-  {
-    name: "Testing & DevOps",
-    skills: [
-      { name: "Jest", icon: <SiJest /> },
-      { name: "React Testing Library", icon: <SiTestinglibrary /> },
-      { name: "Git", icon: <SiGit /> },
-      { name: "Docker", icon: <FaDocker /> },
-      { name: "AWS", icon: <FaAws /> },
-    ],
-  },
+  // {
+  //   name: "Backend & Database",
+  //   skills: [
+  //     { name: "Node.js", icon: <FaNodeJs /> },
+  //     { name: "Express.js", icon: <SiExpress /> },
+  //     { name: "MongoDB", icon: <SiMongodb /> },
+  //     { name: "Mongoose", icon: <SiMongoose /> },
+  //     { name: "PostgreSQL", icon: <SiPostgresql /> },
+  //     { name: "MSSQL", icon: <DiMysql /> },
+  //   ],
+  // },
+  // {
+  //   name: "Testing & DevOps",
+  //   skills: [
+  //     { name: "Jest", icon: <SiJest /> },
+  //     { name: "React Testing Library", icon: <SiTestinglibrary /> },
+  //     { name: "Git", icon: <SiGit /> },
+  //     { name: "Docker", icon: <FaDocker /> },
+  //     { name: "AWS", icon: <FaAws /> },
+  //   ],
+  // },
 ];
 
 const TechStackVisualization = () => {
@@ -87,9 +90,9 @@ const TechStackVisualization = () => {
         <div className="grid grid-cols-1 gap-8">
           {skillCategories.map((category, catIndex) => (
             <div key={catIndex}>
-              <h4 className="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300 border-b-2 border-[#32961C]/30 pb-2">
+              {/* <h4 className="text-lg font-semibold mb-4 text-gray-700 dark:text-gray-300 border-b-2 border-[#32961C]/30 pb-2">
                 {category.name}
-              </h4>
+              </h4> */}
               <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div

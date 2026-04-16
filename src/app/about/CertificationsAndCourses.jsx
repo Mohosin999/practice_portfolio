@@ -153,20 +153,20 @@ const educationList = [
 
 const coursesList = [
   {
-    title: "Advanced TypeScript Patterns",
-    platform: "Pluralsight",
-    year: "2024",
+    title: "Full Stack Army - Advanced Frontend",
+    platform: "Stack Learner (YouTube)",
+    year: "2022 to 2023",
   },
   {
-    title: "AI-Powered Development with OpenAI API",
-    platform: "Udemy",
-    year: "2024",
+    title: "Full Stack Army - Advanced Backend",
+    platform: "Stack Learner (YouTube)",
+    year: "2023 to 2024",
   },
-  {
-    title: "Testing JavaScript with Jest & RTL",
-    platform: "Frontend Masters",
-    year: "2023",
-  },
+  // {
+  //   title: "Testing JavaScript with Jest & RTL",
+  //   platform: "Frontend Masters",
+  //   year: "2023",
+  // },
   // {
   //   title: "React - The Complete Guide",
   //   platform: "Udemy (Maximilian Schwarzmüller)",
@@ -184,7 +184,7 @@ const CertificationsAndCourses = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
         {/* Education Card - removed any h-full */}
         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
-          <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
+          <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaGraduationCap className="text-[#32961C]" />
             Education
           </h3>
@@ -222,7 +222,7 @@ const CertificationsAndCourses = () => {
 
         {/* Recent Courses Card - removed any h-full */}
         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
-          <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
+          <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaBookOpen className="text-[#32961C]" />
             Major Courses
           </h3>

@@ -12,23 +12,25 @@ import {
 const timelineEvents = [
   {
     year: "2021",
-    title: "Started Professional Journey",
+    title: "Started Learning HTML",
     description:
-      "Began working as Junior Frontend Developer at StartupHub Incubator",
-    type: "work",
+      "Began learning HTML from YouTube as a self learner with full dedication. After HTML, I completed CSS and JavaScript also in this year.",
+    type: "learn",
     icon: <FaBriefcase />,
   },
   {
-    year: "2021",
-    title: "Completed BSc in Chemistry",
-    description: "National University of Bangladesh",
-    type: "education",
+    year: "2022",
+    title: "Started the Course - Full Stack Army",
+    description:
+      "On february 2022, I started the paid course for free on YouTube (Stack Learner). I learned the frontend for 1.3 years and the backend over 1 year.",
+    type: "course",
     icon: <FaGraduationCap />,
   },
   {
-    year: "2022",
-    title: "First Major Project Success",
-    description: "Led development of 8+ client projects at DigitalCraft Agency",
+    year: "2025",
+    title: "Completed the Course - Full Stack Army",
+    description:
+      "After a long journey by self learning with full dedication, I successfully completed the course and learned all advanced concept in depth.",
     type: "achievement",
     icon: <FaTrophy />,
   },
@@ -74,9 +76,9 @@ const timelineEvents = [
 
 const getIconColor = (type) => {
   switch (type) {
-    case "work":
+    case "learn":
       return "text-blue-600";
-    case "education":
+    case "course":
       return "text-purple-600";
     case "achievement":
       return "text-[#32961C]";
@@ -87,9 +89,9 @@ const getIconColor = (type) => {
 
 const getBgColor = (type) => {
   switch (type) {
-    case "work":
+    case "learn":
       return "bg-blue-100 dark:bg-blue-900/30";
-    case "education":
+    case "course":
       return "bg-purple-100 dark:bg-purple-900/30";
     case "achievement":
       return "bg-[#32961C]/10 dark:bg-[#32961C]/20";
