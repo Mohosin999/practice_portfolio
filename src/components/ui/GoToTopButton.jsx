@@ -33,7 +33,7 @@ const GoToTopButton = () => {
       {visible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center bg-[#32961C] text-white border-2 border-[#32961C] rounded-lg shadow-lg hover:shadow-[#32961C]/30 hover:bg-transparent hover:text-[#32961C] transition-all ease-in-out duration-300"
+          className="btn-gradient fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center text-white border-2 border-transparent rounded-lg shadow-lg hover:shadow-[#5d39e2]/30 hover:bg-transparent hover:text-white transition-all ease-in-out duration-300"
           aria-label="Go to top"
         >
           <MdKeyboardArrowUp size={28} />

@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <motion.div
       {...fadeInVisiable}
-      className="col-span-5 lg:col-span-3 rounded-xl p-4 lg:p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)] order-1 lg:order-2"
+      className="col-span-5 lg:col-span-3 rounded-xl p-4 lg:p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)] order-1 lg:order-2"
     >
       <h2 className="text-xl font-semibold mb-6">Skills</h2>
 

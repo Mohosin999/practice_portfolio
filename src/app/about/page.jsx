@@ -3,6 +3,7 @@ import WorkExperience from "@/app/about/WorkExperience";
 import CertificationsAndCourses from "@/app/about/CertificationsAndCourses";
 import Languages from "@/app/about/Languages";
 import TechStackVisualization from "@/app/about/TechStackVisualization";
+import NewTechStackVisualization from "@/app/about/NewTechStackVisualization";
 import CareerTimeline from "@/app/about/CareerTimeline";
 import ContactCTA from "@/app/about/ContactCTA";
 
@@ -20,9 +21,10 @@ const About = () => {
       <WorkExperience />
 
       {/* ========================================================
-       *               Tech Stack Visualization
-       ======================================================== */}
-      <TechStackVisualization />
+        *               Tech Stack Visualization
+        ======================================================== */}
+      {/* <TechStackVisualization /> */}
+      <NewTechStackVisualization />
 
       {/* ========================================================
        *               Certifications & Courses

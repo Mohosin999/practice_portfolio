@@ -9,7 +9,7 @@ const Education = () => {
   return (
     <motion.div
       {...fadeInUp}
-      className="col-span-5 lg:col-span-2 rounded-xl p-4 lg:p-6 bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] order-2 lg:order-1"
+      className="col-span-5 lg:col-span-2 rounded-xl p-4 lg:p-6 bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] order-2 lg:order-1"
     >
       <h3 className="text-xl font-semibold mb-6">Education</h3>
       <div>

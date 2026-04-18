@@ -116,7 +116,7 @@ const HomePage = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-white dark:bg-gray-800 rounded-xl p-6 lg:p-8 shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+                className="bg-white dark:bg-[#101016] rounded-xl p-6 lg:p-8 shadow-[0_0_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition-shadow duration-300 custom-border"
                 {...fadeInUp}
               >
                 <div className="mb-4">{feature.icon}</div>
@@ -133,7 +133,7 @@ const HomePage = () => {
       {/* ========================================================
        *                      Quick Stats
       ======================================================== */}
-      <section className="w-full py-16 bg-[#32961C] text-white">
+      <section className="w-full py-16 bg-white dark:bg-[#101016] text-white dark:text-gray-200 mx-3 md:mx-6 lg:mx-[6.5%] rounded-xl mt-10">
         <div className="w-[87%] mx-auto">
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
@@ -144,46 +144,50 @@ const HomePage = () => {
           >
             <motion.div className="flex flex-col items-center">
               <motion.h3
-                className="text-4xl lg:text-5xl font-bold mb-2"
+                className="text-4xl lg:text-5xl font-bold mb-2 text-gray-800 dark:text-white"
                 {...counterAnimation}
               >
                 3+
               </motion.h3>
-              <p className="text-white/80 text-sm lg:text-base">
+              <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base">
                 Years Experience
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col items-center">
               <motion.h3
-                className="text-4xl lg:text-5xl font-bold mb-2"
+                className="text-4xl lg:text-5xl font-bold mb-2 text-gray-800 dark:text-white"
                 {...counterAnimation}
               >
                 20+
               </motion.h3>
-              <p className="text-white/80 text-sm lg:text-base">
+              <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base">
                 Projects Completed
               </p>
             </motion.div>
 
             <motion.div className="flex flex-col items-center">
               <motion.h3
-                className="text-4xl lg:text-5xl font-bold mb-2"
+                className="text-4xl lg:text-5xl font-bold mb-2 text-gray-800 dark:text-white"
                 {...counterAnimation}
               >
                 10+
               </motion.h3>
-              <p className="text-white/80 text-sm lg:text-base">Technologies</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base">
+                Technologies
+              </p>
             </motion.div>
 
             <motion.div className="flex flex-col items-center">
               <motion.h3
-                className="text-4xl lg:text-5xl font-bold mb-2"
+                className="text-4xl lg:text-5xl font-bold mb-2 text-gray-800 dark:text-white"
                 {...counterAnimation}
               >
                 24/7
               </motion.h3>
-              <p className="text-white/80 text-sm lg:text-base">Support</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm lg:text-base">
+                Support
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -206,7 +210,7 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-3 text-white font-semibold bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
+                className="btn-gradient inline-flex items-center gap-2 px-8 py-3 text-white font-semibold border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white"
               >
                 <FaEnvelope /> Get In Touch
               </a>

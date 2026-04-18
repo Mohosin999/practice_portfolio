@@ -10,7 +10,7 @@
 }
 
 .dark {
-  --background: #0a0a0a;
+  --background: #0a0a0f;
   --foreground: #ededed;
 }
 
@@ -44,6 +44,21 @@ body {
 
 .button_link {
   @apply text-xs font-semibold lg:text-sm px-3 lg:px-6 py-2 lg:py-2 bg-[#32961C] hover:bg-transparent hover:text-[#32961C] dark:hover:text-white border border-[#32961C] text-white transition-all ease-out duration-200 select-none active:scale-105;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right, #5d39e2, #361bce);
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(93, 57, 226, 0.3);
+}
+
+.custom-border {
+  @apply border border-gray-100 dark:border-gray-800;
 }
 
 /* Scrollbar for Webkit browsers (Chrome, Safari, Edge) */

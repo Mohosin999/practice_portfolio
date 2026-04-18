@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <>
       {/* Header */}
-      <div className="w-full flex items-center justify-center transition-transform duration-300">
+      <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#0A0A0F]/90 dark:bg-opacity-90 backdrop-blur-sm flex items-center justify-center transition-transform duration-300">
         <div className="w-full lg:w-[87%] flex items-center justify-between px-3 md:px-6 lg:px-0 py-6">
           {/* Left side logo */}
           <Link href={"/"}>
@@ -50,7 +50,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact">
-                <button className="text-sm lg:text-base text-white px-6 py-2 bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30 font-semibold whitespace-nowrap active:scale-105">
+                <button className="btn-gradient text-sm lg:text-base text-white px-6 py-2 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white font-semibold whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>
@@ -104,7 +104,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact" onClick={() => setIsSidebarOpen(false)}>
-                <button className="text-sm lg:text-base text-white px-6 py-2 bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30 font-semibold whitespace-nowrap active:scale-105">
+                <button className="btn-gradient text-sm lg:text-base text-white px-6 py-2 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white font-semibold whitespace-nowrap active:scale-105">
                   Hire Me
                 </button>
               </Link>

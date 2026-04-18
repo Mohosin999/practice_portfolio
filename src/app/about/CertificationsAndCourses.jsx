@@ -56,7 +56,7 @@
 //     >
 //       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 //         {/* Education Card */}
-//         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+//         <div className="rounded-xl p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)]">
 //           <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
 //             <FaGraduationCap className="text-[#32961C]" />
 //             Education
@@ -94,7 +94,7 @@
 //         </div>
 
 //         {/* Recent Courses Card */}
-//         <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+//         <div className="rounded-xl p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)]">
 //           <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
 //             <FaBookOpen className="text-[#32961C]" />
 //             Major Courses
@@ -127,7 +127,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/utils/animation";
+import { fadeInUp, fadeInVisiable } from "@/utils/animation";
 import { FaGraduationCap, FaCalendarAlt, FaBookOpen } from "react-icons/fa";
 
 const educationList = [
@@ -176,14 +176,14 @@ const coursesList = [
 
 const CertificationsAndCourses = () => {
   return (
-    <motion.div
-      {...fadeInUp}
-      className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10"
-    >
+    <div className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10">
       {/* items-start added here - this is the key fix */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
         {/* Education Card - removed any h-full */}
-        <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+        <motion.div
+          {...fadeInUp}
+          className="rounded-xl p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)] custom-border"
+        >
           <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaGraduationCap className="text-[#32961C]" />
             Education
@@ -218,10 +218,13 @@ const CertificationsAndCourses = () => {
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Recent Courses Card - removed any h-full */}
-        <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+        <motion.div
+          {...fadeInVisiable}
+          className="rounded-xl p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)] custom-border"
+        >
           <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
             <FaBookOpen className="text-[#32961C]" />
             Major Courses
@@ -243,9 +246,9 @@ const CertificationsAndCourses = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

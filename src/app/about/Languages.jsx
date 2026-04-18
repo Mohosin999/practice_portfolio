@@ -25,7 +25,7 @@ const Languages = () => {
       {...fadeInUp}
       className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10"
     >
-      <div className="rounded-xl p-6 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)]">
+      <div className="rounded-xl p-6 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)] custom-border">
         <h3 className="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center gap-2">
           <FaLanguage className="text-[#32961C]" />
           Languages

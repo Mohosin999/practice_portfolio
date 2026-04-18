@@ -106,7 +106,7 @@ const CareerTimeline = () => {
       {...fadeInUp}
       className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-10"
     >
-      <div className="rounded-xl p-4 md:p-6 lg:p-8 bg-white dark:bg-gray-800 shadow-[0_0_10px_rgba(0,0,0,0.2)] overflow-hidden">
+      <div className="rounded-xl p-4 md:p-6 lg:p-8 bg-white dark:bg-[#101016] shadow-[0_0_10px_rgba(0,0,0,0.2)] overflow-hidden custom-border">
         <h3 className="text-2xl font-bold mb-6 md:mb-8 text-gray-800 dark:text-gray-200">
           Career Journey Timeline
         </h3>

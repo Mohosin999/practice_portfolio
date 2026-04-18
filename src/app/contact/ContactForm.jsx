@@ -21,7 +21,7 @@ const ContactForm = () => {
         form.current,
         {
           publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-        }
+        },
       )
       .then(
         () => {
@@ -33,14 +33,14 @@ const ContactForm = () => {
         (error) => {
           console.log("FAILED...", error.text);
           setIsLoading(false);
-        }
+        },
       );
   };
 
   return (
     <motion.div
       {...fadeInUp}
-      className="w-full px-4 md:px-8 py-8 md:py-14 max-w-md bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl"
+      className="w-full px-4 md:px-8 py-8 md:py-14 max-w-md bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl custom-border"
     >
       <form
         ref={form}
@@ -52,28 +52,28 @@ const ContactForm = () => {
           name="name"
           placeholder="Your Name"
           required
-          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400 rounded-md"
+          className="w-full bg-gray-200 dark:bg-[#101016] p-3 outline-none custom-border rounded-md"
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
           required
-          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400 rounded-md"
+          className="w-full bg-gray-200 dark:bg-[#101016] p-3 outline-none border-b-2 border-gray-400 rounded-md custom-border"
         />
         <textarea
           name="message"
           placeholder="Your Message"
           required
           rows={5}
-          className="w-full bg-gray-200 dark:bg-gray-700 p-3 outline-none border-b-2 border-gray-400 rounded-md resize-none"
+          className="w-full bg-gray-200 dark:bg-[#101016] p-3 outline-none border-b-2 border-gray-400 rounded-md resize-none custom-border"
         ></textarea>
 
         <div className="relative">
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full text-base text-white p-3 bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30 flex justify-center items-center active:scale-105"
+            className="btn-gradient w-full text-base text-white p-3 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white flex justify-center items-center active:scale-105"
           >
             Send
             {isLoading && (

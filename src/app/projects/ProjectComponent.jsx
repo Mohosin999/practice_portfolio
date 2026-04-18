@@ -23,7 +23,7 @@ const ProjectComponent = () => {
         -------------------------------------------------- */}
         <div className="w-full px-3 md:px-6 lg:px-[6.5%]">
           {projectsData.length > 0 && (
-            <div className="w-full bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden">
+            <div className="w-full bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden custom-border">
               {/* Full width image - no gaps with badge */}
               <div className="relative w-full md:h-[235px] xl:h-[300px] overflow-hidden group">
                 <Link href={projectsData[0].liveUrl} target="_blank">
@@ -93,14 +93,14 @@ const ProjectComponent = () => {
                   <Link
                     href={projectsData[0].liveUrl}
                     target="_blank"
-                    className="inline-flex items-center justify-center px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 text-sm lg:text-base"
+                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
                   >
                     Live Link
                   </Link>
                   <Link
                     href={projectsData[0].sourceUrl}
                     target="_blank"
-                    className="inline-flex items-center justify-center px-5 py-2 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200 text-sm lg:text-base"
+                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
                   >
                     Source Code
                   </Link>
@@ -119,7 +119,7 @@ const ProjectComponent = () => {
             <motion.div
               key={index}
               {...fadeInVisiable}
-              className="bg-white dark:bg-gray-800 shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden flex flex-col"
+              className="bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden flex flex-col custom-border"
             >
               {/* Full width image inside card */}
               <div className="w-full overflow-hidden group">
@@ -168,14 +168,14 @@ const ProjectComponent = () => {
                   <Link
                     href={project.liveUrl}
                     target="_blank"
-                    className="inline-flex items-center justify-center px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200 text-sm lg:text-base"
+                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
                   >
                     Live Link
                   </Link>
                   <Link
                     href={project.sourceUrl}
                     target="_blank"
-                    className="inline-flex items-center justify-center px-5 py-2 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-lg transition-colors duration-200 text-sm lg:text-base"
+                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
                   >
                     Source Code
                   </Link>
