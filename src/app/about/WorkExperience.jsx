@@ -6,25 +6,16 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "MERN Stack Developer",
-    company: "Personal Project",
-    period: "Mar 5, 2026 - Apr 11, 2026",
-    location: "Remote",
-    type: "Self-Employed",
+    role: "Full Stack Developer",
+    company: "Freelance",
+    period: "Apr 5, 2025 - Apr 11, 2026",
+    location: "Mymensingh, Bangladesh",
+    type: "Freelance",
     achievements: [
-      "Built an AI-powered resume platform (CVCoach) that helps users optimize resumes for ATS, improving their chances of getting shortlisted for jobs",
-      "Developed AI-driven resume enhancement features using Google Gemini to generate professional summaries, skills, and experience content automatically",
-      "Designed and implemented a full-stack resume builder with real-time preview, multiple ATS-friendly templates, and export options (PDF, DOCX, PNG)",
-      "Integrated secure authentication and Stripe-based credit system enabling users to access premium AI features and personalized resume analysis",
+      "Developed a secure, payment-centric web system, focused on enabling instant transactions through dynamic QR-based payment flows across multiple gateways",
+      "Built a custom Strapi-based admin dashboard for admin-controlled user creation and access management, ensuring no public registration",
     ],
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    tech: ["Next.js", "JavaScript", "Tailwind CSS", "Strapi"],
   },
 ];
 
