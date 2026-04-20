@@ -83,36 +83,36 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-[#1e43e7] border-2 border-[#1e43e7] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#1e43e7]/30"
+              className="flex items-center justify-center w-10 h-10 text-white bg-[#1e43e7] border-2 border-[#1e43e7] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#1e43e7]/30"
             >
-              <RiGithubFill className="text-2xl lg:text-3xl" />
+              <RiGithubFill className="text-xl lg:text-2xl" />
             </a>
             <a
               href="https://www.linkedin.com/in/mohosinh99/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-[#0e6eeb] border-2 border-[#0e6eeb] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#0e6eeb]/30"
+              className="flex items-center justify-center w-10 h-10 text-white bg-[#0e6eeb] border-2 border-[#0e6eeb] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#0e6eeb]/30"
             >
-              <RiLinkedinFill className="text-2xl lg:text-3xl" />
+              <RiLinkedinFill className="text-xl lg:text-2xl" />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://twitter.com/mohosinh99"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-[#030407] border-2 border-[#030407] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#1DA1F2]/30"
+              className="flex items-center justify-center w-10 h-10 text-white bg-[#030407] border-2 border-[#030407] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#1DA1F2]/30"
             >
-              <FaXTwitter className="text-xl lg:text-2xl" />
+              <FaXTwitter className="text-lg lg:text-xl" />
             </a>
             <a
               href="https://wa.me/8801932612133"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white bg-[#25D366] border-2 border-[#25D366] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#25D366]/30"
+              className="flex items-center justify-center w-10 h-10 text-white bg-[#25D366] border-2 border-[#25D366] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#25D366]/30"
             >
-              <FaWhatsapp className="text-2xl lg:text-3xl" />
+              <FaWhatsapp className="text-xl lg:text-2xl" />
             </a>
           </div>
         </section>
