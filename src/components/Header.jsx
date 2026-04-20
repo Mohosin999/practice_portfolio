@@ -50,9 +50,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact">
-                <button className="btn-gradient text-sm lg:text-base text-white px-6 py-2 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white font-semibold whitespace-nowrap active:scale-105">
-                  Hire Me
-                </button>
+                <button className="btn-gradient rounded-lg">Hire Me</button>
               </Link>
             </li>
           </ul>
@@ -104,9 +102,7 @@ const Header = () => {
             {/* Hire Me button */}
             <li>
               <Link href="/contact" onClick={() => setIsSidebarOpen(false)}>
-                <button className="btn-gradient text-sm lg:text-base text-white px-6 py-2 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white font-semibold whitespace-nowrap active:scale-105">
-                  Hire Me
-                </button>
+                <button className="btn-gradient rounded-lg">Hire Me</button>
               </Link>
             </li>
           </ul>

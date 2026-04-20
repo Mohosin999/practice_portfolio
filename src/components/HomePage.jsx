@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaCode, FaRocket, FaLaptopCode, FaEnvelope } from "react-icons/fa";
+import { FaCode, FaRocket, FaLaptopCode, FaDatabase } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiReact,
@@ -49,7 +49,7 @@ const HomePage = () => {
         "Building responsive, interactive UIs with React, Next.js, and Tailwind CSS.",
     },
     {
-      icon: <FaRocket className="text-4xl text-[#32961C]" />,
+      icon: <FaDatabase className="text-4xl text-[#32961C]" />,
       title: "Backend Development",
       description:
         "Creating scalable RESTful APIs with Node.js, Express, and MongoDB.",
@@ -72,7 +72,7 @@ const HomePage = () => {
       {/* ========================================================
        *                      Tech Stack Marquee
        ======================================================== */}
-      <section className="w-full pt-8">
+      <section className="w-full pt-20">
         <div className="w-[87%] mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl lg:text-3xl font-bold">Core Stack</h2>
@@ -102,9 +102,9 @@ const HomePage = () => {
       {/* ========================================================
        *                      Features/What I Do
       ======================================================== */}
-      <section className="w-full py-16">
+      <section className="w-full pt-20">
         <div className="w-[87%] mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2 className="text-2xl lg:text-3xl font-bold mb-4">What I Do</h2>
             <p className="text-base xl:text-lg text max-w-3xl mx-auto">
               I specialize in building modern, scalable web applications with a
@@ -196,7 +196,7 @@ const HomePage = () => {
       {/* ========================================================
        *                      Call to Action
       ======================================================== */}
-      <section className="w-full pt-16">
+      {/* <section className="w-full pt-20">
         <div className="w-[87%] mx-auto text-center">
           <motion.div {...fadeInUp}>
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
@@ -208,10 +208,7 @@ const HomePage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="/contact"
-                className="btn-gradient inline-flex items-center gap-2 px-8 py-3 text-white font-semibold border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white"
-              >
+              <a href="/contact" className="btn-gradient rounded-lg">
                 <FaEnvelope /> Get In Touch
               </a>
 
@@ -221,24 +218,24 @@ const HomePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#1e43e7] border-2 border-[#1e43e7] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#1e43e7]/30"
                 >
-                  <RiGithubFill className="text-xl" />
+                  <RiGithubFill className="text-3xl" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/mohosinh99/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="flex items-center justify-center w-12 h-12 text-white bg-[#32961C] border-2 border-[#32961C] rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#32961C] hover:shadow-lg hover:shadow-[#32961C]/30"
+                  className="flex items-center justify-center w-12 h-12 text-white bg-[#0e6eeb] border-2 border-[#0e6eeb] rounded-full transition-all ease-in-out duration-300 hover:shadow-lg hover:shadow-[#0e6eeb]/30"
                 >
-                  <RiLinkedinFill className="text-xl" />
+                  <RiLinkedinFill className="text-3xl" />
                 </a>
               </div>
             </div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

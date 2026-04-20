@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeInUp } from "@/utils/animation";
+import { fadeInUp, fadeInVisiable } from "@/utils/animation";
 
 const ProfessionalSummary = () => {
   return (
     <motion.div
-      {...fadeInUp}
+      {...fadeInVisiable}
       className="w-full lg:w-[87%] px-3 md:px-6 lg:px-0 pt-8 lg:pt-12"
     >
       {/* <div className="rounded-xl p-6 lg:p-8 bg-gradient-to-r from-[#32961C] to-[#267a15] shadow-lg"> */}
-      <div className="rounded-xl p-6 lg:p-8 bg-gradient-to-r from-[#5d39e2] to-[#361bce] shadow-lg">
+      <div className="rounded-xl p-6 lg:p-8 bg-gradient-to-r from-[#32961C] via-[#267a15] to-[#1d5e0f] shadow-lg">
         {/* Availability Status Badge */}
         <div className="flex items-center justify-center md:justify-start mb-4">
           <span className="relative flex h-3 w-3 mr-2">

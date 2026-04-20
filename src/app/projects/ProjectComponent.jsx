@@ -2,14 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { fadeInVisiable } from "@/utils/animation";
+import { fadeInUp, fadeInVisiable } from "@/utils/animation";
 import { projectsData } from "@/app/projects/projectData";
 
 const ProjectComponent = () => {
   return (
     <div className="w-full h-full pt-6 lg:pt-10">
       {/* Main container for content with side gaps - but image will break out */}
-      <div className="w-full flex flex-col items-center justify-center gap-6">
+      <div className="w-full flex flex-col items-center justify-center gap-8">
         {/* Heading - constrained with side gaps */}
         <div className="w-full px-3 md:px-6 lg:px-[6.5%]">
           <h3 className="font-bold text-center text-2xl lg:text-3xl mb-2">
@@ -23,7 +23,10 @@ const ProjectComponent = () => {
         -------------------------------------------------- */}
         <div className="w-full px-3 md:px-6 lg:px-[6.5%]">
           {projectsData.length > 0 && (
-            <div className="w-full bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden custom-border">
+            <motion.div
+              {...fadeInUp}
+              className="w-full bg-white dark:bg-[#101016] shadow-[0_0_7px_rgba(0,0,0,0.2)] rounded-xl overflow-hidden custom-border"
+            >
               {/* Full width image - no gaps with badge */}
               <div className="relative w-full md:h-[235px] xl:h-[300px] overflow-hidden group">
                 <Link href={projectsData[0].liveUrl} target="_blank">
@@ -53,7 +56,7 @@ const ProjectComponent = () => {
               {/* Content with side gaps */}
               <div className="p-6 lg:p-8 flex flex-col gap-2 md:gap-4 px-3 md:px-6">
                 {/* Title and Technologies */}
-                <div className="flex items-center gap-3 md:gap-3">
+                <div className="flex items-center gap-3 md:gap-3 flex-wrap">
                   <h3 className="font-bold text-xl lg:text-2xl mb-3">
                     {projectsData[0].name}
                   </h3>
@@ -61,24 +64,22 @@ const ProjectComponent = () => {
                   {projectsData[0].technologies &&
                     projectsData[0].technologies.length > 0 && (
                       <div className="flex items-center">
-                        {projectsData[0].technologies
-                          .slice(0, 3)
-                          .map((tech, idx) => (
-                            <div
-                              key={idx}
-                              className="relative w-7 h-7 md:w-8 md:h-8 rounded-full bg-white dark:bg-gray-700 shadow-md border-2 border-gray-200 dark:border-gray-600 overflow-hidden"
-                              style={{
-                                marginLeft: idx !== 0 ? "-8px" : "0",
-                                zIndex: 3 - idx,
-                              }}
-                            >
-                              <img
-                                src={tech.logo}
-                                alt={tech.name}
-                                className="w-full h-full object-cover p-1"
-                              />
-                            </div>
-                          ))}
+                        {projectsData[0].technologies.map((tech, idx) => (
+                          <div
+                            key={idx}
+                            className="relative w-7 h-7 md:w-8 md:h-8 rounded-full bg-white dark:bg-gray-700 shadow-md border-2 border-gray-200 dark:border-gray-600 overflow-hidden"
+                            style={{
+                              marginLeft: idx !== 0 ? "-7px" : "0",
+                              zIndex: projectsData[0].technologies.length - idx,
+                            }}
+                          >
+                            <img
+                              src={tech.logo}
+                              alt={tech.name}
+                              className="w-full h-full object-cover p-1"
+                            />
+                          </div>
+                        ))}
                       </div>
                     )}
                 </div>
@@ -93,20 +94,27 @@ const ProjectComponent = () => {
                   <Link
                     href={projectsData[0].liveUrl}
                     target="_blank"
-                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
+                    className="btn-gradient rounded-lg"
                   >
                     Live Link
                   </Link>
                   <Link
                     href={projectsData[0].sourceUrl}
                     target="_blank"
-                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
+                    className="btn-gradient rounded-lg"
                   >
                     Source Code
                   </Link>
+                  <Link
+                    href={projectsData[0].details}
+                    target="_blank"
+                    className="btn-transparent rounded-lg"
+                  >
+                    Details
+                  </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           )}
         </div>
 
@@ -114,7 +122,7 @@ const ProjectComponent = () => {
          *         Remaining Projects (Grid 2 columns)
          *         Each card's image is full width inside card
         -------------------------------------------------- */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 px-3 md:px-6 lg:px-[6.5%]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 px-3 md:px-6 lg:px-[6.5%]">
           {projectsData.slice(1).map((project, index) => (
             <motion.div
               key={index}
@@ -135,18 +143,18 @@ const ProjectComponent = () => {
               {/* Content with padding */}
               <div className="p-6 lg:p-8 flex flex-col gap-2 md:gap-3">
                 {/* Title and Technologies */}
-                <div className="flex items-center gap-3">
-                  <h3 className="font-bold text-lg mb-2">{project.name}</h3>
+                <div className="flex items-center gap-3 flex-wrap">
+                  <h3 className="font-bold text-xl mb-2">{project.name}</h3>
                   {/* Technology Logos - Overlapping Circles */}
                   {project.technologies && project.technologies.length > 0 && (
                     <div className="flex items-center">
-                      {project.technologies.slice(0, 3).map((tech, idx) => (
+                      {project.technologies.map((tech, idx) => (
                         <div
                           key={idx}
                           className="relative w-7 h-7 md:w-8 md:h-8 rounded-full bg-white dark:bg-gray-700 shadow-md border-2 border-gray-200 dark:border-gray-600 overflow-hidden"
                           style={{
-                            marginLeft: idx !== 0 ? "-8px" : "0",
-                            zIndex: 3 - idx,
+                            marginLeft: idx !== 0 ? "-7px" : "0",
+                            zIndex: project.technologies.length - idx,
                           }}
                         >
                           <img
@@ -168,16 +176,23 @@ const ProjectComponent = () => {
                   <Link
                     href={project.liveUrl}
                     target="_blank"
-                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
+                    className="btn-gradient rounded-lg"
                   >
                     Live Link
                   </Link>
                   <Link
                     href={project.sourceUrl}
                     target="_blank"
-                    className="btn-gradient inline-flex items-center justify-center px-5 py-2 text-white font-medium rounded-lg border-2 border-transparent transition-all duration-200 hover:bg-transparent hover:text-white hover:border-white text-sm lg:text-base"
+                    className="btn-gradient rounded-lg"
                   >
                     Source Code
+                  </Link>
+                  <Link
+                    href={project.details}
+                    target="_blank"
+                    className="btn-transparent rounded-lg"
+                  >
+                    Details
                   </Link>
                 </div>
               </div>

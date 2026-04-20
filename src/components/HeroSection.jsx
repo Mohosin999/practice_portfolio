@@ -76,7 +76,7 @@ const HeroSection = () => {
                 aria-label="Download Resume"
                 className="flex w-fit mx-auto lg:mx-0"
               >
-                <button className="btn-gradient flex items-center justify-center gap-3 text-sm lg:text-base text-white px-5 py-2 my-3 border-2 border-transparent transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white">
+                <button className="btn-gradient">
                   <FaDownload /> Download Resume
                 </button>
               </a>

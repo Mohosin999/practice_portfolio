@@ -237,7 +237,7 @@ const NewTechStackVisualization = () => {
           {techCategories.map((category) => (
             <div key={category.category}>
               {/* Category Title */}
-              <h4 className="text-lg font-semibold text-[#32961C] mb-3">
+              <h4 className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">
                 {category.category}
               </h4>
 

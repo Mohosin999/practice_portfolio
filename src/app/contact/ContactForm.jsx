@@ -73,7 +73,7 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="btn-gradient w-full text-base text-white p-3 border-2 border-transparent rounded-lg transition-all ease-in-out duration-300 hover:bg-transparent hover:text-white hover:border-white flex justify-center items-center active:scale-105"
+            className="btn-gradient rounded-lg w-full"
           >
             Send
             {isLoading && (
