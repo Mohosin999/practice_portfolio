@@ -12,7 +12,7 @@ const experiences = [
     location: "Mymensingh, Bangladesh",
     type: "Freelance",
     achievements: [
-      "Developed a fully integrated frontend to display dynamic user data, providing users with a dedicated profile area to view account information and monitor their current financial status.",
+      "Developed a system using Next.js to display dynamic user data, providing users with a dedicated profile area to monitor their current financial status.",
       "Designed a payment page utilizing QR codes, enabling seamless transaction flow across multiple payment gateways for authenticated users.",
       "Built a private admin dashboard using Strapi, giving management the sole control over user creation and account access, and preventing public sign-ups.",
     ],
