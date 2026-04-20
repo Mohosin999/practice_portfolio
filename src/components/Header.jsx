@@ -21,8 +21,8 @@ const Header = () => {
   return (
     <>
       {/* Header */}
-      <div className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#0A0A0F]/90 dark:bg-opacity-90 backdrop-blur-sm flex items-center justify-center transition-transform duration-300">
-        <div className="w-full lg:w-[87%] flex items-center justify-between px-3 md:px-6 lg:px-0 py-6">
+      <div className="fixed top-0 left-0 w-full z-50 bg-[#F8F6FD] dark:bg-[#0A0A0F] dark:bg-opacity-90 backdrop-blur-sm flex items-center justify-center transition-transform duration-300">
+        <div className="w-full lg:w-[87%] flex items-center justify-between px-3 md:px-6 lg:px-0 py-4">
           {/* Left side logo */}
           <Link href={"/"}>
             <h4 className="text-xl lg:text-2xl font-bold active:scale-105 flex items-center hover:text-[#32961C] duration-300">

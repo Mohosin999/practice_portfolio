@@ -133,7 +133,7 @@ const HomePage = () => {
       {/* ========================================================
        *                      Quick Stats
       ======================================================== */}
-      <section className="w-full py-16 bg-white dark:bg-[#101016] text-white dark:text-gray-200 mx-3 md:mx-6 lg:mx-[6.5%] rounded-xl mt-10">
+      {/* <section className="w-full py-16 bg-white dark:bg-[#101016] text-white dark:text-gray-200 mx-3 md:mx-6 lg:mx-[6.5%] rounded-xl mt-10">
         <div className="w-[87%] mx-auto">
           <motion.div
             className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
@@ -191,7 +191,7 @@ const HomePage = () => {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* ========================================================
        *                      Call to Action

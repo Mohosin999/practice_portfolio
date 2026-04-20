@@ -63,7 +63,7 @@ body {
 
 /* Scrollbar for Webkit browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-  width: 12px; /* Width of scrollbar */
+  width: 8px; /* Width of scrollbar */
 }
 
 ::-webkit-scrollbar-track {
@@ -72,8 +72,8 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #32961c; /* Thumb color, matches your yellow button */
-  border-radius: 6px; /* Rounded corners */
-  border: 3px solid var(--background); /* Space around thumb */
+  border-radius: 4px; /* Rounded corners */
+  border: 2px solid var(--background); /* Space around thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {

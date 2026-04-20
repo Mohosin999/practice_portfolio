@@ -7,8 +7,8 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 const experiences = [
   {
     role: "Frontend Developer",
-    company: "Freelance",
-    period: "Apr 5, 2025 - Apr 11, 2026",
+    company: "Freelance Project",
+    period: "Apr 11, 2025 - May 03, 2025",
     location: "Mymensingh, Bangladesh",
     type: "Freelance",
     achievements: [
@@ -74,7 +74,7 @@ const WorkExperience = () => {
                       key={i}
                       className="text-sm text-gray-700 dark:text-gray-300 flex gap-2"
                     >
-                      <span className="text-lg text-[#32961C] leading-5 flex-shrink-0">
+                      <span className="text-xl text-[#32961C] leading-5 flex-shrink-0">
                         •
                       </span>
                       <span className="leading-5">{achievement}</span>
