@@ -41,10 +41,10 @@ const ProfessionalSummary = () => {
 
           <p>
             On the frontend, I work with React, Next.js, Redux-Toolkit and
-            Zustand with concentration on designing responsible and
-            user-friendly interfaces. On the backend, I work with Node.js,
-            Express.js, and MongoDB with concentration on robust and scalable
-            server-side applications.​
+            Zustand with a focus on designing responsive and user-friendly
+            interfaces. On the backend, I work with Node.js, Express.js, and
+            MongoDB and PostgreSQL, with a focus on building robust and scalable
+            server-side applications.
           </p>
 
           <p>
