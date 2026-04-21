@@ -40,7 +40,7 @@ export const projectsData = [
     liveUrl: "https://chatbot-client-theta.vercel.app/",
     sourceUrl: "https://github.com/Mohosin999/chatbot-AI-mern-stack-app",
     details:
-      "https://github.com/Mohosin999/chatbot-AI-mern-stack-app#smartgpt---ai-chatbot--image-generator",
+      "https://github.com/Mohosin999/chatbot-AI-mern-stack-app#ai-chatbot",
     technologies: [
       { name: "JavaScript", logo: "/logos/js.svg" },
       { name: "React", logo: "/logos/react.svg" },
