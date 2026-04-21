@@ -37,8 +37,8 @@ const ProjectComponent = () => {
                   />
                 </Link>
                 {/* Featured Badge - Top Left Corner */}
-                <div className="absolute top-0 left-0 md:top-3 md:left-3 z-10">
-                  <div className="flex items-center gap-1 bg-amber-600 text-white px-3 py-1.5 rounded-md shadow-lg">
+                <div className="absolute top-0 left-0 z-10">
+                  <div className="flex items-center gap-1 bg-cyan-400 text-black px-3 py-1.5 shadow-lg">
                     <svg
                       className="w-4 h-4 fill-current"
                       viewBox="0 0 24 24"

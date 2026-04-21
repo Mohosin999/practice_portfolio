@@ -33,13 +33,30 @@ export const projectsData = [
     ],
   },
   {
+    image: "./img/chatbot.png",
+    name: "Clean YouTube",
+    description:
+      "Chatbot is a full-stack AI platform that leverages Google Gemini to generate intelligent, context-aware responses. Built with React and TailwindCSS on the frontend and Node.js, Express, and MongoDB on the backend, it features a secure authentication system ensuring only registered users can access their chat history, with all conversations stored in their account for future reference.",
+    liveUrl: "https://chatbot-client-theta.vercel.app/",
+    sourceUrl: "https://github.com/Mohosin999/chatbot-AI-mern-stack-app",
+    details:
+      "https://github.com/Mohosin999/chatbot-AI-mern-stack-app#smartgpt---ai-chatbot--image-generator",
+    technologies: [
+      { name: "JavaScript", logo: "/logos/js.svg" },
+      { name: "React", logo: "/logos/react.svg" },
+      { name: "Node.js", logo: "/logos/nodejs.svg" },
+      { name: "MongoDB", logo: "/logos/mongodb.svg" },
+    ],
+  },
+  {
     image: "./img/clean-youtube.png",
     name: "Clean YouTube",
     description:
       "Clean YouTube is a React-based web application designed to enhance your YouTube video-watching experience by providing a clean, ad-free, and distraction-free interface. Users can efficiently manage playlists, track recent. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can.",
-    liveUrl: "#",
-    sourceUrl: "#",
-    details: "#",
+    liveUrl: "https://clean-youtube-app.vercel.app/",
+    sourceUrl: "https://github.com/Mohosin999/clean-youtube-app",
+    details:
+      "https://github.com/Mohosin999/clean-youtube-app#clean-youtube-project",
     technologies: [
       { name: "JavaScript", logo: "/logos/js.svg" },
       { name: "React", logo: "/logos/react.svg" },
