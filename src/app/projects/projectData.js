@@ -34,7 +34,7 @@ export const projectsData = [
   },
   {
     image: "./img/chatbot.png",
-    name: "Clean YouTube",
+    name: "AI Chatbot App",
     description:
       "Chatbot is a full-stack AI platform that leverages Google Gemini to generate intelligent, context-aware responses. Built with React and TailwindCSS on the frontend and Node.js, Express, and MongoDB on the backend, it features a secure authentication system ensuring only registered users can access their chat history, with all conversations stored in their account for future reference.",
     liveUrl: "https://chatbot-client-theta.vercel.app/",
@@ -50,7 +50,7 @@ export const projectsData = [
   },
   {
     image: "./img/clean-youtube.png",
-    name: "Clean YouTube",
+    name: "Clean YouTube App",
     description:
       "Clean YouTube is a React-based web application designed to enhance your YouTube video-watching experience by providing a clean, ad-free, and distraction-free interface. Users can efficiently manage playlists, track recent. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can. Powered by Google Gemini AI, it offers tailored descriptions, skill suggestions, and full CRUD. Users can.",
     liveUrl: "https://clean-youtube-app.vercel.app/",
