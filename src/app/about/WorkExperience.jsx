@@ -12,11 +12,10 @@ const experiences = [
     location: "Mymensingh, Bangladesh",
     type: "Freelance",
     achievements: [
-      "Developed a system using Next.js to display dynamic user data, providing users with a dedicated profile area to monitor their current financial status.",
-      "Designed a payment page utilizing QR codes, enabling seamless transaction flow across multiple payment gateways for authenticated users.",
-      "Built a private admin dashboard using Strapi, giving management the sole control over user creation and account access, and preventing public sign-ups.",
+      "Developed a secure invite-only authentication system using Next.js and Strapi with admin-provided credentials and time-limited OTP verification for controlled user access.",
+      "Built a private admin dashboard in Strapi with full user management capabilities and created dynamic user profile pages in Next.js to display real-time user-specific data.",
     ],
-    tech: ["Next.js", "JavaScript", "Tailwind CSS", "Strapi"],
+    tech: ["Next.js", "TypeScript", "Strapi", "Tailwind CSS"],
   },
 ];
 
